@@ -1,0 +1,4549 @@
+[{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82994"
+  },
+  "nct_id": "NCT00000106",
+  "conditions": [
+    "Rheumatism"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Entire body as a whole",
+      "Enzyme Unit",
+      "Fever"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82995"
+  },
+  "nct_id": "NCT00000102",
+  "conditions": [
+    "Congenital adrenal hyperplasia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "14 Years",
+      "maximum_age": "35 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "nifedipine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82996"
+  },
+  "nct_id": "NCT00000107",
+  "conditions": [
+    "Congenital Heart Defects",
+    "Congenital MeSH qualifier"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "17 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82997"
+  },
+  "nct_id": "NCT00000105",
+  "conditions": [
+    "Cancer Genus"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Tetanus Vaccine",
+      "Vaccines"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82998"
+  },
+  "nct_id": "NCT00000104",
+  "conditions": [
+    "Lead Poisoning"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "0 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Attention",
+      "Early repolarization",
+      "Measurement",
+      "Memory"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82999"
+  },
+  "nct_id": "NCT00000110",
+  "conditions": [
+    "BODY MASS INDEX QUANTITATIVE TRAIT LOCUS 20"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "49 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Dietary Fats",
+      "Magnetic Resonance Spectroscopy"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299a"
+  },
+  "nct_id": "NCT00000108",
+  "conditions": [
+    "Cardiovascular Diseases",
+    "Coronary Artery Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Exercise"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299b"
+  },
+  "nct_id": "NCT00000111",
+  "conditions": [
+    "Mouth Diseases"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Graft material",
+      "Mucosal graft",
+      "Oral",
+      "Oral mucous membrane structure"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299c"
+  },
+  "nct_id": "NCT00000112",
+  "conditions": [
+    "Acanthosis Nigricans",
+    "BODY MASS INDEX QUANTITATIVE TRAIT LOCUS 20",
+    "Diabetes",
+    "Glucose Intolerance (disease)"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "8 Years",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299d"
+  },
+  "nct_id": "NCT00000113",
+  "conditions": [
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "6 Years",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Progressive addition glasses",
+      "Single vision glasses"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299e"
+  },
+  "nct_id": "NCT00000115",
+  "conditions": [
+    "Macular retinal edema"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "8 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acetazolamide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299f"
+  },
+  "nct_id": "NCT00000117",
+  "conditions": [
+    "Optic Neuritis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Immunoglobulins"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a0"
+  },
+  "nct_id": "NCT00000114",
+  "conditions": [
+    "Retinitis Pigmentosa"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "49 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Vitamin A Drug Class",
+      "Vitamin E Drug Class"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a1"
+  },
+  "nct_id": "NCT00000118",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Delivery system",
+      "Drug Delivery Systems",
+      "Intraocular",
+      "Sustained Release Dosage Form",
+      "Sustained-Release Preparations"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a2"
+  },
+  "nct_id": "NCT00000119",
+  "conditions": [
+    "Cataract",
+    "Uveitis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Artificial lens, device",
+      "Changing",
+      "Surface",
+      "heparin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a3"
+  },
+  "nct_id": "NCT00000120",
+  "conditions": [
+    "Chlamydia Infections",
+    "Gonococcal Ophthalmia Neonatorum"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Year",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argentum nitricum, silver nitrate",
+      "Drop Dosing Unit",
+      "Erythromycin Topical Ointment"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a4"
+  },
+  "nct_id": "NCT00000121",
+  "conditions": [
+    "Esotropia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Eyeglasses",
+      "Prism correction"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a5"
+  },
+  "nct_id": "NCT00000122",
+  "conditions": [
+    "Glaucoma"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "fluorouracil"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a6"
+  },
+  "nct_id": "NCT00000116",
+  "conditions": [
+    "Retinitis Pigmentosa"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "55 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Control function",
+      "Docosahexaenoic Acids",
+      "Fatty Acids",
+      "Vitamin A Drug Class"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a7"
+  },
+  "nct_id": "NCT00000123",
+  "conditions": [
+    "Astigmatism",
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "20 Years",
+      "maximum_age": "35 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Contact Lenses",
+      "Polymethyl Methacrylate",
+      "silicones"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a8"
+  },
+  "nct_id": "NCT00000126",
+  "conditions": [
+    "Optic Neuropathy, Ischemic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "General surgery specialty"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a9"
+  },
+  "nct_id": "NCT00000124",
+  "conditions": [
+    "Choroid Neoplasms",
+    "Uveitis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Brachytherapy",
+      "Eye Enucleation procedure"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829aa"
+  },
+  "nct_id": "NCT00000125",
+  "conditions": [
+    "Glaucoma",
+    "Ocular Hypertension"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "40 Years",
+      "maximum_age": "80 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Eye Drops",
+      "Topical surface",
+      "ocular hypotensive"
+    ],
+    "outcomes": [
+      "Glaucoma, Primary Open Angle",
+      "Hypotensive",
+      "Incidence",
+      "Patients"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ab"
+  },
+  "nct_id": "NCT00000127",
+  "conditions": [
+    "Optic Neuropathy, Ischemic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Decompression, Surgical",
+      "Optic nerve sheath"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ac"
+  },
+  "nct_id": "NCT00000128",
+  "conditions": [
+    "Esophoria",
+    "Myopia",
+    "Strabismus"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "6 Years",
+      "maximum_age": "12 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Bifocal",
+      "Bifocal glasses (physical object)",
+      "Eyeglasses",
+      "Spectacle lens"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ad"
+  },
+  "nct_id": "NCT00000129",
+  "conditions": [
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Keratotomy, Radial"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ae"
+  },
+  "nct_id": "NCT00000131",
+  "conditions": [
+    "Retinal Diseases",
+    "Retinal Vein Occlusion"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Light Coagulation"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829af"
+  },
+  "nct_id": "NCT00000132",
+  "conditions": [
+    "Glaucoma, Open-Angle"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "80 Years",
+      "country": "Sweden",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser trabeculoplasty",
+      "betaxolol"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b0"
+  },
+  "nct_id": "NCT00000130",
+  "conditions": [
+    "Endophthalmitis",
+    "Eye Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Antibiotic throat preparations",
+      "Firstly",
+      "Mechanical vitrectomy by pars plana approach"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b1"
+  },
+  "nct_id": "NCT00000133",
+  "conditions": [
+    "Retinopathy of Prematurity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Year",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Cryotherapy",
+      "Transcleral approach"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b2"
+  },
+  "nct_id": "NCT00000135",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Placebo Control",
+      "sevirumab"
+    ],
+    "outcomes": [
+      "Death Rate"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b3"
+  },
+  "nct_id": "NCT00000134",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "foscarnet",
+      "ganciclovir"
+    ],
+    "outcomes": [
+      "Morbidity - disease rate"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b4"
+  },
+  "nct_id": "NCT00000136",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "foscarnet",
+      "ganciclovir"
+    ],
+    "outcomes": [
+      "Aspects of mortality statistics"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b5"
+  },
+  "nct_id": "NCT00000137",
+  "conditions": [
+    "Graft Rejection",
+    "Keratoplasty"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "10 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Histocompatibility",
+      "MATCHING"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b6"
+  },
+  "nct_id": "NCT00000138",
+  "conditions": [
+    "Herpes",
+    "Keratitis",
+    "Keratitis, Herpetic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acyclovir",
+      "prednisolone phosphate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b7"
+  },
+  "nct_id": "NCT00000139",
+  "conditions": [
+    "Herpes",
+    "Herpes Simplex Infections",
+    "Keratitis",
+    "Keratitis, Herpetic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Stress",
+      "acyclovir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b8"
+  },
+  "nct_id": "NCT00000140",
+  "conditions": [
+    "Proliferative vitreo-retinopathy",
+    "Retinal Detachment"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Silicone Oils",
+      "perflutren",
+      "sulfur hexafluoride"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b9"
+  },
+  "nct_id": "NCT00000142",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "cidofovir"
+    ],
+    "outcomes": [
+      "Continuance of life"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ba"
+  },
+  "nct_id": "NCT00000143",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration via Implantation",
+      "Intravenous",
+      "Oral",
+      "cidofovir",
+      "ganciclovir"
+    ],
+    "outcomes": [
+      "Continuance of life"
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bb"
+  },
+  "nct_id": "NCT00000144",
+  "conditions": [
+    "Glaucoma, Open-Angle"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "35 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration procedure",
+      "Argon <invertebrate>",
+      "Argon Ion Lasers",
+      "Consent Type - Laser treatment"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bc"
+  },
+  "nct_id": "NCT00000146",
+  "conditions": [
+    "MS gene",
+    "Optic Neuritis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "46 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "methylprednisolone",
+      "prednisone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bd"
+  },
+  "nct_id": "NCT00000145",
+  "conditions": [
+    "Age related macular degeneration",
+    "Cataract",
+    "Lens Opacities"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "80 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Antioxidants",
+      "Dietary Zinc"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829be"
+  },
+  "nct_id": "NCT00000147",
+  "conditions": [
+    "MS gene",
+    "Optic Neuritis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "46 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "methylprednisolone",
+      "prednisone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bf"
+  },
+  "nct_id": "NCT00000148",
+  "conditions": [
+    "Glaucoma"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "35 Years",
+      "maximum_age": "80 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser trabeculoplasty",
+      "Trabeculectomy"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c0"
+  },
+  "nct_id": "NCT00000149",
+  "conditions": [
+    "Glaucoma, Open-Angle"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "25 Years",
+      "maximum_age": "75 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Adrenergic beta-Antagonists",
+      "Argon laser trabeculoplasty",
+      "Trabeculectomy"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c1"
+  },
+  "nct_id": "NCT00000151",
+  "conditions": [
+    "Blindness",
+    "Diabetic Retinopathy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "70 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser photocoagulation",
+      "aspirin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c2"
+  },
+  "nct_id": "NCT00000150",
+  "conditions": [
+    "Age related macular degeneration",
+    "Histoplasmosis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Excision",
+      "Subfoveal choroidal neovascularization"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c3"
+  },
+  "nct_id": "NCT00000152",
+  "conditions": [
+    "Age related macular degeneration"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "40 Years",
+      "maximum_age": "84 Years",
+      "country": "",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Beta carotene measurement",
+      "aspirin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c4"
+  },
+  "nct_id": "NCT00000156",
+  "conditions": [
+    "Retinopathy of Prematurity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Day",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Ambient",
+      "Borg Scale Rating of Perceived Exertion Score 11",
+      "Goggles",
+      "Reduced"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c5"
+  },
+  "nct_id": "NCT00000154",
+  "conditions": [
+    "Diabetic Retinopathy",
+    "Retinal Detachment",
+    "Vitreous Hemorrhage"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "70 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Vitrectomy"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c6"
+  },
+  "nct_id": "NCT00000155",
+  "conditions": [
+    "Keratoconus"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c7"
+  },
+  "nct_id": "NCT00000157",
+  "conditions": [
+    "Cataract"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "40 Years",
+      "maximum_age": "84 Years",
+      "country": "",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "aspirin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c8"
+  },
+  "nct_id": "NCT00000153",
+  "conditions": [
+    "Diabetes Mellitus",
+    "Diabetic Retinopathy",
+    "Retinal Neovascularization"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "79 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration procedure",
+      "Argon <invertebrate>",
+      "Argon Ion Lasers",
+      "Blue green color",
+      "Consent Type - Laser treatment",
+      "Krypton",
+      "Krypton laser device",
+      "Laser light, red",
+      "Radiological Exposure Device"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c9"
+  },
+  "nct_id": "NCT00000158",
+  "conditions": [
+    "Age related macular degeneration",
+    "Choroidal Neovascularization",
+    "Histoplasmosis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser photocoagulation",
+      "Blue green color"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ca"
+  },
+  "nct_id": "NCT00000159",
+  "conditions": [
+    "Diabetes Mellitus",
+    "Diabetic Retinopathy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "56 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "sorbinil"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cb"
+  },
+  "nct_id": "NCT00000160",
+  "conditions": [
+    "Blindness",
+    "Diabetic Retinopathy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "70 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon <invertebrate>",
+      "Infrared Photocoagulation Therapy",
+      "xenon"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cc"
+  },
+  "nct_id": "NCT00000162",
+  "conditions": [
+    "Age related macular degeneration",
+    "Pathologic",
+    "Pathologic Neovascularization",
+    "Vitreous Hemorrhage"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser photocoagulation",
+      "Peripheral",
+      "Scattered",
+      "macular"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cd"
+  },
+  "nct_id": "NCT00000161",
+  "conditions": [
+    "Age related macular degeneration",
+    "Cataract"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "45 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Beta carotene measurement",
+      "Vitamin C Drug Class",
+      "Vitamin E Drug Class",
+      "aspirin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ce"
+  },
+  "nct_id": "NCT00000163",
+  "conditions": [
+    "Esotropia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Weeks",
+      "maximum_age": "20 Weeks",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cf"
+  },
+  "nct_id": "NCT00000168",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d0"
+  },
+  "nct_id": "NCT00000169",
+  "conditions": [
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "6 Years",
+      "maximum_age": "14 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d1"
+  },
+  "nct_id": "NCT00000167",
+  "conditions": [
+    "Age related macular degeneration"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration procedure",
+      "Low-intensity laser"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d2"
+  },
+  "nct_id": "NCT00000170",
+  "conditions": [
+    "Amblyopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "6 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Atropinum, atropine",
+      "Eye patch"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d3"
+  },
+  "nct_id": "NCT00000171",
+  "conditions": [
+    "Alzheimer's Disease",
+    "Dyssomnias"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Recombinant melatonin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d4"
+  },
+  "nct_id": "NCT00000172",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "0 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "galantamine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d5"
+  },
+  "nct_id": "NCT00000173",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "90 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Vitamin E Drug Class",
+      "donepezil"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d6"
+  },
+  "nct_id": "NCT00000174",
+  "conditions": [
+    "Alzheimer's Disease",
+    "Cognition Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "85 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "rivastigmine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d7"
+  },
+  "nct_id": "NCT00000175",
+  "conditions": [
+    "Cognition Disorders",
+    "Mood Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "65 Years",
+      "maximum_age": "90 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Estrogen (disposition)",
+      "Therapeutic Testosterone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d8"
+  },
+  "nct_id": "NCT00000177",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "60 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Estrogen (disposition)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d9"
+  },
+  "nct_id": "NCT00000176",
+  "conditions": [
+    "Alzheimer's Disease",
+    "Memory Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "65 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Estrogen (disposition)",
+      "Progesterone [EPC]"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829da"
+  },
+  "nct_id": "NCT00000178",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "0 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "prednisone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829db"
+  },
+  "nct_id": "NCT00000179",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "haloperidol",
+      "trazodone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829dc"
+  },
+  "nct_id": "NCT00000187",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "28 Years",
+      "maximum_age": "47 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Ritanserin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829dd"
+  },
+  "nct_id": "NCT00000180",
+  "conditions": [
+    "Memory Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIT 082"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829de"
+  },
+  "nct_id": "NCT00000188",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "selegiline"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829df"
+  },
+  "nct_id": "NCT00000189",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "gepirone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e0"
+  },
+  "nct_id": "NCT00000190",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Parotid Gland"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e1"
+  },
+  "nct_id": "NCT00000192",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Lamotrigine measurement"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e2"
+  },
+  "nct_id": "NCT00000191",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "51 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Carbamazepine measurement"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e3"
+  },
+  "nct_id": "NCT00000195",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "naltrexone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e4"
+  },
+  "nct_id": "NCT00000193",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Gamma - unit of measure"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e5"
+  },
+  "nct_id": "NCT00000194",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "cycloserine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e6"
+  },
+  "nct_id": "NCT00000196",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "naltrexone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e7"
+  },
+  "nct_id": "NCT00000198",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "piracetam"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e8"
+  },
+  "nct_id": "NCT00000199",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "piracetam"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e9"
+  },
+  "nct_id": "NCT00000197",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "25 Years",
+      "maximum_age": "49 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "propranolol"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ea"
+  },
+  "nct_id": "NCT00000200",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "methadone"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829eb"
+  },
+  "nct_id": "NCT00000201",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "selegiline"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ec"
+  },
+  "nct_id": "NCT00000202",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ed"
+  },
+  "nct_id": "NCT00000205",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ee"
+  },
+  "nct_id": "NCT00000203",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ef"
+  },
+  "nct_id": "NCT00000204",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f0"
+  },
+  "nct_id": "NCT00000206",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f1"
+  },
+  "nct_id": "NCT00000208",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f2"
+  },
+  "nct_id": "NCT00000207",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f3"
+  },
+  "nct_id": "NCT00000210",
+  "conditions": [
+    "Cocaine-Related Disorders",
+    "Heroin Dependence"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "26 Years",
+      "maximum_age": "41 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f4"
+  },
+  "nct_id": "NCT00000211",
+  "conditions": [
+    "Cocaine-Related Disorders",
+    "Heroin Dependence"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "26 Years",
+      "maximum_age": "41 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f5"
+  },
+  "nct_id": "NCT00000212",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "desipramine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f6"
+  },
+  "nct_id": "NCT00000213",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Fluoxetine measurement"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f7"
+  },
+  "nct_id": "NCT00000209",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a2"
+  },
+  "nct_id": "NCT00001030",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "rifabutin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a3"
+  },
+  "nct_id": "NCT00001027",
+  "conditions": [
+    "HIV Infections",
+    "Pneumocystis Carinii reagents",
+    "Pneumonia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Month",
+      "maximum_age": "6 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "pentamidine isethionate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a4"
+  },
+  "nct_id": "NCT00001029",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a5"
+  },
+  "nct_id": "NCT00001031",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "HIV 1+2"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a6"
+  },
+  "nct_id": "NCT00001028",
+  "conditions": [
+    "HIV Infections",
+    "Pneumocystis Carinii reagents",
+    "Pneumonia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "dapsone",
+      "pentamidine isethionate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a7"
+  },
+  "nct_id": "NCT00001032",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Months",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a8"
+  },
+  "nct_id": "NCT00001033",
+  "conditions": [
+    "HIV Infections",
+    "Tuberculosis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ethambutol hydrochloride",
+      "isoniazid",
+      "levofloxacin",
+      "pyrazinamide",
+      "pyridoxine hydrochloride",
+      "rifampin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a9"
+  },
+  "nct_id": "NCT00001034",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "Gastrointestinal Diseases",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ganciclovir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51aa"
+  },
+  "nct_id": "NCT00001035",
+  "conditions": [
+    "HIV Infections",
+    "Hepatitis C"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "IFNA2 gene",
+      "didanosine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ab"
+  },
+  "nct_id": "NCT00001037",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ENPEP gene",
+      "Procedure Agents Domain",
+      "Vaccines"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ac"
+  },
+  "nct_id": "NCT00001039",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "ethambutol hydrochloride"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ad"
+  },
+  "nct_id": "NCT00001040",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "saquinavir",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ae"
+  },
+  "nct_id": "NCT00001041",
+  "conditions": [
+    "HIV Infections",
+    "Pregnancy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "40 Years",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "HIV"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51af"
+  },
+  "nct_id": "NCT00001043",
+  "conditions": [
+    "HIV Infections",
+    "HIV Seronegativity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ENPEP gene",
+      "Procedure Agents Domain",
+      "Vaccines"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b0"
+  },
+  "nct_id": "NCT00001042",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Acetylmuramyl-Alanyl-Isoglutamine",
+      "Encapsulated (qualifier value)",
+      "Etoposide-Platinol Regimen",
+      "HIV 1+2",
+      "Lipid A",
+      "Liposomes",
+      "MF59 oil emulsion",
+      "MTTP gene",
+      "Syntex adjuvant formulation",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b1"
+  },
+  "nct_id": "NCT00001044",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "QS-21",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b2"
+  },
+  "nct_id": "NCT00001036",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Glycolates",
+      "IL2 gene",
+      "Polyethylene",
+      "thymalfasin",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b3"
+  },
+  "nct_id": "NCT00001046",
+  "conditions": [
+    "HIV Infections",
+    "HIV Seronegativity",
+    "Pregnancy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "40 Years",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "HIV 1+2",
+      "MF59 oil emulsion"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b4"
+  },
+  "nct_id": "NCT00001047",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "clofazimine",
+      "ethambutol hydrochloride",
+      "rifabutin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b5"
+  },
+  "nct_id": "NCT00001045",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "nevirapine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b6"
+  },
+  "nct_id": "NCT00001049",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "3 Months",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b7"
+  },
+  "nct_id": "NCT00001048",
+  "conditions": [
+    "HIV Infections",
+    "Leukoencephalopathy",
+    "Multifocal",
+    "Progressive"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CSF3 gene",
+      "cytarabine",
+      "didanosine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b8"
+  },
+  "nct_id": "NCT00001050",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b9"
+  },
+  "nct_id": "NCT00001052",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "QS-21",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ba"
+  },
+  "nct_id": "NCT00001038",
+  "conditions": [
+    "Cytomegalovirus Infections",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acyclovir",
+      "valacyclovir hydrochloride"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bb"
+  },
+  "nct_id": "NCT00001053",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "FAM72A gene",
+      "HIV Core Protein p24",
+      "VHLL gene",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bc"
+  },
+  "nct_id": "NCT00001054",
+  "conditions": [
+    "Chickenpox",
+    "HIV Infections",
+    "Herpes Simplex Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Years",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "valacyclovir hydrochloride"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bd"
+  },
+  "nct_id": "NCT00001055",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIDSVAX",
+      "C4A gene",
+      "Glycoproteins",
+      "HIV 1+2",
+      "Rabies (disorder)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51be"
+  },
+  "nct_id": "NCT00001057",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bf"
+  },
+  "nct_id": "NCT00001058",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "ethambutol hydrochloride",
+      "indinavir sulfate",
+      "rifabutin",
+      "ritonavir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c0"
+  },
+  "nct_id": "NCT00001059",
+  "conditions": [
+    "HIV Infections",
+    "Malignant neoplasm of soft tissue"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CSF3 gene",
+      "Liposomes",
+      "bleomycin sulfate",
+      "doxorubicin hydrochloride",
+      "vincristine sulfate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c1"
+  },
+  "nct_id": "NCT00001060",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Anterior bronchopulmonary segment of superior pulmonary vein",
+      "C4A wt Allele",
+      "HIV-1",
+      "Peptides",
+      "Polyvalent Vaccine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c2"
+  },
+  "nct_id": "NCT00001061",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "foscarnet sodium",
+      "ganciclovir",
+      "sevirumab"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c3"
+  },
+  "nct_id": "NCT00001062",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ganciclovir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c4"
+  },
+  "nct_id": "NCT00001063",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c5"
+  },
+  "nct_id": "NCT00001064",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Allogeneic",
+      "Dendritic Cells"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c6"
+  },
+  "nct_id": "NCT00001067",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c7"
+  },
+  "nct_id": "NCT00001065",
+  "conditions": [
+    "Candidiasis",
+    "HIV Infections",
+    "Oral"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "amphotericin B"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c8"
+  },
+  "nct_id": "NCT00001066",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Months",
+      "maximum_age": "15 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "lamivudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c9"
+  },
+  "nct_id": "NCT00001068",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ca"
+  },
+  "nct_id": "NCT00001069",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cb"
+  },
+  "nct_id": "NCT00001070",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Oral",
+      "Vitamin C Drug Class"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cc"
+  },
+  "nct_id": "NCT00001071",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CSF3 gene"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cd"
+  },
+  "nct_id": "NCT00001072",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIDSVAX",
+      "C4A gene",
+      "Glycoproteins",
+      "HIV 1+2",
+      "Rabies (disorder)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ce"
+  },
+  "nct_id": "NCT00001075",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine",
+      "ritonavir",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cf"
+  },
+  "nct_id": "NCT00001073",
+  "conditions": [
+    "Cervix Uteri",
+    "Dysplasia",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "isotretinoin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d0"
+  },
+  "nct_id": "NCT00001076",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIDSVAX",
+      "C4A gene",
+      "Glycoproteins",
+      "HIV 1+2",
+      "Rabies (disorder)"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d1"
+  },
+  "nct_id": "NCT00001074",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "hydroxyurea"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d2"
+  },
+  "nct_id": "NCT00001078",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "21 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "FDA Inactivation",
+      "Hepatitis A Vaccines"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d3"
+  },
+  "nct_id": "NCT00001079",
+  "conditions": [
+    "HIV Infections",
+    "HIV Wasting Syndrome"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "megestrol acetate",
+      "testosterone enanthate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d4"
+  },
+  "nct_id": "NCT00001077",
+  "conditions": [
+    "HIV Infections",
+    "HIV Wasting Syndrome"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Dietary Supplements",
+      "Minerals",
+      "Multivitamin preparation",
+      "Peptamen"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d5"
+  },
+  "nct_id": "NCT00001081",
+  "conditions": [
+    "Cryptosporidiosis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "nitazoxanide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d6"
+  },
+  "nct_id": "NCT00001080",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "23",
+      "Influenza virus vaccine",
+      "Pneumococcal Vaccine:-:Point in time:^Patient:-",
+      "Polyvalence",
+      "lamivudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d7"
+  },
+  "nct_id": "NCT00001083",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "indinavir sulfate",
+      "lamivudine",
+      "nevirapine",
+      "ritonavir",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d8"
+  },
+  "nct_id": "NCT00001084",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "indinavir sulfate",
+      "lamivudine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d9"
+  },
+  "nct_id": "NCT00001082",
+  "conditions": [
+    "Cytomegalovirus Infections",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Placebo Control",
+      "adefovir dipivoxil",
+      "levocarnitine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51da"
+  },
+  "nct_id": "NCT00001085",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "amprenavir",
+      "lamivudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51db"
+  },
+  "nct_id": "NCT00001086",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "abacavir sulfate",
+      "efavirenz",
+      "indinavir sulfate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51dc"
+  },
+  "nct_id": "NCT00001087",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "adefovir dipivoxil",
+      "didanosine",
+      "efavirenz",
+      "lamivudine",
+      "levocarnitine",
+      "nelfinavir mesylate",
+      "ritonavir",
+      "saquinavir",
+      "stavudine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51dd"
+  },
+  "nct_id": "NCT00001088",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "400",
+      "bupivacaine hydrochloride"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51de"
+  },
+  "nct_id": "NCT00001089",
+  "conditions": [
+    "Cytomegalovirus Infections",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51df"
+  },
+  "nct_id": "NCT00001056",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ENPEP gene",
+      "Procedure Agents Domain",
+      "Vaccines"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e0"
+  },
+  "nct_id": "NCT00001091",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Months",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine",
+      "nelfinavir mesylate",
+      "nevirapine",
+      "ritonavir",
+      "stavudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e1"
+  },
+  "nct_id": "NCT00001094",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Lamivudine / Zidovudine",
+      "delavirdine mesylate",
+      "nelfinavir mesylate",
+      "saquinavir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e2"
+  },
+  "nct_id": "NCT00001092",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e3"
+  },
+  "nct_id": "NCT00001093",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e4"
+  },
+  "nct_id": "NCT00001095",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "amprenavir",
+      "indinavir sulfate",
+      "lamivudine",
+      "nevirapine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e5"
+  },
+  "nct_id": "NCT00001096",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "HIV-1",
+      "MNSs Blood-Group System",
+      "QS-21"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e6"
+  },
+  "nct_id": "NCT00001097",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "8 Years",
+      "maximum_age": "22 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e7"
+  },
+  "nct_id": "NCT00001100",
+  "conditions": [
+    "Cytomegalovirus Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Month",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ganciclovir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e8"
+  },
+  "nct_id": "NCT00001101",
+  "conditions": [
+    "Lyme Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ceftriaxone",
+      "doxycycline"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e9"
+  },
+  "nct_id": "NCT00001104",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ea"
+  },
+  "nct_id": "NCT00001102",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51eb"
+  },
+  "nct_id": "NCT00001103",
+  "conditions": [
+    "Cognition Disorders",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ec"
+  },
+  "nct_id": "NCT00001105",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Homo sapiens",
+      "Monoclonal Antibodies"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ed"
+  },
+  "nct_id": "NCT00001106",
+  "conditions": [
+    "HIV Infections",
+    "Pregnancy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ee"
+  },
+  "nct_id": "NCT00001107",
+  "conditions": [
+    "Candidiasis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AmBisome",
+      "fluconazole"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ef"
+  },
+  "nct_id": "NCT00001108",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Years",
+      "maximum_age": "22 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "lamivudine",
+      "nelfinavir mesylate",
+      "nevirapine",
+      "ritonavir",
+      "saquinavir",
+      "stavudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f0"
+  },
+  "nct_id": "NCT00001109",
+  "conditions": [
+    "HIV Infections",
+    "HIV Seronegativity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f1"
+  },
+  "nct_id": "NCT00001110",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Bronchoalveolar Lavage"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f2"
+  },
+  "nct_id": "NCT00001112",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "interferon gamma-1b",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f3"
+  },
+  "nct_id": "NCT00001113",
+  "conditions": [
+    "HIV Infections",
+    "Malignant neoplasm of soft tissue"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "IFNA2 protein, human",
+      "interferon alfa-n1",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f4"
+  },
+  "nct_id": "NCT00001111",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "nevirapine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f5"
+  },
+  "nct_id": "NCT00001114",
+  "conditions": [
+    "HIV Infections",
+    "Malignant neoplasm of soft tissue"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "IFNA2 gene",
+      "didanosine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f6"
+  },
+  "nct_id": "NCT00001115",
+  "conditions": [
+    "HIV Infections",
+    "Herpes Simplex Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acyclovir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f7"
+  },
+  "nct_id": "NCT00001116",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Soluble (qualifier)",
+      "tumor necrosis factor receptor superfamily complex"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f8"
+  },
+  "nct_id": "NCT00001118",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Years",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "enfuvirtide"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f9"
+  },
+  "nct_id": "NCT00001117",
+  "conditions": [
+    "HIV Infections",
+    "Hepatitis C"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fa"
+  },
+  "nct_id": "NCT00001120",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Adult Lymphoma",
+    "HIV Infections",
+    "Lymphoma, Non-Hodgkin",
+    "Malignant neoplasm of soft tissue",
+    "Related personal status"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fb"
+  },
+  "nct_id": "NCT00001119",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Hepatitis B Vaccines",
+      "Lamivudine / Zidovudine",
+      "Recombinants",
+      "abacavir sulfate",
+      "amprenavir",
+      "efavirenz",
+      "indinavir sulfate",
+      "lamivudine",
+      "ritonavir",
+      "tetanus toxoid vaccine, inactivated",
+      "zidovudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fc"
+  },
+  "nct_id": "NCT00001121",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fd"
+  },
+  "nct_id": "NCT00001123",
+  "conditions": [
+    "Hantavirus Pulmonary Syndrome"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ribavirin"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fe"
+  },
+  "nct_id": "NCT00001122",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "efavirenz",
+      "nelfinavir mesylate",
+      "stavudine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ff"
+  },
+  "nct_id": "NCT00001125",
+  "conditions": [
+    "Chickenpox",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "% live",
+      "Chickenpox Vaccine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5200"
+  },
+  "nct_id": "NCT00001126",
+  "conditions": [
+    "Papilloma"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "cidofovir"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5201"
+  },
+  "nct_id": "NCT00001127",
+  "conditions": [
+    "Influenza"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Months",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CA4 gene",
+      "Influenza virus vaccine"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5202"
+  },
+  "nct_id": "NCT00001090",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "400",
+      "AIDSVAX",
+      "CSF2 gene"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5203"
+  },
+  "nct_id": "NCT00001128",
+  "conditions": [
+    "Cryptosporidiosis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Recombinant Interleukin-12",
+      "azithromycin",
+      "paromomycin sulfate"
+    ],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5204"
+  },
+  "nct_id": "NCT00001130",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  }
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5205"
+  },
+  "nct_id": "NCT00001129",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Authorization Mode - Electronic",
+      "Medication Systems",
+      "Medications",
+      "Relationship - Manager",
+      "Reminder",
+      "Reminder Systems"
+    ],
+    "outcomes": []
+  }
+}]

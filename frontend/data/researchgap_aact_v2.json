@@ -1,0 +1,4749 @@
+[{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82994"
+  },
+  "nct_id": "NCT00000106",
+  "conditions": [
+    "Rheumatism"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Entire body as a whole",
+      "Enzyme Unit",
+      "Fever"
+    ],
+    "outcomes": []
+  },
+  "title": "41.8 Degree Centigrade Whole Body Hyperthermia for the Treatment of Rheumatoid Diseases"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82995"
+  },
+  "nct_id": "NCT00000102",
+  "conditions": [
+    "Congenital adrenal hyperplasia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "14 Years",
+      "maximum_age": "35 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "nifedipine"
+    ],
+    "outcomes": []
+  },
+  "title": "Congenital Adrenal Hyperplasia: Calcium Channels as Therapeutic Targets"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82996"
+  },
+  "nct_id": "NCT00000107",
+  "conditions": [
+    "Congenital Heart Defects",
+    "Congenital MeSH qualifier"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "17 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Body Water Content in Cyanotic Congenital Heart Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82997"
+  },
+  "nct_id": "NCT00000105",
+  "conditions": [
+    "Cancer Genus"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Tetanus Vaccine",
+      "Vaccines"
+    ],
+    "outcomes": []
+  },
+  "title": "Vaccination With Tetanus and KLH to Assess Immune Responses."
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82998"
+  },
+  "nct_id": "NCT00000104",
+  "conditions": [
+    "Lead Poisoning"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "0 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Attention",
+      "Early repolarization",
+      "Measurement",
+      "Memory"
+    ],
+    "outcomes": []
+  },
+  "title": "Does Lead Burden Alter Neuropsychological Development?"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f82999"
+  },
+  "nct_id": "NCT00000110",
+  "conditions": [
+    "BODY MASS INDEX QUANTITATIVE TRAIT LOCUS 20"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "49 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Dietary Fats",
+      "Magnetic Resonance Spectroscopy"
+    ],
+    "outcomes": []
+  },
+  "title": "Influence of Diet and Endurance Running on Intramuscular Lipids Measured at 4.1 TESLA"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299a"
+  },
+  "nct_id": "NCT00000108",
+  "conditions": [
+    "Cardiovascular Diseases",
+    "Coronary Artery Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Exercise"
+    ],
+    "outcomes": []
+  },
+  "title": "Effects of Training Intensity on the CHD Risk Factors in Postmenopausal Women"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299b"
+  },
+  "nct_id": "NCT00000111",
+  "conditions": [
+    "Mouth Diseases"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Graft material",
+      "Mucosal graft",
+      "Oral",
+      "Oral mucous membrane structure"
+    ],
+    "outcomes": []
+  },
+  "title": "Intraoral Grafting of Ex Vivo Produced Oral Mucosal Composites"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299c"
+  },
+  "nct_id": "NCT00000112",
+  "conditions": [
+    "Acanthosis Nigricans",
+    "BODY MASS INDEX QUANTITATIVE TRAIT LOCUS 20",
+    "Diabetes",
+    "Glucose Intolerance (disease)"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "8 Years",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Prevalence of Carbohydrate Intolerance in Lean and Obese Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299d"
+  },
+  "nct_id": "NCT00000113",
+  "conditions": [
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "6 Years",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Progressive addition glasses",
+      "Single vision glasses"
+    ],
+    "outcomes": []
+  },
+  "title": "Correction of Myopia Evaluation Trial (COMET)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299e"
+  },
+  "nct_id": "NCT00000115",
+  "conditions": [
+    "Macular retinal edema"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "8 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acetazolamide"
+    ],
+    "outcomes": []
+  },
+  "title": "Randomized Trial of Acetazolamide for Uveitis-Associated Cystoid Macular Edema"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f8299f"
+  },
+  "nct_id": "NCT00000117",
+  "conditions": [
+    "Optic Neuritis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Immunoglobulins"
+    ],
+    "outcomes": []
+  },
+  "title": "Intravenous Immunoglobulin Therapy in Optic Neuritis"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a0"
+  },
+  "nct_id": "NCT00000114",
+  "conditions": [
+    "Retinitis Pigmentosa"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "49 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Vitamin A Drug Class",
+      "Vitamin E Drug Class"
+    ],
+    "outcomes": []
+  },
+  "title": "Randomized Trial of Vitamin A and Vitamin E Supplementation for Retinitis Pigmentosa"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a1"
+  },
+  "nct_id": "NCT00000118",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Delivery system",
+      "Drug Delivery Systems",
+      "Intraocular",
+      "Sustained Release Dosage Form",
+      "Sustained-Release Preparations"
+    ],
+    "outcomes": []
+  },
+  "title": "Ganciclovir Implant Study for Cytomegalovirus Retinitis"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a2"
+  },
+  "nct_id": "NCT00000119",
+  "conditions": [
+    "Cataract",
+    "Uveitis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Artificial lens, device",
+      "Changing",
+      "Surface",
+      "heparin"
+    ],
+    "outcomes": []
+  },
+  "title": "Safety and Efficacy of a Heparin-Coated Intraocular Lens in Uveitis"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a3"
+  },
+  "nct_id": "NCT00000120",
+  "conditions": [
+    "Chlamydia Infections",
+    "Gonococcal Ophthalmia Neonatorum"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Year",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argentum nitricum, silver nitrate",
+      "Drop Dosing Unit",
+      "Erythromycin Topical Ointment"
+    ],
+    "outcomes": []
+  },
+  "title": "Clinical Trial of Eye Prophylaxis in the Newborn"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a4"
+  },
+  "nct_id": "NCT00000121",
+  "conditions": [
+    "Esotropia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Eyeglasses",
+      "Prism correction"
+    ],
+    "outcomes": []
+  },
+  "title": "The Prism Adaptation Study (PAS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a5"
+  },
+  "nct_id": "NCT00000122",
+  "conditions": [
+    "Glaucoma"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "fluorouracil"
+    ],
+    "outcomes": []
+  },
+  "title": "Fluorouracil Filtering Surgery Study (FFSS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a6"
+  },
+  "nct_id": "NCT00000116",
+  "conditions": [
+    "Retinitis Pigmentosa"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "55 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Control function",
+      "Docosahexaenoic Acids",
+      "Fatty Acids",
+      "Vitamin A Drug Class"
+    ],
+    "outcomes": []
+  },
+  "title": "Randomized Trial of DHA for Retinitis Pigmentosa Patients Receiving Vitamin A"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a7"
+  },
+  "nct_id": "NCT00000123",
+  "conditions": [
+    "Astigmatism",
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "20 Years",
+      "maximum_age": "35 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Contact Lenses",
+      "Polymethyl Methacrylate",
+      "silicones"
+    ],
+    "outcomes": []
+  },
+  "title": "The Berkeley Orthokeratology Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a8"
+  },
+  "nct_id": "NCT00000126",
+  "conditions": [
+    "Optic Neuropathy, Ischemic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "General surgery specialty"
+    ],
+    "outcomes": []
+  },
+  "title": "Ischemic Optic Neuropathy Decompression Trial Followup (IONDT Followup)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829a9"
+  },
+  "nct_id": "NCT00000124",
+  "conditions": [
+    "Choroid Neoplasms",
+    "Uveitis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Brachytherapy",
+      "Eye Enucleation procedure"
+    ],
+    "outcomes": []
+  },
+  "title": "Collaborative Ocular Melanoma Study (COMS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829aa"
+  },
+  "nct_id": "NCT00000125",
+  "conditions": [
+    "Glaucoma",
+    "Ocular Hypertension"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "40 Years",
+      "maximum_age": "80 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Eye Drops",
+      "Topical surface",
+      "ocular hypotensive"
+    ],
+    "outcomes": [
+      "Glaucoma, Primary Open Angle",
+      "Hypotensive",
+      "Incidence",
+      "Patients"
+    ]
+  },
+  "title": "Ocular Hypertension Treatment Study (OHTS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ab"
+  },
+  "nct_id": "NCT00000127",
+  "conditions": [
+    "Optic Neuropathy, Ischemic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Decompression, Surgical",
+      "Optic nerve sheath"
+    ],
+    "outcomes": []
+  },
+  "title": "Ischemic Optic Neuropathy Decompression Trial (IONDT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ac"
+  },
+  "nct_id": "NCT00000128",
+  "conditions": [
+    "Esophoria",
+    "Myopia",
+    "Strabismus"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "6 Years",
+      "maximum_age": "12 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Bifocal",
+      "Bifocal glasses (physical object)",
+      "Eyeglasses",
+      "Spectacle lens"
+    ],
+    "outcomes": []
+  },
+  "title": "A Trial of Bifocals in Myopic Children With Esophoria"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ad"
+  },
+  "nct_id": "NCT00000129",
+  "conditions": [
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Keratotomy, Radial"
+    ],
+    "outcomes": []
+  },
+  "title": "Prospective Evaluation of Radial Keratotomy (PERK) Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ae"
+  },
+  "nct_id": "NCT00000131",
+  "conditions": [
+    "Retinal Diseases",
+    "Retinal Vein Occlusion"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Light Coagulation"
+    ],
+    "outcomes": []
+  },
+  "title": "Central Vein Occlusion Study (CVOS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829af"
+  },
+  "nct_id": "NCT00000132",
+  "conditions": [
+    "Glaucoma, Open-Angle"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "80 Years",
+      "country": "Sweden",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser trabeculoplasty",
+      "betaxolol"
+    ],
+    "outcomes": []
+  },
+  "title": "Early Manifest Glaucoma Trial (EMGT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b0"
+  },
+  "nct_id": "NCT00000130",
+  "conditions": [
+    "Endophthalmitis",
+    "Eye Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Antibiotic throat preparations",
+      "Firstly",
+      "Mechanical vitrectomy by pars plana approach"
+    ],
+    "outcomes": []
+  },
+  "title": "Endophthalmitis Vitrectomy Study (EVS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b1"
+  },
+  "nct_id": "NCT00000133",
+  "conditions": [
+    "Retinopathy of Prematurity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Year",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Cryotherapy",
+      "Transcleral approach"
+    ],
+    "outcomes": []
+  },
+  "title": "Cryotherapy for Retinopathy of Prematurity (CRYO-ROP) - Outcome Study of Cryotherapy for Retinopathy of Prematurity"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b2"
+  },
+  "nct_id": "NCT00000135",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Placebo Control",
+      "sevirumab"
+    ],
+    "outcomes": [
+      "Death Rate"
+    ]
+  },
+  "title": "Studies of the Ocular Complications of AIDS (SOCA)--Monoclonal Antibody CMV Retinitis Trial (MACRT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b3"
+  },
+  "nct_id": "NCT00000134",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "foscarnet",
+      "ganciclovir"
+    ],
+    "outcomes": [
+      "Morbidity - disease rate"
+    ]
+  },
+  "title": "Studies of the Ocular Complications of AIDS (SOCA)--Cytomegalovirus Retinitis Retreatment Trial (CRRT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b4"
+  },
+  "nct_id": "NCT00000136",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "foscarnet",
+      "ganciclovir"
+    ],
+    "outcomes": [
+      "Aspects of mortality statistics"
+    ]
+  },
+  "title": "Studies of the Ocular Complications of AIDS (SOCA)--Foscarnet-Ganciclovir CMV Retinitis Trial (FGCRT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b5"
+  },
+  "nct_id": "NCT00000137",
+  "conditions": [
+    "Graft Rejection",
+    "Keratoplasty"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "10 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Histocompatibility",
+      "MATCHING"
+    ],
+    "outcomes": []
+  },
+  "title": "Collaborative Corneal Transplantation Studies (CCTS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b6"
+  },
+  "nct_id": "NCT00000138",
+  "conditions": [
+    "Herpes",
+    "Keratitis",
+    "Keratitis, Herpetic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acyclovir",
+      "prednisolone phosphate"
+    ],
+    "outcomes": []
+  },
+  "title": "Herpetic Eye Disease Study (HEDS) I"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b7"
+  },
+  "nct_id": "NCT00000139",
+  "conditions": [
+    "Herpes",
+    "Herpes Simplex Infections",
+    "Keratitis",
+    "Keratitis, Herpetic"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Stress",
+      "acyclovir"
+    ],
+    "outcomes": []
+  },
+  "title": "Herpetic Eye Disease Study (HEDS) II"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b8"
+  },
+  "nct_id": "NCT00000140",
+  "conditions": [
+    "Proliferative vitreo-retinopathy",
+    "Retinal Detachment"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Silicone Oils",
+      "perflutren",
+      "sulfur hexafluoride"
+    ],
+    "outcomes": []
+  },
+  "title": "The Silicone Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829b9"
+  },
+  "nct_id": "NCT00000142",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "cidofovir"
+    ],
+    "outcomes": [
+      "Continuance of life"
+    ]
+  },
+  "title": "Studies of the Ocular Complications of AIDS (SOCA)--HPMPC Peripheral CMV Retinitis Trial (HPCRT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ba"
+  },
+  "nct_id": "NCT00000143",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration via Implantation",
+      "Intravenous",
+      "Oral",
+      "cidofovir",
+      "ganciclovir"
+    ],
+    "outcomes": [
+      "Continuance of life"
+    ]
+  },
+  "title": "Studies of Ocular Complications of AIDS (SOCA)--Ganciclovir-Cidofovir CMV Retinitis Trial (GCCRT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bb"
+  },
+  "nct_id": "NCT00000144",
+  "conditions": [
+    "Glaucoma, Open-Angle"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "35 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration procedure",
+      "Argon <invertebrate>",
+      "Argon Ion Lasers",
+      "Consent Type - Laser treatment"
+    ],
+    "outcomes": []
+  },
+  "title": "Glaucoma Laser Trial (GLT) Glaucoma Laser Trial Followup Study (GLTFS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bc"
+  },
+  "nct_id": "NCT00000146",
+  "conditions": [
+    "MS gene",
+    "Optic Neuritis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "46 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "methylprednisolone",
+      "prednisone"
+    ],
+    "outcomes": []
+  },
+  "title": "Optic Neuritis Treatment Trial (ONTT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bd"
+  },
+  "nct_id": "NCT00000145",
+  "conditions": [
+    "Age related macular degeneration",
+    "Cataract",
+    "Lens Opacities"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "80 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Antioxidants",
+      "Dietary Zinc"
+    ],
+    "outcomes": []
+  },
+  "title": "Age-Related Eye Disease Study (AREDS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829be"
+  },
+  "nct_id": "NCT00000147",
+  "conditions": [
+    "MS gene",
+    "Optic Neuritis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "46 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "methylprednisolone",
+      "prednisone"
+    ],
+    "outcomes": []
+  },
+  "title": "Longitudinal Optic Neuritis Study (LONS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829bf"
+  },
+  "nct_id": "NCT00000148",
+  "conditions": [
+    "Glaucoma"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "35 Years",
+      "maximum_age": "80 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser trabeculoplasty",
+      "Trabeculectomy"
+    ],
+    "outcomes": []
+  },
+  "title": "Advanced Glaucoma Intervention Study (AGIS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c0"
+  },
+  "nct_id": "NCT00000149",
+  "conditions": [
+    "Glaucoma, Open-Angle"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "25 Years",
+      "maximum_age": "75 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Adrenergic beta-Antagonists",
+      "Argon laser trabeculoplasty",
+      "Trabeculectomy"
+    ],
+    "outcomes": []
+  },
+  "title": "Collaborative Initial Glaucoma Treatment Study (CIGTS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c1"
+  },
+  "nct_id": "NCT00000151",
+  "conditions": [
+    "Blindness",
+    "Diabetic Retinopathy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "70 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser photocoagulation",
+      "aspirin"
+    ],
+    "outcomes": []
+  },
+  "title": "Early Treatment Diabetic Retinopathy Study (ETDRS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c2"
+  },
+  "nct_id": "NCT00000150",
+  "conditions": [
+    "Age related macular degeneration",
+    "Histoplasmosis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Excision",
+      "Subfoveal choroidal neovascularization"
+    ],
+    "outcomes": []
+  },
+  "title": "Submacular Surgery Trials (SST)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c3"
+  },
+  "nct_id": "NCT00000152",
+  "conditions": [
+    "Age related macular degeneration"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "40 Years",
+      "maximum_age": "84 Years",
+      "country": "",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Beta carotene measurement",
+      "aspirin"
+    ],
+    "outcomes": []
+  },
+  "title": "Randomized Trial of Beta-Carotene and Macular Degeneration"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c4"
+  },
+  "nct_id": "NCT00000156",
+  "conditions": [
+    "Retinopathy of Prematurity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Day",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Ambient",
+      "Borg Scale Rating of Perceived Exertion Score 11",
+      "Goggles",
+      "Reduced"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effects of Light Reduction on Retinopathy of Prematurity (Light-ROP)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c5"
+  },
+  "nct_id": "NCT00000154",
+  "conditions": [
+    "Diabetic Retinopathy",
+    "Retinal Detachment",
+    "Vitreous Hemorrhage"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "70 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Vitrectomy"
+    ],
+    "outcomes": []
+  },
+  "title": "Diabetic Retinopathy Vitrectomy Study (DRVS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c6"
+  },
+  "nct_id": "NCT00000155",
+  "conditions": [
+    "Keratoconus"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "The Collaborative Longitudinal Evaluation of Keratoconus (CLEK) Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c7"
+  },
+  "nct_id": "NCT00000157",
+  "conditions": [
+    "Cataract"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "40 Years",
+      "maximum_age": "84 Years",
+      "country": "",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "aspirin"
+    ],
+    "outcomes": []
+  },
+  "title": "Randomized Trial of Aspirin and Cataracts in U.S. Physicians"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c8"
+  },
+  "nct_id": "NCT00000153",
+  "conditions": [
+    "Diabetes Mellitus",
+    "Diabetic Retinopathy",
+    "Retinal Neovascularization"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "79 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration procedure",
+      "Argon <invertebrate>",
+      "Argon Ion Lasers",
+      "Blue green color",
+      "Consent Type - Laser treatment",
+      "Krypton",
+      "Krypton laser device",
+      "Laser light, red",
+      "Radiological Exposure Device"
+    ],
+    "outcomes": []
+  },
+  "title": "Krypton-Argon Regression of Neovascularization Study (KARNS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829c9"
+  },
+  "nct_id": "NCT00000158",
+  "conditions": [
+    "Age related macular degeneration",
+    "Choroidal Neovascularization",
+    "Histoplasmosis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser photocoagulation",
+      "Blue green color"
+    ],
+    "outcomes": []
+  },
+  "title": "Macular Photocoagulation Study (MPS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ca"
+  },
+  "nct_id": "NCT00000159",
+  "conditions": [
+    "Diabetes Mellitus",
+    "Diabetic Retinopathy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "56 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "sorbinil"
+    ],
+    "outcomes": []
+  },
+  "title": "Sorbinil Retinopathy Trial (SRT)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cb"
+  },
+  "nct_id": "NCT00000160",
+  "conditions": [
+    "Blindness",
+    "Diabetic Retinopathy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "70 Years",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon <invertebrate>",
+      "Infrared Photocoagulation Therapy",
+      "xenon"
+    ],
+    "outcomes": []
+  },
+  "title": "Diabetic Retinopathy Study (DRS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cc"
+  },
+  "nct_id": "NCT00000162",
+  "conditions": [
+    "Age related macular degeneration",
+    "Pathologic",
+    "Pathologic Neovascularization",
+    "Vitreous Hemorrhage"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Argon laser photocoagulation",
+      "Peripheral",
+      "Scattered",
+      "macular"
+    ],
+    "outcomes": []
+  },
+  "title": "Branch Vein Occlusion Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cd"
+  },
+  "nct_id": "NCT00000161",
+  "conditions": [
+    "Age related macular degeneration",
+    "Cataract"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "45 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Beta carotene measurement",
+      "Vitamin C Drug Class",
+      "Vitamin E Drug Class",
+      "aspirin"
+    ],
+    "outcomes": []
+  },
+  "title": "Randomized Trials of Vitamin Supplements and Eye Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ce"
+  },
+  "nct_id": "NCT00000163",
+  "conditions": [
+    "Esotropia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Weeks",
+      "maximum_age": "20 Weeks",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Congenital Esotropia Observational Study (CEOS)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829cf"
+  },
+  "nct_id": "NCT00000168",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Longitudinal Study of Ocular Complications of AIDS (LSOCA)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d0"
+  },
+  "nct_id": "NCT00000169",
+  "conditions": [
+    "Myopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "6 Years",
+      "maximum_age": "14 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "The Collaborative Longitudinal Evaluation of Ethnicity and Refractive Error (CLEERE) Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d1"
+  },
+  "nct_id": "NCT00000167",
+  "conditions": [
+    "Age related macular degeneration"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Administration procedure",
+      "Low-intensity laser"
+    ],
+    "outcomes": []
+  },
+  "title": "Complications of Age-Related Macular Degeneration Prevention Trial"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d2"
+  },
+  "nct_id": "NCT00000170",
+  "conditions": [
+    "Amblyopia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "6 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Atropinum, atropine",
+      "Eye patch"
+    ],
+    "outcomes": []
+  },
+  "title": "Occlusion Versus Pharmacologic Therapy for Moderate Amblyopia"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d3"
+  },
+  "nct_id": "NCT00000171",
+  "conditions": [
+    "Alzheimer's Disease",
+    "Dyssomnias"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Recombinant melatonin"
+    ],
+    "outcomes": []
+  },
+  "title": "Study of Melatonin: Sleep Problems in Alzheimer's Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d4"
+  },
+  "nct_id": "NCT00000172",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "0 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "galantamine"
+    ],
+    "outcomes": []
+  },
+  "title": "Evaluation of Galantamine in the Treatment of Alzheimer's Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d5"
+  },
+  "nct_id": "NCT00000173",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "90 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Vitamin E Drug Class",
+      "donepezil"
+    ],
+    "outcomes": []
+  },
+  "title": "Memory Impairment Study (Mild Cognitive Impairment Study)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d6"
+  },
+  "nct_id": "NCT00000174",
+  "conditions": [
+    "Alzheimer's Disease",
+    "Cognition Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "55 Years",
+      "maximum_age": "85 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "rivastigmine"
+    ],
+    "outcomes": []
+  },
+  "title": "Investigation Into Delay to Diagnosis of Alzheimer's Disease With Exelon (InDDEx)"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d7"
+  },
+  "nct_id": "NCT00000175",
+  "conditions": [
+    "Cognition Disorders",
+    "Mood Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "65 Years",
+      "maximum_age": "90 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Estrogen (disposition)",
+      "Therapeutic Testosterone"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effects of Sex Hormones on Cognition and Mood in Older Adults"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d8"
+  },
+  "nct_id": "NCT00000177",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "60 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Estrogen (disposition)"
+    ],
+    "outcomes": []
+  },
+  "title": "Estrogen Hormone Protocol"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829d9"
+  },
+  "nct_id": "NCT00000176",
+  "conditions": [
+    "Alzheimer's Disease",
+    "Memory Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "65 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "Estrogen (disposition)",
+      "Progesterone [EPC]"
+    ],
+    "outcomes": []
+  },
+  "title": "Alzheimer's Disease Prevention Trial"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829da"
+  },
+  "nct_id": "NCT00000178",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "0 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "prednisone"
+    ],
+    "outcomes": []
+  },
+  "title": "Multicenter Trial of Prednisone in Alzheimer's Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829db"
+  },
+  "nct_id": "NCT00000179",
+  "conditions": [
+    "Alzheimer's Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "50 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "haloperidol",
+      "trazodone"
+    ],
+    "outcomes": []
+  },
+  "title": "Agitation in Alzheimer's Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829dc"
+  },
+  "nct_id": "NCT00000187",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "28 Years",
+      "maximum_age": "47 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Ritanserin"
+    ],
+    "outcomes": []
+  },
+  "title": "Ritanserin in Treatment of Cocaine Dependence - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829dd"
+  },
+  "nct_id": "NCT00000180",
+  "conditions": [
+    "Memory Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIT 082"
+    ],
+    "outcomes": []
+  },
+  "title": "AIT-082 Phase 1B Study"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829de"
+  },
+  "nct_id": "NCT00000188",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "selegiline"
+    ],
+    "outcomes": []
+  },
+  "title": "Selegiline in Treatment of Cocaine Dependence - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829df"
+  },
+  "nct_id": "NCT00000189",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "gepirone"
+    ],
+    "outcomes": []
+  },
+  "title": "Gepirone vs Placebo in Treatment of Cocaine Dependence - 3"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e0"
+  },
+  "nct_id": "NCT00000190",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Parotid Gland"
+    ],
+    "outcomes": []
+  },
+  "title": "Cocaine in Parotid Saliva, Blood and Urine - 4"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e1"
+  },
+  "nct_id": "NCT00000192",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Lamotrigine measurement"
+    ],
+    "outcomes": []
+  },
+  "title": "Neurobiology of Opioid Dependence: 1 - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e2"
+  },
+  "nct_id": "NCT00000191",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "51 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Carbamazepine measurement"
+    ],
+    "outcomes": []
+  },
+  "title": "Carbamazepine Treatment for Cocaine Dependence - 5"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e3"
+  },
+  "nct_id": "NCT00000195",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "naltrexone"
+    ],
+    "outcomes": []
+  },
+  "title": "Neurobiology of Opioid Dependence: 4 - 4"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e4"
+  },
+  "nct_id": "NCT00000193",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Gamma - unit of measure"
+    ],
+    "outcomes": []
+  },
+  "title": "Neurobiology of Opioid Dependence: 2 - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e5"
+  },
+  "nct_id": "NCT00000194",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "cycloserine"
+    ],
+    "outcomes": []
+  },
+  "title": "Neurobiology of Opioid Dependence: 3 - 3"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e6"
+  },
+  "nct_id": "NCT00000196",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "naltrexone"
+    ],
+    "outcomes": []
+  },
+  "title": "Neurobiology of Opioid Dependence: 5 - 5"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e7"
+  },
+  "nct_id": "NCT00000198",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "piracetam"
+    ],
+    "outcomes": []
+  },
+  "title": "Piracetam for Treatment of Cocaine Addiction - 3"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e8"
+  },
+  "nct_id": "NCT00000199",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "piracetam"
+    ],
+    "outcomes": []
+  },
+  "title": "Piracetam for Treatment of Cocaine Addiction, Phase II - 4"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829e9"
+  },
+  "nct_id": "NCT00000197",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "25 Years",
+      "maximum_age": "49 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "propranolol"
+    ],
+    "outcomes": []
+  },
+  "title": "Propranolol for Treatment of Cocaine Addiction - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ea"
+  },
+  "nct_id": "NCT00000200",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "methadone"
+    ],
+    "outcomes": []
+  },
+  "title": "Cocaine Effects in Humans: Physiology and Behavior - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829eb"
+  },
+  "nct_id": "NCT00000201",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "selegiline"
+    ],
+    "outcomes": []
+  },
+  "title": "Pharmacological Modulation of Cocaine Effects - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ec"
+  },
+  "nct_id": "NCT00000202",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Buprenorphine Maintenance for Opioid Addicts - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ed"
+  },
+  "nct_id": "NCT00000205",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Buprenorphine Maintenance Protocol - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ee"
+  },
+  "nct_id": "NCT00000203",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Buprenorphine Maintenance for Opioid Addicts - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829ef"
+  },
+  "nct_id": "NCT00000204",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Buprenorphine Maintenance for Opioid Addicts - 3"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f0"
+  },
+  "nct_id": "NCT00000206",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Clinical Rescue Protocol - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f1"
+  },
+  "nct_id": "NCT00000208",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Methadone/Buprenorphine Cross-Over Study - 4"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f2"
+  },
+  "nct_id": "NCT00000207",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Multicenter Clinical Trial of Buprenorphine - 3"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f3"
+  },
+  "nct_id": "NCT00000210",
+  "conditions": [
+    "Cocaine-Related Disorders",
+    "Heroin Dependence"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "26 Years",
+      "maximum_age": "41 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Treatment Efficacy for Drug Abuse and AIDS Prevention - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f4"
+  },
+  "nct_id": "NCT00000211",
+  "conditions": [
+    "Cocaine-Related Disorders",
+    "Heroin Dependence"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "26 Years",
+      "maximum_age": "41 Years",
+      "country": "United States",
+      "gender": "MALE"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Treatment Efficacy for Drug Abuse and AIDS Prevention - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f5"
+  },
+  "nct_id": "NCT00000212",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "desipramine"
+    ],
+    "outcomes": []
+  },
+  "title": "IV Cocaine Abuse: A Laboratory Model - 1"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f6"
+  },
+  "nct_id": "NCT00000213",
+  "conditions": [
+    "Cocaine-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "45 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Fluoxetine measurement"
+    ],
+    "outcomes": []
+  },
+  "title": "IV Cocaine Abuse: A Laboratory Model - 2"
+},
+{
+  "_id": {
+    "$oid": "671a2b185ffdb81650f829f7"
+  },
+  "nct_id": "NCT00000209",
+  "conditions": [
+    "Opioid-Related Disorders"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "21 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Buprenorphine measurement (procedure)"
+    ],
+    "outcomes": []
+  },
+  "title": "Buprenorphine Dosing Interval - 5"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a2"
+  },
+  "nct_id": "NCT00001030",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "rifabutin"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Clarithromycin and Rifabutin Used Alone or in Combination to Prevent Mycobacterium Avium Complex (MAC) or Disseminated MAC Disease in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a3"
+  },
+  "nct_id": "NCT00001027",
+  "conditions": [
+    "HIV Infections",
+    "Pneumocystis Carinii reagents",
+    "Pneumonia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Month",
+      "maximum_age": "6 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "pentamidine isethionate"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Pentamidine in the Prevention of Pneumocystis Carinii Pneumonia (PCP) in HIV-Infected Children Who Cannot Take Trimethoprim-Sulfamethoxazole"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a4"
+  },
+  "nct_id": "NCT00001029",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Comparison of Three Treatments for Advanced HIV Disease in Patients Who Have Received Nucleoside Therapy in the Past"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a5"
+  },
+  "nct_id": "NCT00001031",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "HIV 1+2"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase II Clinical Trial to Evaluate the Immunogenicity and Reactogenicity of the Recombinant HIV-1 Envelope Vaccines SF-2 rgp120 (CHO) [Chiron Vaccines] in MF59 Adjuvant and MN rgp120/HIV-1 [VaxGen] in Alum Adjuvant in Healthy Adults"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a6"
+  },
+  "nct_id": "NCT00001028",
+  "conditions": [
+    "HIV Infections",
+    "Pneumocystis Carinii reagents",
+    "Pneumonia"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "dapsone",
+      "pentamidine isethionate"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Pentamidine Plus Dapsone in the Prevention of Pneumocystis Carinii Pneumonia (PCP) in HIV-Infected Patients Who Cannot Take Trimethoprim or Sulfonamides"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a7"
+  },
+  "nct_id": "NCT00001032",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Months",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Dideoxycytidine Plus Zidovudine (AZT) in HIV-Infected Children Who Have Taken AZT"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a8"
+  },
+  "nct_id": "NCT00001033",
+  "conditions": [
+    "HIV Infections",
+    "Tuberculosis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ethambutol hydrochloride",
+      "isoniazid",
+      "levofloxacin",
+      "pyrazinamide",
+      "pyridoxine hydrochloride",
+      "rifampin"
+    ],
+    "outcomes": []
+  },
+  "title": "The Treatment of Tuberculosis in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51a9"
+  },
+  "nct_id": "NCT00001034",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "Gastrointestinal Diseases",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ganciclovir"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Ganciclovir in the Prevention of Cytomegalovirus (CMV) of the Eyes and Disease of the Stomach and Intestines in Patients With HIV"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51aa"
+  },
+  "nct_id": "NCT00001035",
+  "conditions": [
+    "HIV Infections",
+    "Hepatitis C"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "IFNA2 gene",
+      "didanosine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of a Two-Drug Combination in the Treatment of Patients With Hepatitis C Plus Advanced HIV Infections"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ab"
+  },
+  "nct_id": "NCT00001037",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ENPEP gene",
+      "Procedure Agents Domain",
+      "Vaccines"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I, Multicenter, Clinical Trial to Evaluate the Safety and Immunogenicity of Vaccinia-Derived MN HIV-1 Recombinant Envelope Glycoprotein (rgp160) of Human Immunodeficiency Virus at Two Different Vaccination Schedules"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ac"
+  },
+  "nct_id": "NCT00001039",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "ethambutol hydrochloride"
+    ],
+    "outcomes": []
+  },
+  "title": "Evaluation of Treatment for Mycobacterium Avium Complex (MAC) Infection in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ad"
+  },
+  "nct_id": "NCT00001040",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "saquinavir",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of Ro 31-8959 Plus Zidovudine (AZT) Versus AZT Plus Zalcitabine (ddC) Versus Ro 31-8959 Plus AZT Plus ddC"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ae"
+  },
+  "nct_id": "NCT00001041",
+  "conditions": [
+    "HIV Infections",
+    "Pregnancy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "40 Years",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "HIV"
+    ],
+    "outcomes": []
+  },
+  "title": "Active Immunization of HIV-1 Infected, Pregnant Women With CD4 Lymphocyte Counts >= 400/mm3: A Phase I Study of Safety and Immunogenicity of MN rgp120/HIV-1 Vaccine (NOTE: Some Patients Receive Placebo)"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51af"
+  },
+  "nct_id": "NCT00001043",
+  "conditions": [
+    "HIV Infections",
+    "HIV Seronegativity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ENPEP gene",
+      "Procedure Agents Domain",
+      "Vaccines"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I, Multicenter, Randomized Trial to Evaluate the Safety and Immunogenicity of Vaccinia-Derived MN HIV-1 Recombinant Envelope Glycoprotein (rgp160) of Human Immunodeficiency Virus at Two Different Vaccination Schedules"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b0"
+  },
+  "nct_id": "NCT00001042",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Acetylmuramyl-Alanyl-Isoglutamine",
+      "Encapsulated (qualifier value)",
+      "Etoposide-Platinol Regimen",
+      "HIV 1+2",
+      "Lipid A",
+      "Liposomes",
+      "MF59 oil emulsion",
+      "MTTP gene",
+      "Syntex adjuvant formulation",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I, Randomized, Double-Blind, Placebo-Controlled, Clinical Trial to Compare the Safety and Immunogenicity of Recombinant Envelope Protein rgp120/HIV-1SF2 (BIOCINE) Combined With Seven Adjuvants in Healthy HIV-1 Uninfected Individuals"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b1"
+  },
+  "nct_id": "NCT00001044",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "QS-21",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I, Multicenter, Randomized, Double-Blind, Placebo-Controlled HIV-1 Vaccine Trial to Evaluate the Safety and Immunogenicity of rgp120/HIV-1MN (Genentech) in Combination With QS21 Adjuvant and/or Alum in Healthy Adults."
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b2"
+  },
+  "nct_id": "NCT00001036",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Glycolates",
+      "IL2 gene",
+      "Polyethylene",
+      "thymalfasin",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of a Type of Interleukin-2 Plus Zidovudine Plus Thymosin in HIV-Positive Patients With and Without Symptoms of Infection"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b3"
+  },
+  "nct_id": "NCT00001046",
+  "conditions": [
+    "HIV Infections",
+    "HIV Seronegativity",
+    "Pregnancy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "40 Years",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "HIV 1+2",
+      "MF59 oil emulsion"
+    ],
+    "outcomes": []
+  },
+  "title": "Active Immunization of HIV-Infected Pregnant Women: A Phase I Study of Safety and Immunogenicity of a rgp120/HIV-1 Vaccine (NOTE: Some Patients Receive Placebo)"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b4"
+  },
+  "nct_id": "NCT00001047",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "clofazimine",
+      "ethambutol hydrochloride",
+      "rifabutin"
+    ],
+    "outcomes": []
+  },
+  "title": "Study of Four Different Treatment Approaches for Patients Who Have Mycobacterium Avium Complex Disease (MAC) Plus AIDS"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b5"
+  },
+  "nct_id": "NCT00001045",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "nevirapine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of Three Anti-HIV Drug Combinations in HIV-Infected Patients With No Symptoms of the Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b6"
+  },
+  "nct_id": "NCT00001049",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "3 Months",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Didanosine Use Alone or in Combination With Zidovudine in Infants Exposed to or Infected With HIV"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b7"
+  },
+  "nct_id": "NCT00001048",
+  "conditions": [
+    "HIV Infections",
+    "Leukoencephalopathy",
+    "Multifocal",
+    "Progressive"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CSF3 gene",
+      "cytarabine",
+      "didanosine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of Anti HIV Drugs Used Alone or in Combination With Cytosine Arabinoside to Treat Progressive Multifocal Leukoencephalopathy (PML) in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b8"
+  },
+  "nct_id": "NCT00001050",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Study of Women Who Have AIDS"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51b9"
+  },
+  "nct_id": "NCT00001052",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "QS-21",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I, Multicenter, Randomized, Double-Blind, Placebo-Controlled HIV-1 Vaccine Trial to Evaluate the Safety and Immunogenicity of MN Recombinant Soluble gp120/HIV-1 (rsgp120/HIV-1) (Genentech) in Combination With QS21 Adjuvant and/or Alum in Healthy Adults"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ba"
+  },
+  "nct_id": "NCT00001038",
+  "conditions": [
+    "Cytomegalovirus Infections",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acyclovir",
+      "valacyclovir hydrochloride"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Valacyclovir Hydrochloride in the Prevention of Life-Threatening Cytomegalovirus Disease in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bb"
+  },
+  "nct_id": "NCT00001053",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "FAM72A gene",
+      "HIV Core Protein p24",
+      "VHLL gene",
+      "aluminum hydroxide"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Safety and Immunogenicity Study of HIV p17/p24:Ty-VLP in HIV-1 Seronegative Subjects"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bc"
+  },
+  "nct_id": "NCT00001054",
+  "conditions": [
+    "Chickenpox",
+    "HIV Infections",
+    "Herpes Simplex Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Years",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "valacyclovir hydrochloride"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Valacyclovir HCl in the Treatment of Herpes Simplex or Varicella/Zoster Infections in HIV-1 Infected Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bd"
+  },
+  "nct_id": "NCT00001055",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIDSVAX",
+      "C4A gene",
+      "Glycoproteins",
+      "HIV 1+2",
+      "Rabies (disorder)"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Safety and Immunogenicity Trial of Live Recombinant Canarypox ALVAC-HIV (vCP205) in HIV-1 Uninfected Adult Volunteers"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51be"
+  },
+  "nct_id": "NCT00001057",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effectiveness of Two Anti-HIV Treatments in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51bf"
+  },
+  "nct_id": "NCT00001058",
+  "conditions": [
+    "HIV Infections",
+    "Mycobacterium avium-intracellulare Infection"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "clarithromycin",
+      "ethambutol hydrochloride",
+      "indinavir sulfate",
+      "rifabutin",
+      "ritonavir"
+    ],
+    "outcomes": []
+  },
+  "title": "A Comparison of Three Drug Combinations Containing Clarithromycin in the Treatment of Mycobacterium Avium Complex (MAC) Disease in Patients With AIDS"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c0"
+  },
+  "nct_id": "NCT00001059",
+  "conditions": [
+    "HIV Infections",
+    "Malignant neoplasm of soft tissue"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CSF3 gene",
+      "Liposomes",
+      "bleomycin sulfate",
+      "doxorubicin hydrochloride",
+      "vincristine sulfate"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of Liposomal Doxorubicin Used Alone or in Combination With Bleomycin Plus Vincristine in the Treatment of Kaposi's Sarcoma in Patients With AIDS"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c1"
+  },
+  "nct_id": "NCT00001060",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Anterior bronchopulmonary segment of superior pulmonary vein",
+      "C4A wt Allele",
+      "HIV-1",
+      "Peptides",
+      "Polyvalent Vaccine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Trial of HIV-1 C4-V3 Polyvalent Peptide Vaccine in HIV-1 Infected Persons"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c2"
+  },
+  "nct_id": "NCT00001061",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "foscarnet sodium",
+      "ganciclovir",
+      "sevirumab"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of Two Methods in the Treatment of Cytomegalovirus of the Eyes in Patients With AIDS"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c3"
+  },
+  "nct_id": "NCT00001062",
+  "conditions": [
+    "Cytomegalovirus Retinitis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ganciclovir"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Ganciclovir in the Treatment of Cytomegalovirus of the Eyes"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c4"
+  },
+  "nct_id": "NCT00001063",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effectiveness of Three Drug Combinations in HIV-Infected Patients Who Have Taken Zidovudine for More Than 12 Weeks"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c5"
+  },
+  "nct_id": "NCT00001064",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Allogeneic",
+      "Dendritic Cells"
+    ],
+    "outcomes": []
+  },
+  "title": "A Pilot Study of Immunization With HIV-1 Antigen Pulsed Allogenic Dendritic Cells in HIV-Infected Asymptomatic Patients With CD4+ T Cells > 350 Cells/mm3"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c6"
+  },
+  "nct_id": "NCT00001067",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effectiveness of Three Anti-HIV Drug Combinations in HIV-Infected Patients Who Have Never Used Anti-HIV Drugs"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c7"
+  },
+  "nct_id": "NCT00001065",
+  "conditions": [
+    "Candidiasis",
+    "HIV Infections",
+    "Oral"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "amphotericin B"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Amphotericin B in the Treatment of Fungal Infections of the Mouth in HIV-Infected Patients Who Have Not Had Success With Fluconazole"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c8"
+  },
+  "nct_id": "NCT00001066",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Months",
+      "maximum_age": "15 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "lamivudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Comparison of Zidovudine Plus Lamivudine Versus ddI Used Alone or in Combination With Zidovudine in HIV-1 Infected Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51c9"
+  },
+  "nct_id": "NCT00001068",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Disease Progression and Anti-HIV Treatments"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ca"
+  },
+  "nct_id": "NCT00001069",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "A Study of Two Methods of Determining When to Begin or Change Anti-HIV Treatment"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cb"
+  },
+  "nct_id": "NCT00001070",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Oral",
+      "Vitamin C Drug Class"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Different Doses of Vitamin C in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cc"
+  },
+  "nct_id": "NCT00001071",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CSF3 gene"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Stem Cells and Filgrastim"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cd"
+  },
+  "nct_id": "NCT00001072",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIDSVAX",
+      "C4A gene",
+      "Glycoproteins",
+      "HIV 1+2",
+      "Rabies (disorder)"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Safety and Immunogenicity Trial of Live Recombinant Canarypox ALVAC-HIV vCP300 and HIV-1 SF-2 rgp120 in HIV-1 Uninfected Adult Volunteers"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ce"
+  },
+  "nct_id": "NCT00001075",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine",
+      "ritonavir",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effectiveness of Ritonavir Plus Zidovudine Plus Lamivudine in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51cf"
+  },
+  "nct_id": "NCT00001073",
+  "conditions": [
+    "Cervix Uteri",
+    "Dysplasia",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "FEMALE"
+    },
+    "interventions": [
+      "isotretinoin"
+    ],
+    "outcomes": []
+  },
+  "title": "Safety and Effectiveness of Giving Isotretinoin to HIV-Infected Women to Treat Cervical Tumors"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d0"
+  },
+  "nct_id": "NCT00001076",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AIDSVAX",
+      "C4A gene",
+      "Glycoproteins",
+      "HIV 1+2",
+      "Rabies (disorder)"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Safety and Immunogenicity Trial of Live Recombinant Canarypox ALVAC-HIV (vCP205) and HIV-1 SF-2 rgp120 in HIV-1 Uninfected Volunteers to Evaluate Accelerated Vaccine Schedules"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d1"
+  },
+  "nct_id": "NCT00001074",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "hydroxyurea"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Hydroxyurea and ddI Used Individually or Together in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d2"
+  },
+  "nct_id": "NCT00001078",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "21 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "FDA Inactivation",
+      "Hepatitis A Vaccines"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study on the Rate of Opportunistic (AIDS-Related) Infections Among HIV-Positive Children Who Have Stopped Taking Their OI Preventive Medications"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d3"
+  },
+  "nct_id": "NCT00001079",
+  "conditions": [
+    "HIV Infections",
+    "HIV Wasting Syndrome"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "megestrol acetate",
+      "testosterone enanthate"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Megestrol Acetate Alone or in Combination With Testosterone Enanthate Drug in the Treatment of HIV-Associated Weight Loss"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d4"
+  },
+  "nct_id": "NCT00001077",
+  "conditions": [
+    "HIV Infections",
+    "HIV Wasting Syndrome"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Dietary Supplements",
+      "Minerals",
+      "Multivitamin preparation",
+      "Peptamen"
+    ],
+    "outcomes": []
+  },
+  "title": "A Comparison of Two Caloric Supplements in the Prevention of Weight Loss in Patients With AIDS Who Take Daily Multivitamin and Mineral Supplements"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d5"
+  },
+  "nct_id": "NCT00001081",
+  "conditions": [
+    "Cryptosporidiosis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "nitazoxanide"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Nitazoxanide in Patients With AIDS and Diarrhea Caused by Cryptosporidium"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d6"
+  },
+  "nct_id": "NCT00001080",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "23",
+      "Influenza virus vaccine",
+      "Pneumococcal Vaccine:-:Point in time:^Patient:-",
+      "Polyvalence",
+      "lamivudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Effect of Vaccination on Turnover of Lamivudine (3TC) Sensitive and Resistant Virus Populations in HIV-1-Infected Individuals"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d7"
+  },
+  "nct_id": "NCT00001083",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "indinavir sulfate",
+      "lamivudine",
+      "nevirapine",
+      "ritonavir",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of New Anti-HIV Drug Combinations in HIV-Infected Children Who Have Taken Anti-HIV Drugs"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d8"
+  },
+  "nct_id": "NCT00001084",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "indinavir sulfate",
+      "lamivudine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Three Treatment Combinations Using Zidovudine Plus Lamivudine Plus Indinavir in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51d9"
+  },
+  "nct_id": "NCT00001082",
+  "conditions": [
+    "Cytomegalovirus Infections",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Placebo Control",
+      "adefovir dipivoxil",
+      "levocarnitine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Adefovir Dipivoxil in the Treatment of HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51da"
+  },
+  "nct_id": "NCT00001085",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "amprenavir",
+      "lamivudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of 141W94 Used Alone or in Combination With Zidovudine Plus 3TC in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51db"
+  },
+  "nct_id": "NCT00001086",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "abacavir sulfate",
+      "efavirenz",
+      "indinavir sulfate"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Abacavir Plus Indinavir Sulfate Plus Efavirenz in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51dc"
+  },
+  "nct_id": "NCT00001087",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "adefovir dipivoxil",
+      "didanosine",
+      "efavirenz",
+      "lamivudine",
+      "levocarnitine",
+      "nelfinavir mesylate",
+      "ritonavir",
+      "saquinavir",
+      "stavudine",
+      "zalcitabine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effectiveness of Nelfinavir and Efavirenz, Used Alone or Together, Combined With Other Anti-HIV Drugs in Patients Who Have Taken Anti-HIV Drugs"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51dd"
+  },
+  "nct_id": "NCT00001088",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "400",
+      "bupivacaine hydrochloride"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Safety and Immunogenicity Trial of the Facilitated HIV-1 Gag-Pol DNA Vaccine (APL-400-047, Apollon, Inc.) Given Intramuscularly by Needle and Syringe or Biojector 2000 Needle-Free Jet Injection System in HIV-1 Uninfected Adult Volunteers"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51de"
+  },
+  "nct_id": "NCT00001089",
+  "conditions": [
+    "Cytomegalovirus Infections",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "A Study of HIV and Cytomegalovirus (CMV) in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51df"
+  },
+  "nct_id": "NCT00001056",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ENPEP gene",
+      "Procedure Agents Domain",
+      "Vaccines"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I Multicenter Clinical Trial to Evaluate the Safety and Immunogenicity of Vaccinia Derived HIV-1 Recombinant Envelope Glycoprotein (gp160) of Human Immunodeficiency Virus: Evaluation of a 200-mcg Dose"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e0"
+  },
+  "nct_id": "NCT00001091",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Months",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "lamivudine",
+      "nelfinavir mesylate",
+      "nevirapine",
+      "ritonavir",
+      "stavudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Safety and Effectiveness of Four Anti-HIV Drug Combinations in HIV-Infected Children and Teens"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e1"
+  },
+  "nct_id": "NCT00001094",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Lamivudine / Zidovudine",
+      "delavirdine mesylate",
+      "nelfinavir mesylate",
+      "saquinavir"
+    ],
+    "outcomes": []
+  },
+  "title": "A Comparison of Nelfinavir Plus Saquinavir Plus Delavirdine or 3TC/ZDV Versus Nelfinavir Plus 3TC/ZDV in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e2"
+  },
+  "nct_id": "NCT00001092",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "The Biology of HIV Transmission"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e3"
+  },
+  "nct_id": "NCT00001093",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Outcomes of Anti-HIV Therapy During Early HIV Infection"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e4"
+  },
+  "nct_id": "NCT00001095",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "amprenavir",
+      "indinavir sulfate",
+      "lamivudine",
+      "nevirapine",
+      "stavudine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Three Anti-HIV Drug Combinations in Patients Who Have Taken Amprenavir"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e5"
+  },
+  "nct_id": "NCT00001096",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "HIV",
+      "HIV-1",
+      "MNSs Blood-Group System",
+      "QS-21"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase I, Multicenter, Randomized, Double-Blind, Placebo-Controlled Trial to Evaluate the Safety and Immunogenicity of HIV-1 MN rsgp120 and Bivalent AIDSVAX B/E (HIV-1 MN rgp120/A244 rgp120) in Combination With QS-21 With or Without Alum in Healthy HIV-1 Uninfected Adults"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e6"
+  },
+  "nct_id": "NCT00001097",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "8 Years",
+      "maximum_age": "22 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Long-Term Effects of HAART in Youth With Stronger Immune Systems Versus Youth With Weaker Immune Systems"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e7"
+  },
+  "nct_id": "NCT00001100",
+  "conditions": [
+    "Cytomegalovirus Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "1 Month",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ganciclovir"
+    ],
+    "outcomes": []
+  },
+  "title": "A Phase III Study to Evaluate the Safety and Efficacy of Ganciclovir (Dihydroxypropoxymethyl Guanine [DHPG]) Treatment of Symptomatic Central Nervous System (CNS) Congenital Cytomegalovirus (CMV) Infections."
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e8"
+  },
+  "nct_id": "NCT00001101",
+  "conditions": [
+    "Lyme Disease"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ceftriaxone",
+      "doxycycline"
+    ],
+    "outcomes": []
+  },
+  "title": "A Randomized, Double-Blind, Placebo-Controlled, Multicenter Trial of the Safety and Efficacy of Ceftriaxone and Doxycycline in the Treatment of Patients With Seropositive Chronic Lyme Disease"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51e9"
+  },
+  "nct_id": "NCT00001104",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Zidovudine in HIV-Infected Patients Who Have Hemophilia"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ea"
+  },
+  "nct_id": "NCT00001102",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "The Effect of Anti-HIV Therapy on Fat Metabolism in HIV-Positive Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51eb"
+  },
+  "nct_id": "NCT00001103",
+  "conditions": [
+    "Cognition Disorders",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "HIV Levels in Cerebrospinal Fluid and Brain Function in Patients Receiving Anti-HIV Drugs"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ec"
+  },
+  "nct_id": "NCT00001105",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Homo sapiens",
+      "Monoclonal Antibodies"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Human Monoclonal Antibody, F105, in the Treatment of HIV"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ed"
+  },
+  "nct_id": "NCT00001106",
+  "conditions": [
+    "HIV Infections",
+    "Pregnancy"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "50 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Zidovudine in HIV-Infected Pregnant Women and Their Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ee"
+  },
+  "nct_id": "NCT00001107",
+  "conditions": [
+    "Candidiasis"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "AmBisome",
+      "fluconazole"
+    ],
+    "outcomes": []
+  },
+  "title": "Comparison of Two Treatments to Prevent Invasive Fungal Infections in Patients Who Have Received Liver Transplants"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ef"
+  },
+  "nct_id": "NCT00001108",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "4 Years",
+      "maximum_age": "22 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "lamivudine",
+      "nelfinavir mesylate",
+      "nevirapine",
+      "ritonavir",
+      "saquinavir",
+      "stavudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of the Safety and Effectiveness of Treating Advanced AIDS Patients Between Ages 4 and 22 With 7 Drugs, Some at Higher Than Usual Doses"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f0"
+  },
+  "nct_id": "NCT00001109",
+  "conditions": [
+    "HIV Infections",
+    "HIV Seronegativity"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "A Blood Test to Look at Cells of the Immune System in Healthy Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f1"
+  },
+  "nct_id": "NCT00001110",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Bronchoalveolar Lavage"
+    ],
+    "outcomes": []
+  },
+  "title": "Effect of Anti-HIV Therapy (HAART) on HIV Levels in the Lungs and on Lung Cell Inflammation in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f2"
+  },
+  "nct_id": "NCT00001112",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "65 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "interferon gamma-1b",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Injections of Human Recombinant Interferon-gamma in Patients With AIDS Who Have Taken Zidovudine"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f3"
+  },
+  "nct_id": "NCT00001113",
+  "conditions": [
+    "HIV Infections",
+    "Malignant neoplasm of soft tissue"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "IFNA2 protein, human",
+      "interferon alfa-n1",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of AZT Plus Human Interferon Alpha in the Treatment of AIDS-Related Kaposi's Sarcoma"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f4"
+  },
+  "nct_id": "NCT00001111",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "1 Day",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "nevirapine",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Nevirapine Used Alone or in Combination With AZT in HIV-1-Infected Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f5"
+  },
+  "nct_id": "NCT00001114",
+  "conditions": [
+    "HIV Infections",
+    "Malignant neoplasm of soft tissue"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "IFNA2 gene",
+      "didanosine"
+    ],
+    "outcomes": []
+  },
+  "title": "The Safety and Effectiveness of Interferon Alfa-2B Plus Didanosine in Patients With Kaposi's Sarcoma"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f6"
+  },
+  "nct_id": "NCT00001115",
+  "conditions": [
+    "HIV Infections",
+    "Herpes Simplex Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "acyclovir"
+    ],
+    "outcomes": []
+  },
+  "title": "The Effect of Acyclovir Treatment of the Herpes Simplex Virus (HSV) Infection on HIV Levels in the Blood"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f7"
+  },
+  "nct_id": "NCT00001116",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Soluble (qualifier)",
+      "tumor necrosis factor receptor superfamily complex"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study to Evaluate the Ability of TNFR:Fc to Decrease the Amount of IL-6 (Interleukin-6) and TNF-alpha (Tumor Necrosis Factor) in HIV-Infected Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f8"
+  },
+  "nct_id": "NCT00001118",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "3 Years",
+      "maximum_age": "12 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "enfuvirtide"
+    ],
+    "outcomes": []
+  },
+  "title": "Study of a New Anti-HIV Drug, T-20, in HIV-Infected Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51f9"
+  },
+  "nct_id": "NCT00001117",
+  "conditions": [
+    "HIV Infections",
+    "Hepatitis C"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "A Study to Evaluate the Effects of Anti-HIV Drugs in HIV-Positive Patients Who Also Have Hepatitis C Infection"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fa"
+  },
+  "nct_id": "NCT00001120",
+  "conditions": [
+    "Acquired Immunodeficiency Syndrome",
+    "Adult Lymphoma",
+    "HIV Infections",
+    "Lymphoma, Non-Hodgkin",
+    "Malignant neoplasm of soft tissue",
+    "Related personal status"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "A Study of Patients With AIDS Syndrome"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fb"
+  },
+  "nct_id": "NCT00001119",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "16 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Hepatitis B Vaccines",
+      "Lamivudine / Zidovudine",
+      "Recombinants",
+      "abacavir sulfate",
+      "amprenavir",
+      "efavirenz",
+      "indinavir sulfate",
+      "lamivudine",
+      "ritonavir",
+      "tetanus toxoid vaccine, inactivated",
+      "zidovudine"
+    ],
+    "outcomes": []
+  },
+  "title": "Effects on the Immune System of Anti-HIV Drugs in Patients Recently Infected With HIV"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fc"
+  },
+  "nct_id": "NCT00001121",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "60 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "A Study to Monitor the Health of Participants in HIVNET 014 Who Become Infected With HIV-1"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fd"
+  },
+  "nct_id": "NCT00001123",
+  "conditions": [
+    "Hantavirus Pulmonary Syndrome"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "12 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "ribavirin"
+    ],
+    "outcomes": []
+  },
+  "title": "A Collaborative Double-Blind Placebo-Controlled Trial of Intravenous Ribavirin As a Treatment for Presumed Hantavirus Pulmonary Syndrome"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51fe"
+  },
+  "nct_id": "NCT00001122",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "13 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "didanosine",
+      "efavirenz",
+      "nelfinavir mesylate",
+      "stavudine"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of an Adherence Plan to Help HIV-Positive Patients Take Their First Anti-HIV Medications Correctly"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e51ff"
+  },
+  "nct_id": "NCT00001125",
+  "conditions": [
+    "Chickenpox",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "% live",
+      "Chickenpox Vaccine"
+    ],
+    "outcomes": []
+  },
+  "title": "Use of a Varicella-Zoster Virus (VZV) Vaccine to Prevent Shingles in HIV-Infected Children Who Have Already Had Chickenpox"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5200"
+  },
+  "nct_id": "NCT00001126",
+  "conditions": [
+    "Papilloma"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "2 Years",
+      "maximum_age": "17 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "cidofovir"
+    ],
+    "outcomes": []
+  },
+  "title": "Treatment With Cidofovir for Children With Laryngeal Papillomatosis (Warts in the Throat)"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5201"
+  },
+  "nct_id": "NCT00001127",
+  "conditions": [
+    "Influenza"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Months",
+      "maximum_age": "18 Years",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "CA4 gene",
+      "Influenza virus vaccine"
+    ],
+    "outcomes": []
+  },
+  "title": "Study of a Flu Vaccine in Children"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5202"
+  },
+  "nct_id": "NCT00001090",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "400",
+      "AIDSVAX",
+      "CSF2 gene"
+    ],
+    "outcomes": []
+  },
+  "title": "A Multicenter, Randomized, Placebo-Controlled, Double-Blinded, Phase I Trial to Evaluate the Safety and Immunogenicity of Live Recombinant Canarypox ALVAC-HIV vCP205 Combined With GM-CSF in Healthy, HIV-1 Uninfected Volunteers"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5203"
+  },
+  "nct_id": "NCT00001128",
+  "conditions": [
+    "Cryptosporidiosis",
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Recombinant Interleukin-12",
+      "azithromycin",
+      "paromomycin sulfate"
+    ],
+    "outcomes": []
+  },
+  "title": "Treatment of Chronic Cryptosporidiosis in AIDS Patients"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5204"
+  },
+  "nct_id": "NCT00001130",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "18 Years",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [],
+    "outcomes": []
+  },
+  "title": "Identifying Emergency Room Patients Who Have Recently Been Infected With HIV"
+},
+{
+  "_id": {
+    "$oid": "671a2b181845d98ae42e5205"
+  },
+  "nct_id": "NCT00001129",
+  "conditions": [
+    "HIV Infections"
+  ],
+  "pico_attributes": {
+    "populations": {
+      "minimum_age": "NA",
+      "maximum_age": "NA",
+      "country": "United States",
+      "gender": "ALL"
+    },
+    "interventions": [
+      "Authorization Mode - Electronic",
+      "Medication Systems",
+      "Medications",
+      "Relationship - Manager",
+      "Reminder",
+      "Reminder Systems"
+    ],
+    "outcomes": []
+  },
+  "title": "A Study of Two Adherence Plans to Help HIV-Positive Patients Take Their Medications Correctly"
+}]

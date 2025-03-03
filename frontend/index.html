@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvidenceChart - Visualizing Clinical Trial Data</title>
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSV Parsing library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> 
+
+    <!-- Add D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body onload="showSection('home')"> <!-- Show Home section by default -->
+
+    <script src="./js/evidencechart.js"></script>
+
+    <header>
+        <h1>Welcome to EvidenceChart</h1>
+        <p>Visualizing Clinical Trial Data for Informed Decision-Making</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('evidencechart')">EvidenceChart</a>
+        <a href="#" onclick="showSection('ourteam')">Our Team</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="active">
+        <h2>Introduction</h2>
+        <p>
+            <strong>EvidenceChart</strong> is an advanced analytical platform designed to facilitate the exploration and visualization of comprehensive clinical trial data. Tailored for clinicians, researchers, and healthcare professionals, the platform offers a structured and detailed approach to understanding trial outcomes, interventions, and studied populations across a broad spectrum of medical conditions.
+        </p>
+        <p>
+            EvidenceChart provides an intuitive interface that enables users to:
+            <ul>
+                <li>Filter clinical trials by specific conditions, interventions, and outcomes with precision.</li>
+                <li>Analyze demographic trends, including age and gender distributions, across clinical trial populations.</li>
+                <li>Examine geographical distribution of trials and compare trends across global regions.</li>
+                <li>Identify the most frequently investigated interventions and their associated outcomes to aid in evidence-based decision making.</li>
+            </ul>
+        </p>
+        <p>
+            The platform is powered by a robust dataset encompassing over <strong>510,000 clinical studies</strong>, including <strong>493,000 completed trials</strong> and <strong>16,000 ongoing studies</strong>. It enables users to engage with the latest evidence from clinical research, providing a foundation for critical decision-making in clinical practice, policy development, and research design.
+        </p>
+        <p>
+            By visualizing trends in clinical interventions and outcomes, EvidenceChart supports the identification of emerging therapeutic strategies and key outcome measures. The platform is designed to offer clarity and efficiency in understanding complex datasets, making it an indispensable resource for clinicians and researchers seeking to stay abreast of the latest developments in clinical science.
+        </p>
+        <div class="evidencechart-data">
+            <div class="stats-container">
+                <div class="trial-stat">
+                    <div class="stat-number">510,000+</div>
+                    <div class="stat-label">Studies</div>
+                </div>
+                <div class="trial-stat">
+                    <div class="stat-number">493,000+</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="trial-stat">
+                    <div class="stat-number">16,000+</div>
+                    <div class="stat-label">Active</div>
+                </div>
+            </div>
+        </div>
+        <h3>User Guide (Coming Soon)</h3>
+    </section>
+    
+    
+
+    <!-- EvidenceChart Section -->
+    <section id="evidencechart" class="evidencechart-container">
+        <h2>Filter by Conditions</h2>
+        <p>Type the initial letters of a condition, select from the suggestions, and use the AND/OR logic to refine your search results.</p>
+
+        <!-- Search input, dropdown, and search button -->
+        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <!-- Search bar for conditions -->
+            <input type="text" id="searchInput" placeholder="Enter condition..." style="padding: 0.75rem; width: 300px; border-radius: 5px; border: 1px solid #ccc;" onkeyup="showSuggestions(this.value)">
+            
+            <!-- AND/OR Dropdown -->
+            <select id="groupLogicDropdown" class="dropdown" style="margin-left: 10px;">
+                <option value="AND">AND</option>
+                <option value="OR">OR</option>
+            </select>
+
+            <!-- Clear button -->
+            <button onclick="clearConditions()" style="margin-left: 10px; padding: 0.75rem; border: none; background-color: rgb(192, 12, 12); color: white; border-radius: 5px;">Clear</button>
+
+            <!-- Search button -->
+            <button onclick="submitSearch()" style="margin-left: 10px; padding: 0.75rem; border: none; background-color: #2d64a8; color: white; border-radius: 5px;">Search</button>
+            
+        </div>
+
+        <!-- Autocomplete suggestions -->
+        <div id="autocompleteContainer" class="autocomplete-list"></div>
+
+        <!-- Placeholder to show selected conditions -->
+        <div id="selectedConditions" style="margin-top: 1rem;"></div>
+
+        <!-- Add a new placeholder for the real-time query visualization -->
+        <div id="queryVisualization" style="margin-top: 1rem; font-weight: bold;"></div>
+
+        <div class="evidencechart-split">
+            <!-- Left Column for Visualizations -->
+            <div class="visualizations-column" style="display: none;">
+                <!-- <button class="collapsible">Population</button> -->
+                <div class="content">
+                    <h4>Geographical Distribution of Clinical Trials</h4>
+                    <div class="content" style="display: flex; justify-content: center;">
+                        <svg id="map" width="800" height="500"></svg> <!-- SVG placeholder for the map -->
+                    </div>
+        
+                    <h4>Eligible Age Distribution</h4>
+                    <div class="chart-container">
+                        <!-- Minimum Age Distribution Chart -->
+                        <div id="bar-chart-min-age"></div> <!-- Chart will render here -->
+                    
+                        <!-- Maximum Age Distribution Chart -->
+                        <div id="bar-chart-max-age"></div> <!-- Chart will render here -->
+                    </div>
+                    
+                    <h4>Gender Distribution in Clinical Trials</h4>
+                    <div id="gender-donut-chart"></div>
+                </div>
+                
+                <!-- <button class="collapsible">Interventions</button> -->
+                <div class="content">
+                    <h4>Intervention Types Distribution</h4>
+                    <div id="intervention-pie-chart"></div>
+
+
+                    <h4>Top 20 Investigated Interventions</h4>
+                    <div id="top20-interventions-bar-chart"></div>
+                </div>
+                
+                
+                <!-- <button class="collapsible">Outcomes</button> -->
+                <div class="content">
+                    <h4>Top 20 Investigated Outcomes</h4>
+                    <div id="top20-outcomes-bar-chart"></div>
+                </div>
+            </div>
+
+            <!-- Right Column for Additional Content -->
+            <div class="trial-details-column" style="display: none;">
+                <div id="searchResults">
+                    <!-- Search results will appear here -->
+                </div>
+                <div id="paginationControls" style="text-align: center; margin-top: 10px;">
+                    <!-- Pagination buttons will appear here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="ourteam">
+        <!-- Part 1: Current Members -->
+        <div class="team-section">
+            <h3>Meet Our Team</h3>
+            <div class="team-grid">
+                <!-- First Row -->
+                <div class="team-member">
+                    <img src="images/team/chunhua.jpg" alt="Dr. Weng Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Dr. Chunhua Weng</strong></p>
+                        <p>Principal Investigator (PI)</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/yifan.jpg" alt="Dr. Peng Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Dr. Yifan Peng</strong></p>
+                        <p>PI (Collaborator)</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/zhiyong.jpg" alt="Dr. Lu Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Dr. Zhiyong Lu</strong></p>
+                        <p>Collaborator</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/betina.jpg" alt="Dr. Idnay Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Dr. Betina Idnay</strong></p>
+                        <p>Postdoctoral Fellow</p>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="team-member">
+                    <img src="images/team/gongbo.jpg" alt="Dr. Zhang Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Dr. Gongbo Zhang</strong></p>
+                        <p>Postdoctoral Researcher</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/yilu.jpg" alt="Ms. Fang Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Yilu Fang</strong></p>
+                        <p>Predoctoral Student</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/fangyi.jpg" alt="Ms. Chen Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Fangyi Chen</strong></p>
+                        <p>Predoctoral Student</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/qiao.jpg" alt="Dr. Jin Photo" class="team-photo">
+                    <div class="team-info">
+                        <p><strong>Dr. Qiao Jin</strong></p>
+                        <p>Collaborator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 2: Acknowledgement -->
+        <div class="team-section">
+            <h3>Acknowledgement</h3>
+            <p>
+                Our projects were supported by the National Library of Medicine, National Institutes of Health, through grants numbered <strong>R01LM014344</strong> and <strong>R01LM009886</strong>.
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 EvidenceChart - Visualizing Clinical Trials</p>
+    </footer>
+
+    <!-- Tooltip for map hover -->
+    <div id="tooltip" style="position: absolute; background-color: white; padding: 5px; border: 1px solid black; border-radius: 3px; display: none;"></div>
+
+</body>
