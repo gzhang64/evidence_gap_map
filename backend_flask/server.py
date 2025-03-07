@@ -17,7 +17,7 @@ trials_collection = mongo.db.aact
 # Route to get distinct conditions
 @app.route('/api/conditions', methods=['GET'])
 def get_distinct_conditions():
-    distinct_conditions = trials_collection.distinct("condition_concepts")
+    distinct_conditions = trials_collection.distinct("conditions")
     flattened_conditions = {
         condition 
         for condition in distinct_conditions 
