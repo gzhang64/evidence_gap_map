@@ -334,9 +334,11 @@ function updateSelectedConditions() {
     if (searchQuery) {
         queryVisualization.innerHTML = `Current query: ${searchQuery}`;
         queryVisualization.style.display = 'block'; // Make query visible
+        document.getElementById('report-export-button').style.display = 'block'
     } else {
         queryVisualization.innerHTML = '';
         queryVisualization.style.display = 'none'; // Hide query if no conditions
+        document.getElementById('report-export-button').style.display = 'none'
     }
 }
 
@@ -1270,6 +1272,17 @@ window.onload = function() {
     loadConditionsFromAPI();
 
     showSection('home');  // Show Home section by default
+
+    const { jsPDF } = window.jspdf;
+    document.getElementById('report-export-button').addEventListener('click', () => {
+        const element = document.getElementById('content-to-export');
+        html2canvas(element).then((canvas) => {
+            const imgData = canvas.toDataURL('image/png');
+            const doc = new jsPDF();
+            doc.addImage(imgData, 'PNG', 10, 10);
+            doc.save('evidence-chart.pdf');
+        });
+    });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
