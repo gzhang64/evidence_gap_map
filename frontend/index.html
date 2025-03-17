@@ -113,12 +113,17 @@
 
         <div class="evidencechart-split">
             <!-- Left Column for Visualizations -->
-            <div class="visualizations-column" style="display: none;" id="content-to-export">
+            <!-- temporary overflow style for testing the new element -->
+            <div class="visualizations-column" style="display: none; overflow: visible;" id="content-to-export">
                 <!-- <button class="collapsible">Population</button> -->
-                <div class="content">
+                <div class="content" style="overflow: visible;">
                     <h4>Geographical Distribution of Clinical Trials</h4>
-                    <div class="content" style="display: flex; justify-content: center;">
+                    <div style="display: flex; justify-content: center;width: 800px;background-color: lightgray;">
+                        <div style="width: 400px;">
                         <svg id="map" width="800" height="500"></svg> <!-- SVG placeholder for the map -->
+                        </div>
+                        <div style="width: 400px; background-color: lightgoldenrodyellow;" id="trend1">
+                        </div>
                     </div>
         
                     <h4>Eligible Age Distribution</h4>
@@ -248,5 +253,7 @@
 
     <!-- Tooltip for map hover -->
     <div id="tooltip" style="position: absolute; background-color: white; padding: 5px; border: 1px solid black; border-radius: 3px; display: none;"></div>
+
+    <script src="./js/trend-plots.js"></script>
 
 </body>
