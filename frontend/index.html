@@ -122,14 +122,20 @@
                         <div style="width: 400px;">
                         <svg id="map" width="800" height="500"></svg> <!-- SVG placeholder for the map -->
                         </div>
-                        <div style="width: 400px; background-color: lightgoldenrodyellow;" id="trend1">
+                        <div style="width: 400px; background-color: lightgoldenrodyellow;" id="trend-geographical">
                         </div>
                     </div>
         
                     <h4>Eligible Age Distribution</h4>
                     <div class="chart-container">
+                        <div style="display: flex; justify-content: center;width: 810px;background-color: ivory;">
                         <!-- Minimum Age Distribution Chart -->
+                        <div style="width: 400px;">
                         <div id="bar-chart-min-age"></div> <!-- Chart will render here -->
+                        </div>
+                        <div style="width: 400px; background-color: lightgoldenrodyellow;" id="trend-min-age">
+                        </div>
+                        </div>
                     
                         <!-- Maximum Age Distribution Chart -->
                         <div id="bar-chart-max-age"></div> <!-- Chart will render here -->
@@ -156,15 +162,15 @@
                     <div id="top20-outcomes-bar-chart"></div>
                 </div>
             </div>
+        </div>
 
-            <!-- Right Column for Additional Content -->
-            <div class="trial-details-column" style="display: none;">
-                <div id="searchResults">
-                    <!-- Search results will appear here -->
-                </div>
-                <div id="paginationControls" style="text-align: center; margin-top: 10px;">
-                    <!-- Pagination buttons will appear here -->
-                </div>
+        <!-- trial detail Content -->
+        <div class="trial-details-column" style="display: none;">
+            <div id="searchResults">
+                <!-- Search results will appear here -->
+            </div>
+            <div id="paginationControls" style="text-align: center; margin-top: 10px;">
+                <!-- Pagination buttons will appear here -->
             </div>
         </div>
     </section>

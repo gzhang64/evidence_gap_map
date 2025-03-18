@@ -23,7 +23,8 @@ const margin = { top: 20, right: 20, bottom: 40, left: 50 };
 const width = plot_width - margin.left - margin.right;
 const height = plot_height - margin.top - margin.bottom;
 
-const svg = d3.select("#trend1")
+function trend_plot(data, element_id) {
+    const svg = d3.select(`#${element_id}`)
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -81,3 +82,6 @@ svg.append("text")
     .attr("text-anchor", "middle")
     .attr("font-size", "smaller")
     .text("Number of Records");
+}
+trend_plot(data, "trend-geographical")
+trend_plot(data, "trend-min-age")
