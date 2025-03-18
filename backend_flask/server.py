@@ -33,7 +33,7 @@ def search_trials():
     # Construct MongoDB query for conditions
     query_conditions = []
     for group in selected_groups:
-        group_query = {"condition_concepts": {"$all": group}}  # Each group is an AND clause
+        group_query = {"conditions": {"$all": group}}  # Each group is an AND clause
         query_conditions.append(group_query)
 
     # Use an OR query for multiple groups
