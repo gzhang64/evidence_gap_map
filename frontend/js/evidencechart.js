@@ -378,9 +378,47 @@ async function submitSearch() {
         // Update other visualizations (map, charts)
         const countryTrialCount = countTrialsByCountry(matchedTrials);
         drawChoroplethMap(countryTrialCount);
+        const count_by_year = matchedTrials.map(trial=>trial.time)
+            .reduce((acc, curr) => {
+            acc[curr] = (acc[curr] || 0) + 1;
+            return acc;
+          }, {});
+        const array = Object.keys(count_by_year).map(key=>({
+            year: key,
+            value: "V1", // not used for noe
+            records: count_by_year[key]
+            })
+        )
+        trend_plot(array, "trend-geographical")
 
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
         createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
+        const x = matchedTrials.reduce((acc, trial) => {
+            const year = trial.time
+            // use the same normalization as the other age plots
+            const age = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
+            if(!acc[year]) {
+                acc[year] = {value: age, records: 1}
+            } else {
+                if(!acc[year][age]) {
+                    acc[year][age] = 1
+                } else {
+                    acc[year][age]++
+                }
+            }
+            return acc;
+          }, {});
+        const min_age_array = []
+        for(const year in x) {
+            const values = x[year]
+            for(const age in values) {
+                min_age_array.push({
+                    year: year,
+                    value: age,
+                    records: +values[age]})
+            }
+        }
+        trend_plot(min_age_array, "trend-min-age")
         createAgeBarChart(maxAgeCount, '#bar-chart-max-age', 'Maximum Age');
 
         const genderCount = countGenderDistribution(matchedTrials);
