@@ -9,6 +9,7 @@
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/trend-plots.css">
 
     <!-- CSV Parsing library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> 
@@ -128,17 +129,21 @@
         
                     <h4>Eligible Age Distribution</h4>
                     <div class="chart-container">
-                        <div style="display: flex; justify-content: center;width: 810px;background-color: ivory;">
                         <!-- Minimum Age Distribution Chart -->
-                        <div style="width: 400px;">
-                        <div id="bar-chart-min-age"></div> <!-- Chart will render here -->
-                        </div>
-                        <div style="width: 400px; background-color: lightgoldenrodyellow;" id="trend-min-age">
-                        </div>
+                        <div class="chart-pair">
+                            <div class="left-of-pair">
+                                <div id="bar-chart-min-age"></div> <!-- Chart will render here -->
+                            </div>
+                            <div class="right-of-pair" id="trend-min-age"></div>
                         </div>
                     
                         <!-- Maximum Age Distribution Chart -->
-                        <div id="bar-chart-max-age"></div> <!-- Chart will render here -->
+                        <div class="chart-pair">
+                            <div class="left-of-pair">
+                                <div id="bar-chart-max-age"></div> <!-- Chart will render here -->
+                            </div>
+                            <div class="right-of-pair" id="trend-max-age"></div>
+                        </div>
                     </div>
                     
                     <h4>Gender Distribution in Clinical Trials</h4>

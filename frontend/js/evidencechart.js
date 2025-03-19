@@ -392,34 +392,52 @@ async function submitSearch() {
         trend_plot(array, "trend-geographical")
 
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
-        createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
-        const x = matchedTrials.reduce((acc, trial) => {
+        const aggregated_ages = matchedTrials.reduce((acc, trial) => {
             const year = trial.time
             // use the same normalization as the other age plots
-            const age = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
+            const min_age = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
+            const max_age = normalizeAgeToBin(trial.pico_attributes.populations.maximum_age || "NA");
             if(!acc[year]) {
-                acc[year] = {value: age, records: 1}
+                acc[year] = {
+                    min: {value: min_age, records: 1},
+                    max: {value: max_age, records: 1}
+                }
             } else {
-                if(!acc[year][age]) {
-                    acc[year][age] = 1
+                if(!acc[year].min[min_age]) {
+                    acc[year].min[min_age] = 1
                 } else {
-                    acc[year][age]++
+                    acc[year].min[min_age]++
+                }
+                if(!acc[year].max[max_age]) {
+                    acc[year].max[max_age] = 1
+                } else {
+                    acc[year].max[max_age]++
                 }
             }
             return acc;
           }, {});
-        const min_age_array = []
-        for(const year in x) {
-            const values = x[year]
+        const min_age_array=[], max_age_array = []
+        for(const year in aggregated_ages) {
+            const values = aggregated_ages[year].min
             for(const age in values) {
                 min_age_array.push({
                     year: year,
                     value: age,
                     records: +values[age]})
             }
+            const max_values = aggregated_ages[year].max
+            for(const age in max_values) {
+                max_age_array.push({
+                    year: year,
+                    value: age,
+                    records: +max_values[age]})
+            }
         }
+
+        createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
         trend_plot(min_age_array, "trend-min-age")
         createAgeBarChart(maxAgeCount, '#bar-chart-max-age', 'Maximum Age');
+        trend_plot(max_age_array, "trend-max-age")
 
         const genderCount = countGenderDistribution(matchedTrials);
         const genderData = Object.entries(genderCount).map(([gender, count]) => ({
