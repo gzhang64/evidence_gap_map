@@ -399,8 +399,8 @@ async function submitSearch() {
             const max_age = normalizeAgeToBin(trial.pico_attributes.populations.maximum_age || "NA");
             if(!acc[year]) {
                 acc[year] = {
-                    min: {value: min_age, records: 1},
-                    max: {value: max_age, records: 1}
+                    min: {},
+                    max: {}
                 }
             } else {
                 if(!acc[year].min[min_age]) {
@@ -418,12 +418,12 @@ async function submitSearch() {
           }, {});
         const min_age_array=[], max_age_array = []
         for(const year in aggregated_ages) {
-            const values = aggregated_ages[year].min
-            for(const age in values) {
+            const min_values = aggregated_ages[year].min
+            for(const age in min_values) {
                 min_age_array.push({
                     year: year,
                     value: age,
-                    records: +values[age]})
+                    records: +min_values[age]})
             }
             const max_values = aggregated_ages[year].max
             for(const age in max_values) {
@@ -445,6 +445,7 @@ async function submitSearch() {
             count
         }));
         drawGenderDistributionDonutChart(genderData, '#gender-donut-chart');
+        trend_plot(gender_by_year(matchedTrials), "trend-gender")
 
         // Count intervention types and render the intervention type donut chart
         const interventionCount = countInterventionTypes(matchedTrials);
@@ -465,6 +466,33 @@ async function submitSearch() {
     }
 }
 
+function gender_by_year(matchedTrials) {
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.time
+        const gender = normalizeGender(trial.pico_attributes.populations.gender || "N/A")
+        if(!acc[year]) {
+            acc[year] = {}
+        } else {
+            if(!acc[year][gender]) {
+                acc[year][gender] = 1
+            } else {
+                acc[year][gender]++
+            }
+        }
+        return acc
+      }, {})
+    const gender_array=[]
+    for(const year in aggregated) {
+        const values = aggregated[year]
+        for(const gender in values) {
+            gender_array.push({
+                year: year,
+                value: gender,
+                records: +values[gender]})
+        }
+    }
+    return gender_array
+}
 
 // Function to update search results with matchedTrials
 function updateSearchResults(matchedTrials) {
