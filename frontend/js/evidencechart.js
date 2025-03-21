@@ -836,7 +836,7 @@ function countInterventionTypes(matchedTrials) {
     const interventionCount = {};
 
     matchedTrials.forEach(trial => {
-        const intervention_types = trial.pico_attributes.intervention_types || [];
+        const intervention_types = trial.pico_attributes.interventions.map(x=>x.type) || [];
         intervention_types.forEach(intervention_type => {
             interventionCount[intervention_type] = (interventionCount[intervention_type] || 0) + 1;
         });
