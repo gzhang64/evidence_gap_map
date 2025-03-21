@@ -566,8 +566,8 @@ function updateSearchResults(matchedTrials) {
         const interventionConcepts = trial.pico_attributes.intervention_concepts && trial.pico_attributes.intervention_concepts.length > 0 ?
             trial.pico_attributes.intervention_concepts.join(", ") : "No intervention concepts specified";
 
-        const outcomeConcepts = trial.pico_attributes.outcome_concepts && trial.pico_attributes.outcome_concepts.length > 0 ?
-            trial.pico_attributes.outcome_concepts.join(", ") : "No outcome concepts specified";
+        const outcomeConcepts = trial.pico_attributes.outcomes && trial.pico_attributes.outcomes.length > 0 ?
+            trial.pico_attributes.outcomes.join(", ") : "No outcome concepts specified";
 
         // Structure the HTML to include new fields
         trialDiv.innerHTML = `
@@ -1082,7 +1082,7 @@ function getTop20Interventions(matchedTrials) {
 
     // Count occurrences of each intervention
     matchedTrials.forEach(trial => {
-        const interventions = trial.pico_attributes.intervention_concepts || [];
+        const interventions = trial.pico_attributes.interventions.map(x=>x.name) || [];
         interventions.forEach(intervention => {
             interventionCount[intervention] = (interventionCount[intervention] || 0) + 1;
         });
@@ -1180,7 +1180,7 @@ function getTop20Outcomes(matchedTrials) {
 
     // Count occurrences of each outcome
     matchedTrials.forEach(trial => {
-        const outcomes = trial.pico_attributes.outcome_concepts || [];
+        const outcomes = trial.pico_attributes.outcomes || [];
         outcomes.forEach(outcome => {
             outcomeCount[outcome] = (outcomeCount[outcome] || 0) + 1;
         });
