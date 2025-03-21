@@ -1,4 +1,3 @@
-// this is just fake data to test the plot
 const plot_width = 400;
 const plot_height = 300;
 
@@ -7,6 +6,7 @@ const width = plot_width - margin.left - margin.right;
 const height = plot_height - margin.top - margin.bottom;
 
 function trend_plot(data, element_id) {
+    d3.select(`#${element_id}`).selectAll("svg").remove()
     const svg = d3.select(`#${element_id}`)
         .append("svg")
         .attr("width", width + margin.left + margin.right)
