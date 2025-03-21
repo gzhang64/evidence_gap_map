@@ -458,9 +458,13 @@ async function submitSearch() {
 
         const top20Interventions = getTop20Interventions(matchedTrials);
         drawTop20InterventionsBarChart(top20Interventions, '#top20-interventions-bar-chart');
+        const top_intervention_names = top20Interventions.map(x=>x.intervention)
+        trend_plot(top_intervention_names_by_year(matchedTrials, top_intervention_names), "trend-top-interventions")
 
         const top20Outcomes = getTop20Outcomes(matchedTrials);
         drawTop20OutcomesBarChart(top20Outcomes, '#top20-outcomes-bar-chart');
+        const top_outcome_names = top20Outcomes.map(x=>x.outcome)
+        trend_plot(top_outcomes_by_year(matchedTrials, top_outcome_names), "trend-top-outcomes")
 
     } catch (error) {
         console.error("Error in submitSearch:", error);
@@ -515,11 +519,73 @@ function intervention_by_year(matchedTrials) {
     const as_array=[]
     for(const year in aggregated) {
         const values = aggregated[year]
-        for(const gender in values) {
+        for(const v in values) {
             as_array.push({
                 year: year,
-                value: gender,
-                records: +values[gender]})
+                value: v,
+                records: +values[v]})
+        }
+    }
+    return as_array
+}
+
+function top_intervention_names_by_year(matchedTrials, top_intervention_names) {
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.time
+        const intervention_names = trial.pico_attributes.interventions.map(x=>x.name) || []
+        for(const t of intervention_names) {
+            if(!top_intervention_names.includes(t)) continue
+            if(!acc[year]) {
+                acc[year] = {}
+            } else {
+                if(!acc[year][t]) {
+                    acc[year][t] = 1
+                } else {
+                    acc[year][t]++
+                }
+            }
+        }
+        return acc
+      }, {})
+    const as_array=[]
+    for(const year in aggregated) {
+        const values = aggregated[year]
+        for(const v in values) {
+            as_array.push({
+                year: year,
+                value: v,
+                records: +values[v]})
+        }
+    }
+    return as_array
+}
+
+function top_outcomes_by_year(matchedTrials, top_names) {
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.time
+        const names = trial.pico_attributes.outcomes || []
+        for(const t of names) {
+            if(!top_names.includes(t)) continue
+            if(!acc[year]) {
+                acc[year] = {}
+            } else {
+                if(!acc[year][t]) {
+                    acc[year][t] = 1
+                } else {
+                    acc[year][t]++
+                }
+            }
+        }
+        return acc
+      }, {})
+    const as_array=[]
+    for(const year in aggregated) {
+        const values = aggregated[year]
+        for(const v in values) {
+            as_array.push({
+                year: year,
+                value: v,
+                records: +values[v]})
         }
     }
     return as_array
