@@ -156,10 +156,14 @@
                 </div>
                 
                 <!-- <button class="collapsible">Interventions</button> -->
-                <div class="content">
+                <div class="content" style="overflow: visible;">
                     <h4>Intervention Types Distribution</h4>
-                    <div id="intervention-pie-chart"></div>
-
+                    <div class="chart-pair">
+                        <div class="left-of-pair">
+                            <div id="intervention-pie-chart"></div>
+                        </div>
+                        <div class="right-of-pair" id="trend-intervention-types"></div>
+                    </div>
 
                     <h4>Top 20 Investigated Interventions</h4>
                     <div id="top20-interventions-bar-chart"></div>

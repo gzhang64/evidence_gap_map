@@ -454,6 +454,7 @@ async function submitSearch() {
             count
         }));
         drawInterventionTypeDonutChart(interventionData, '#intervention-pie-chart');
+        trend_plot(intervention_by_year(matchedTrials), "trend-intervention-types")
 
         const top20Interventions = getTop20Interventions(matchedTrials);
         drawTop20InterventionsBarChart(top20Interventions, '#top20-interventions-bar-chart');
@@ -492,6 +493,36 @@ function gender_by_year(matchedTrials) {
         }
     }
     return gender_array
+}
+
+function intervention_by_year(matchedTrials) {
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.time
+        const intervention_types = trial.pico_attributes.interventions.map(x=>x.type) || []
+        for(const t of intervention_types) {
+            if(!acc[year]) {
+                acc[year] = {}
+            } else {
+                if(!acc[year][t]) {
+                    acc[year][t] = 1
+                } else {
+                    acc[year][t]++
+                }
+            }
+        }
+        return acc
+      }, {})
+    const as_array=[]
+    for(const year in aggregated) {
+        const values = aggregated[year]
+        for(const gender in values) {
+            as_array.push({
+                year: year,
+                value: gender,
+                records: +values[gender]})
+        }
+    }
+    return as_array
 }
 
 // Function to update search results with matchedTrials
