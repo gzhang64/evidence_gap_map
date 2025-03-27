@@ -466,6 +466,7 @@ async function submitSearch() {
         const top_outcome_names = top20Outcomes.map(x=>x.outcome)
         trend_plot(top_outcomes_by_year(matchedTrials, top_outcome_names), "trend-top-outcomes")
 
+        stacked_bars(groups_by_year(matchedTrials), "stacked-1")
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
