@@ -29,7 +29,7 @@ function groups_by_year(data) {
     return as_array
 }
 
-function stacked_bars(data, element_id) {
+function stacked_bars(data, element_id, searchQuery) {
     // Set up dimensions
     const margin = { top: 40, right: 100, bottom: 60, left: 60 };
     const width = 800 - margin.left - margin.right;
@@ -111,7 +111,7 @@ function stacked_bars(data, element_id) {
         .attr("y", -10)
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
-        .text("Population Age Group Distribution Over Time (Hypertension)");
+        .text(`Population Age Group Distribution Over Time (${searchQuery})`);
 
     // Add legend
     const legend = svg.append("g")
