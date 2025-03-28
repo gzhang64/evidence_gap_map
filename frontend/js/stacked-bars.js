@@ -1,9 +1,7 @@
-const groups = []
 function groups_by_year(data) {
-    groups.length = 0 // clean up existing groups
+    const groups = []
     const aggregated = data.reduce((acc, trial) => {
         const year = trial.time
-        // TODO this is only a temporary grouping to test the stacked bar chart
         const t = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
         if (!groups.includes(t)) {
             groups.push(t)
@@ -26,10 +24,40 @@ function groups_by_year(data) {
         values.year = year
         as_array.push(values)
     }
-    return as_array
+    return { groups: groups, data: as_array }
 }
 
-function stacked_bars(data, element_id, searchQuery) {
+function groups_by_country(data) {
+    const groups = []
+    const aggregated = data.reduce((acc, trial) => {
+        const year = trial.time
+        const t = trial.pico_attributes.populations.country
+        if (!groups.includes(t)) {
+            groups.push(t)
+        }
+        if (!acc[year]) {
+            acc[year] = {}
+        } else {
+            if (!acc[year][t]) {
+                acc[year][t] = 1
+            } else {
+                acc[year][t]++
+            }
+        }
+
+        return acc
+    }, {})
+    const as_array = []
+    for (const year in aggregated) {
+        const values = aggregated[year]
+        values.year = year
+        as_array.push(values)
+    }
+    return { groups: groups, data: as_array }
+}
+
+function stacked_bars(all_data, group_by, element_id, searchQuery, title) {
+    const { groups, data } = group_by(all_data)
     // Set up dimensions
     const margin = { top: 40, right: 100, bottom: 60, left: 60 };
     const width = 800 - margin.left - margin.right;
@@ -111,7 +139,7 @@ function stacked_bars(data, element_id, searchQuery) {
         .attr("y", -10)
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
-        .text(`Population Age Group Distribution Over Time (${searchQuery})`);
+        .text(`${title} (${searchQuery})`);
 
     // Add legend
     const legend = svg.append("g")

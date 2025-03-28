@@ -467,7 +467,8 @@ async function submitSearch() {
         trend_plot(top_outcomes_by_year(matchedTrials, top_outcome_names), "trend-top-outcomes")
 
         const searchQuery = selectedGroups.map(group => group.join(' AND ')).join(' OR ') // plot title
-        stacked_bars(groups_by_year(matchedTrials), "stacked-1", searchQuery)
+        stacked_bars(matchedTrials, groups_by_year, "age-distribution", searchQuery, "Population Age Group Distribution Over Time")
+        stacked_bars(matchedTrials, groups_by_country, "country-distribution", searchQuery, "Country Distribution of Studies Over Time")
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
