@@ -1,4 +1,33 @@
-function groups_by_year(data) {
+function group_by_gender(data) {
+    const groups = []
+    const aggregated = data.reduce((acc, trial) => {
+        const year = trial.time
+        const t = trial.pico_attributes.populations.gender
+        if (!groups.includes(t)) {
+            groups.push(t)
+        }
+        if (!acc[year]) {
+            acc[year] = {}
+        } else {
+            if (!acc[year][t]) {
+                acc[year][t] = 1
+            } else {
+                acc[year][t]++
+            }
+        }
+
+        return acc
+    }, {})
+    const as_array = []
+    for (const year in aggregated) {
+        const values = aggregated[year]
+        values.year = year
+        as_array.push(values)
+    }
+    return { groups: groups, data: as_array }
+}
+
+function group_by_age(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {
         const year = trial.time
@@ -27,7 +56,7 @@ function groups_by_year(data) {
     return { groups: groups, data: as_array }
 }
 
-function groups_by_country(data) {
+function group_by_country(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {
         const year = trial.time
