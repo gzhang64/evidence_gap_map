@@ -1,3 +1,33 @@
+function group_by_intervention_type(data) {
+    const groups = []
+    const aggregated = data.reduce((acc, trial) => {
+        const year = trial.time
+        trial.pico_attributes.interventions.forEach(intervention=>{
+            const t = intervention.type
+            if (!groups.includes(t)) {
+                groups.push(t)
+            }
+            if (!acc[year]) {
+                acc[year] = {}
+            } else {
+                if (!acc[year][t]) {
+                    acc[year][t] = 1
+                } else {
+                    acc[year][t]++
+                }
+            }
+        })
+        return acc
+    }, {})
+    const as_array = []
+    for (const year in aggregated) {
+        const values = aggregated[year]
+        values.year = year
+        as_array.push(values)
+    }
+    return { groups: groups, data: as_array }
+}
+
 function group_by_gender(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {

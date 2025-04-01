@@ -470,6 +470,7 @@ async function submitSearch() {
         stacked_bars(matchedTrials, group_by_age, "age-distribution", searchQuery, "Population Age Group Distribution Over Time")
         stacked_bars(matchedTrials, group_by_country, "country-distribution", searchQuery, "Country Distribution of Studies Over Time")
         stacked_bars(matchedTrials, group_by_gender, "gender-distribution", searchQuery, "Gender Distribution of Studies Over Time")
+        stacked_bars(matchedTrials, group_by_intervention_type, "intervention-types-over-time", searchQuery, "Intervention Types Over Time")
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
