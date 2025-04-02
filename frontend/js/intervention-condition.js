@@ -35,17 +35,23 @@ async function get_intervention_types() {
     }
 }
 
-function grouped_by(result) {
-    // already organized
-    return {groups: result.groups, data: Object.values(result.data)}
+// convert the data part to an array
+function convert(result) {
+    const data = []
+    for(year in result.data) {
+        const item = result.data[year]
+        item.year = year
+        data.push(item)
+    }
+    return {groups: result.groups, data: data}
 }
 
 function plot_intervention_condition(intervention) {
     try {
         fetch(`http://127.0.0.1:5000/api/count-by-conditions/${intervention}`).then(response => {
             response.json().then(x=>{
-                stacked_bars(x, grouped_by, "intervention-condition-count", 'count', `Conditions Studied with ${intervention} Over Time`)
-                stacked_bars(x, grouped_by, "intervention-condition-percentage", 'percentage', `Conditions Studied with ${intervention} Over Time`)
+                stacked_bars(x, convert, "intervention-condition-count", 'count', `Conditions Studied with ${intervention} Over Time`)
+                stacked_bars(x, convert, "intervention-condition-percentage", 'percentage', `Conditions Studied with ${intervention} Over Time`)
             })
         }).catch(error => {
             console.error("Error:", error);

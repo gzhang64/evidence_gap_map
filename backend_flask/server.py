@@ -50,7 +50,7 @@ def count_intervention(intervention):
         count = item["count"]
         groups = result["data"]
         if groups.get(year) is None:
-            groups[year] = {"year": year, condition: count}
+            groups[year] = {condition: count}
         else:
             groups[year][condition] = count
         return result
