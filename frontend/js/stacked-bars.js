@@ -115,8 +115,14 @@ function group_by_country(data) {
     return { groups: groups, data: as_array }
 }
 
-function stacked_bars(all_data, group_by, element_id, searchQuery, title) {
+function stacked_bars(all_data, group_by, element_id, subtitle, title) {
     const { groups, data } = group_by(all_data)
+    if(groups.length==0) {
+        const plot_container = document.getElementById(element_id)
+        plot_container.style.backgroundColor = 'lightyellow'
+        plot_container.textContent = `${title} (${subtitle}): no group data`
+        return
+    }
     // Set up dimensions
     const margin = { top: 40, right: 100, bottom: 60, left: 60 };
     const width = 800 - margin.left - margin.right;
@@ -198,7 +204,7 @@ function stacked_bars(all_data, group_by, element_id, searchQuery, title) {
         .attr("y", -10)
         .attr("text-anchor", "middle")
         .style("font-size", "16px")
-        .text(`${title} (${searchQuery})`);
+        .text(`${title} (${subtitle})`);
 
     // Add legend
     const legend = svg.append("g")
