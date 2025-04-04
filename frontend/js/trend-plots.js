@@ -1,11 +1,9 @@
-const plot_width = 400;
-const plot_height = 300;
-
-const margin = { top: 20, right: 20, bottom: 40, left: 50 };
-const width = plot_width - margin.left - margin.right;
-const height = plot_height - margin.top - margin.bottom;
-
 function trend_plot(data, element_id) {
+    const margin = { top: 20, right: 20, bottom: 40, left: 50 };
+    const plot_width = document.getElementById(element_id).clientWidth
+    const plot_height = document.getElementById(element_id).clientHeight
+    const width = plot_width - margin.left - margin.right
+    const height = plot_height - margin.top - margin.bottom
     d3.select(`#${element_id}`).selectAll("svg").remove()
     const svg = d3.select(`#${element_id}`)
         .append("svg")

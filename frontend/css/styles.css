@@ -297,10 +297,9 @@ section {
     align-items: flex-start;
 }
 
-/* Left Column for Visualizations */
+/* Column for Visualizations */
 .visualizations-column {
-    flex: 0 0 25%;
-    max-width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 0;
@@ -322,7 +321,6 @@ section {
     background-color: #ffffff;
     width: 100%; /* Full width within the container */
     max-width: 100%;
-    padding: 0;
     box-sizing: border-box; /* Include padding in the width calculation */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     display: block; /* Ensure they are visible */

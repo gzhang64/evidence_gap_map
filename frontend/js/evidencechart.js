@@ -712,8 +712,9 @@ function countTrialsByCountry(matchedTrials) {
 
 // Function to draw the choropleth map with Europe on the left
 function drawChoroplethMap(countryTrialCount) {
-    const width = 300;
-    const height = 150;
+    const element = document.getElementById("map").parentElement
+    const width = element.offsetWidth
+    const height = element.offsetWidth*0.6
 
     const svg = d3.select("#map")
         .attr("width", width)
@@ -721,7 +722,7 @@ function drawChoroplethMap(countryTrialCount) {
 
     // Adjust the projection to rotate the globe
     const projection = d3.geoNaturalEarth1()
-        .scale(55)
+        .scale(width/5)
         .translate([width / 2, height / 2]);
 
     const path = d3.geoPath().projection(projection);
@@ -951,10 +952,11 @@ function countInterventionTypes(matchedTrials) {
 
 // Function to draw a donut chart for intervention types with a legend and hover tooltip
 function drawInterventionTypeDonutChart(data, chartID) {
-    const width = 300;
-    const height = 225;
+    const element = document.getElementById(chartID.replace("#", ""))
+    const width = element.offsetWidth
+    const height = element.offsetWidth*0.6
     const margin = 10;
-    const legendWidth = 75;
+    const legendWidth = 50;
     const radius = Math.min(width - legendWidth, height) / 2 - margin;
 
     // Clear previous chart content
@@ -1057,8 +1059,9 @@ function countGenderDistribution(matchedTrials) {
 
 // Function to draw a donut chart for gender distribution with a legend and hover tooltip
 function drawGenderDistributionDonutChart(data, chartID) {
-    const width = 300;  // Increase width to accommodate legend
-    const height = 225;
+    const element = document.getElementById(chartID.replace("#", ""))
+    const width = element.offsetWidth
+    const height = element.offsetWidth*0.6
     const margin = 10;
     const legendWidth = 50;  // Space for the legend
 
@@ -1171,8 +1174,9 @@ function getTop20Interventions(matchedTrials) {
 // Function to draw a horizontal bar chart for the top 20 interventions
 function drawTop20InterventionsBarChart(data, chartID) {
     const margin = { top: 20, right: 0, bottom: 20, left: 150 };
-    const width = 300 - margin.left - margin.right;
-    const height = 225 - margin.top - margin.bottom;
+    const element = document.getElementById(chartID.replace("#", ""))
+    const width = element.offsetWidth - margin.left - margin.right;
+    const height = element.offsetWidth*0.6 - margin.top - margin.bottom;
 
     // Clear previous chart content
     d3.select(chartID).html("");
@@ -1269,8 +1273,9 @@ function getTop20Outcomes(matchedTrials) {
 // Function to draw a horizontal bar chart for the top 20 outcomes
 function drawTop20OutcomesBarChart(data, chartID) {
     const margin = { top: 20, right: 0, bottom: 20, left: 150 };
-    const width = 300 - margin.left - margin.right;
-    const height = 225 - margin.top - margin.bottom;
+    const element = document.getElementById(chartID.replace("#", ""))
+    const width = element.offsetWidth - margin.left - margin.right;
+    const height = element.offsetWidth*0.6 - margin.top - margin.bottom;
 
     // Clear previous chart content
     d3.select(chartID).html("");

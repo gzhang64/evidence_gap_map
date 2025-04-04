@@ -1,9 +1,11 @@
 .chart-pair {
-    display: flex; justify-content: center;width: 810px;background-color: ivory;
+    display: flex; justify-content: center;width: 100%;background-color: whitesmoke;
 }
 .left-of-pair {
-    width: 400px;
+    width: 50%;
+    margin: 10px;
 }
 .right-of-pair {
-    width: 400px; background-color: lightgoldenrodyellow;
+    width: 50%; background-color: white;
+    margin: 10px;
 }

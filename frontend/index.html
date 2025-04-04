@@ -128,21 +128,20 @@
         <div id="gender-distribution" style="width: 800px;height: 500px;"></div>
         <div id="intervention-types-over-time" style="width: 800px;height: 500px;"></div>
 
+        <!-- this is the left column of the original layout, where we have all the condition-based plots -->
         <div class="evidencechart-split">
-            <!-- Left Column for Visualizations -->
-            <!-- temporary overflow style for testing the new element -->
-            <div class="visualizations-column" style="display: none; overflow: visible;" id="content-to-export">
-                <!-- <button class="collapsible">Population</button> -->
-                <div class="content" style="overflow: visible;">
+            <div class="visualizations-column" style="display: none;" id="content-to-export">
+                <div class="content">
                     <h4>Geographical Distribution of Clinical Trials</h4>
-                    <div style="display: flex; justify-content: center;width: 800px;background-color: lightgray;">
-                        <div style="width: 400px;">
-                        <svg id="map" width="800" height="500"></svg> <!-- SVG placeholder for the map -->
+                    <div class="chart-pair">
+                        <div class="left-of-pair">
+                        <svg id="map"></svg> <!-- SVG placeholder for the map -->
                         </div>
-                        <div style="width: 400px; background-color: lightgoldenrodyellow;" id="trend-geographical">
+                        <div class="right-of-pair" id="trend-geographical">
                         </div>
                     </div>
-        
+                </div>
+                <div class="content">
                     <h4>Eligible Age Distribution</h4>
                     <div class="chart-container">
                         <!-- Minimum Age Distribution Chart -->
@@ -161,7 +160,8 @@
                             <div class="right-of-pair" id="trend-max-age"></div>
                         </div>
                     </div>
-                    
+                </div>
+                <div class="content">
                     <h4>Gender Distribution in Clinical Trials</h4>
                     <div class="chart-pair">
                         <div class="left-of-pair">
@@ -170,9 +170,8 @@
                         <div class="right-of-pair" id="trend-gender"></div>
                     </div>
                 </div>
-                
-                <!-- <button class="collapsible">Interventions</button> -->
-                <div class="content" style="overflow: visible;">
+
+                <div class="content">
                     <h4>Intervention Types Distribution</h4>
                     <div class="chart-pair">
                         <div class="left-of-pair">
@@ -189,10 +188,8 @@
                         <div class="right-of-pair" id="trend-top-interventions"></div>
                     </div>
                 </div>
-                
-                
-                <!-- <button class="collapsible">Outcomes</button> -->
-                <div class="content" style="overflow: visible;">
+
+                <div class="content">
                     <h4>Top 20 Investigated Outcomes</h4>
                     <div class="chart-pair">
                         <div class="left-of-pair">
