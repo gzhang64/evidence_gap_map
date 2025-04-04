@@ -39,7 +39,21 @@ async function get_intervention_types() {
 function convert(result) {
     const data = []
     for(year in result.data) {
-        const item = result.data[year]
+        const item = {...result.data[year]} // make a copy so we can reuse the orginal result
+        item.year = year
+        data.push(item)
+    }
+    return {groups: result.groups, data: data}
+}
+
+function percentage(result) {
+    const data = []
+    for(year in result.data) {
+        const item = {...result.data[year]}
+        const sum = Object.values(item).reduce((sum, x) => sum+x)
+        for(let x in item) {
+             item[x] *= 100/sum
+        }
         item.year = year
         data.push(item)
     }
@@ -51,7 +65,7 @@ function plot_intervention_condition(intervention) {
         fetch(`http://127.0.0.1:5000/api/count-by-conditions/${intervention}`).then(response => {
             response.json().then(x=>{
                 stacked_bars(x, convert, "intervention-condition-count", 'count', `Conditions Studied with ${intervention} Over Time`)
-                stacked_bars(x, convert, "intervention-condition-percentage", 'percentage', `Conditions Studied with ${intervention} Over Time`)
+                stacked_bars(x, percentage, "intervention-condition-percentage", 'percentage', `Conditions Studied with ${intervention} Over Time`)
             })
         }).catch(error => {
             console.error("Error:", error);
