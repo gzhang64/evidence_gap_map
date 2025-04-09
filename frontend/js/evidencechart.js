@@ -385,7 +385,7 @@ async function submitSearch() {
           }, {});
         const array = Object.keys(count_by_year).map(key=>({
             year: key,
-            value: "V1", // not used for noe
+            value: "total",
             records: count_by_year[key]
             })
         )

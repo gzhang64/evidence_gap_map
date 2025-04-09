@@ -57,6 +57,28 @@ function trend_plot(data, element_id) {
             .attr("fill", color(value));
     });
 
+    // create legend
+    const values = data.map(item => item.value)
+    const uniques = [...new Set(values)]
+
+    const legend = svg.append("g")
+        .attr("transform", `translate(${width - 100}, 20)`)
+    uniques.forEach((group, i) => {
+        const legendItem = legend.append("g")
+            .attr("transform", `translate(0, ${i * 20})`);
+        
+        legendItem.append("rect")
+            .attr("width", 15)
+            .attr("height", 15)
+            .attr("fill", color(group));
+        
+        legendItem.append("text")
+            .attr("x", 20)
+            .attr("y", 12)
+            .attr("class", "legend")
+            .text(group);
+    });
+
     svg.append("text")
         .attr("x", width / 2)
         .attr("y", height + margin.bottom)
