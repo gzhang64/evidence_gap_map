@@ -117,15 +117,15 @@ function group_by_country(data) {
 
 function stacked_bars(all_data, group_by, element_id, subtitle, title) {
     const { groups, data } = group_by(all_data)
+    const plot_container = document.getElementById(element_id)
     if(groups.length==0) {
-        const plot_container = document.getElementById(element_id)
         plot_container.style.backgroundColor = 'lightyellow'
         plot_container.textContent = `${title} (${subtitle}): no group data`
         return
     }
     // Set up dimensions
-    const margin = { top: 40, right: 100, bottom: 60, left: 60 };
-    const width = 800 - margin.left - margin.right;
+    const margin = { top: 40, right: 150, bottom: 60, left: 60 };
+    const width = plot_container.clientWidth - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 
     d3.select(`#${element_id}`).selectAll("svg").remove()
