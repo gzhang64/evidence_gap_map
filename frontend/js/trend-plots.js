@@ -1,14 +1,13 @@
 function trend_plot(data, element_id) {
-    const margin = { top: 20, right: 20, bottom: 40, left: 50 };
-    const plot_width = document.getElementById(element_id).clientWidth
-    const plot_height = document.getElementById(element_id).clientHeight
-    const width = plot_width - margin.left - margin.right
-    const height = plot_height - margin.top - margin.bottom
+    const margin = { top: 20, right: 100, bottom: 40, left: 50 };
+    const element_width = document.getElementById(element_id).clientWidth
+    const element_height = document.getElementById(element_id).clientHeight
+    const width = element_width - margin.left - margin.right
+    const height = element_height - margin.top - margin.bottom
     d3.select(`#${element_id}`).selectAll("svg").remove()
     const svg = d3.select(`#${element_id}`)
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("height", element_height)
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -62,7 +61,7 @@ function trend_plot(data, element_id) {
     const uniques = [...new Set(values)]
 
     const legend = svg.append("g")
-        .attr("transform", `translate(${width - 100}, 20)`)
+        .attr("transform", `translate(${width}, 20)`)
     uniques.forEach((group, i) => {
         const legendItem = legend.append("g")
             .attr("transform", `translate(0, ${i * 20})`);
