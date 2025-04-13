@@ -1,4 +1,6 @@
 function suggest_intervention_types(input) {
+    document.getElementById("intervention-condition-pair").style.display = "none"
+
     const container = document.getElementById('autocomplete-intervention-type');
     container.innerHTML = ''; // Clear previous suggestions
     if (!input) return; // If no input, exit
@@ -64,6 +66,7 @@ function plot_intervention_condition(intervention) {
     try {
         fetch(`http://127.0.0.1:5000/api/count-by-conditions/${intervention}`).then(response => {
             response.json().then(x=>{
+                document.getElementById("intervention-condition-pair").style.display = "flex"
                 stacked_bars(x, convert, "intervention-condition-count", 'count', `Conditions Studied with ${intervention} Over Time`)
                 stacked_bars(x, percentage, "intervention-condition-percentage", 'percentage', `Conditions Studied with ${intervention} Over Time`)
             })
