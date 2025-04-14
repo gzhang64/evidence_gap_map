@@ -109,6 +109,7 @@ function updateSelectedConditions() {
         queryVisualization.style.display = 'none'; // Hide query if no conditions
         document.getElementById('report-export-button').style.display = 'none'
     }
+    document.querySelector('.visualizations-column').style.display = 'none' // hide the plots until search is carried out again
 }
 
 async function submitSearch() {

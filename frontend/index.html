@@ -71,8 +71,6 @@
         </div>
         <h3>User Guide (Coming Soon)</h3>
     </section>
-    
-    
 
     <!-- EvidenceChart Section -->
     <section id="evidencechart" class="evidencechart-container">
@@ -106,7 +104,8 @@
 
             <!-- Search button -->
             <button onclick="submitSearch()" style="margin-left: 10px; padding: 0.75rem; border: none; background-color: #2d64a8; color: white; border-radius: 5px;">Search</button>
-            
+            <!-- export button -->
+            <button id="report-export-button" style="display: none; margin-left: 10px; padding: 0.75rem; border: none; background-color: #2d64a8; color: white; border-radius: 5px;">Report Export</button>
         </div>
 
         <!-- Autocomplete suggestions -->
@@ -117,20 +116,17 @@
 
         <!-- Add a new placeholder for the real-time query visualization -->
         <div id="queryVisualization" style="margin-top: 1rem; font-weight: bold;"></div>
-        <div style="padding: 5px;">
-            <button id="report-export-button" style="display: none; margin-left: 10px; padding: 0.75rem; border: none; background-color: #2d64a8; color: white; border-radius: 5px;">Report Export</button>
-        </div>
-
-        <div style="display: flex;">
-            <div id="age-distribution" style="width: 100%;"></div>
-            <div id="country-distribution" style="width: 100%;"></div>
-            <div id="gender-distribution" style="width: 100%;"></div>
-        </div>
-        <div id="intervention-types-over-time" style="width: 50%;"></div>
 
         <!-- this is the left column of the original layout, where we have all the condition-based plots -->
         <div class="evidencechart-split">
             <div class="visualizations-column" style="display: none;" id="content-to-export">
+                <div style="display: flex;">
+                    <div id="age-distribution" style="width: 100%;"></div>
+                    <div id="country-distribution" style="width: 100%;"></div>
+                    <div id="gender-distribution" style="width: 100%;"></div>
+                </div>
+                <div id="intervention-types-over-time" style="width: 50%;margin:5px"></div>
+
                 <div class="content">
                     <h4>Geographical Distribution of Clinical Trials</h4>
                     <div class="chart-pair">
