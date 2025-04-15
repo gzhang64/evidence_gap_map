@@ -87,7 +87,12 @@ function updateSelectedConditions() {
         group.forEach(condition => {
             const chip = document.createElement('div');
             chip.classList.add('condition-chip');
-            chip.innerHTML = `${condition} <span class="remove-chip" onclick="removeCondition('${condition}')">x</span>`;
+            chip.appendChild(document.createTextNode(condition))
+            const x = document.createElement("span")
+            x.textContent = 'x'
+            x.className = "remove-chip"
+            x.onclick = ()=>removeCondition(condition)
+            chip.appendChild(x)
             groupDiv.appendChild(chip);
         });
 
