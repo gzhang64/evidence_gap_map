@@ -43,6 +43,7 @@ function draw_matrix_view(data) {
         cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
         grid.appendChild(cell)
   }
+  const dim1 = "country", dim2 = "gender"
   for(let i=0;i<num_inter;i++){
     const intervention = interventions[i]
     const cell = document.createElement("div")
@@ -58,7 +59,7 @@ function draw_matrix_view(data) {
 
             const popup = document.getElementById("gap-map-popup")
             cell.addEventListener('mouseenter', (event) => {
-              document.getElementById("radial-title").textContent = `Distribution by ${intervention} and ${outcome}`
+              document.getElementById("radial-title").innerHTML = `Distribution by ${dim1} and ${dim2}<br/>(${intervention} / ${outcome})`
 
               fetch(`http://127.0.0.1:5000/api/count/${intervention}/${outcome}`).then(response => {
                 response.json().then(x=>{
@@ -71,7 +72,7 @@ function draw_matrix_view(data) {
 
               fetch(`http://127.0.0.1:5000/api/trials/${intervention}/${outcome}`).then(response => {
                 response.json().then(x=>{
-                  const counts = group_by_2d(x, "country", "gender")
+                  const counts = group_by_2d(x, dim1, dim2)
                   const counts_no_label = [] // for now
                   for(let country in counts) {
                     const values = Object.values(counts[country])
