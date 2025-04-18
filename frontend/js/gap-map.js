@@ -36,17 +36,18 @@ function draw_matrix_view(data) {
   const grid = document.getElementById("gap-map")
   const num_ot = Math.min(outcomes.length, document.getElementById("number-of-outcomes").value)
   const num_inter = Math.min(interventions.length, document.getElementById("number-of-intervention-types").value)
-  for(let j=0; j<=num_ot; j++) {
+  grid.insertAdjacentHTML("afterbegin", `<div style="border:thin solid lightgrey;padding:3px;">Intervention/Outcome</div>`)
+  for(let j=0; j<num_ot; j++) {
         const cell = document.createElement("div")
         cell.textContent = outcomes[j]
-        cell.style.border = "thin solid lightgrey"
+        cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
         grid.appendChild(cell)
   }
   for(let i=0;i<num_inter;i++){
     const intervention = interventions[i]
     const cell = document.createElement("div")
     cell.textContent = intervention
-    cell.style.border = "thin solid lightgrey"
+    cell.style = "border:thin solid lightgrey;padding:3px;"
     grid.appendChild(cell)
     for(let j=0;j<num_ot;j++){
             const outcome = outcomes[j]
