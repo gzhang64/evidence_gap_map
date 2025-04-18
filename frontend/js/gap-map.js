@@ -59,9 +59,7 @@ function draw_matrix_view(data) {
             cell.addEventListener('mouseenter', (event) => {
               document.getElementById("radial-title").textContent = `Distribution by ${intervention} and ${outcome}`
 
-              const it_2 = "Drug"
-              const ot_2 = "Survival Rate"
-              fetch(`http://127.0.0.1:5000/api/count/${it_2}/${ot_2}`).then(response => {
+              fetch(`http://127.0.0.1:5000/api/count/${intervention}/${outcome}`).then(response => {
                 response.json().then(x=>{
                   const count_over_years = x.map( item=>({year: item.year, value:"count", records: item.count}) )
                   trend_plot(count_over_years, "gap-map-trend")
@@ -70,7 +68,7 @@ function draw_matrix_view(data) {
                 console.error("Error:", error);
               });
 
-              fetch(`http://127.0.0.1:5000/api/trials/${it_2}/${ot_2}`).then(response => {
+              fetch(`http://127.0.0.1:5000/api/trials/${intervention}/${outcome}`).then(response => {
                 response.json().then(x=>{
                   const counts = group_by_2d(x, "country", "gender")
                   const counts_no_label = [] // for now
@@ -121,6 +119,7 @@ function get_blue_shade(value, min=0, max=150) {
 function create_radial_stacked_plot(data, element_id) {
   const element_width = document.getElementById(element_id).clientWidth
   d3.select(`#${element_id}`).selectAll("svg").remove()
+  if(data.length==0) return // empty dataset
 
   const width = element_width;
   const height = element_width;
