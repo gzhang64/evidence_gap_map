@@ -21,6 +21,81 @@ def get_distinct_intervention_types():
     intervention_types = trials_collection.distinct("pico_attributes.interventions.type")
     return jsonify(sorted(intervention_types))
 
+# count trials for all intervention types and outcomes
+@app.route('/api/total', methods=['GET'])
+def total():
+    counts = trials_collection.aggregate([
+        { "$unwind": "$pico_attributes.interventions" },
+        { "$unwind": "$pico_attributes.outcomes" },
+        { "$group": { "_id": {
+            "intervention": "$pico_attributes.interventions.type", 
+            "outcome": "$pico_attributes.outcomes", }, "count": { "$sum": 1 } } },
+        {
+            "$project": {
+                "intervention": "$_id.intervention",
+                "outcome": "$_id.outcome",
+                "count": 1,
+                "_id": 0  # exclude the default _id field
+            }
+        },
+        { "$sort": { "year": 1 } }
+    ])
+
+    return jsonify(counts)
+
+# count trials over years given intervention type and outcome
+@app.route('/api/count/<intervention>/<outcome>', methods=['GET'])
+def count(intervention, outcome):
+    print(intervention, outcome)
+    counts = trials_collection.aggregate([
+        { "$match": {"pico_attributes.outcomes": outcome, "pico_attributes.interventions.type": intervention} },
+        # group by year. count
+        { "$group": { "_id": { "time": "$time" }, "count": { "$sum": 1 } } },
+        {
+            "$project": {
+                "year": "$_id.time",
+                "count": 1,
+                "_id": 0  # exclude the default _id field
+            }
+        },
+        { "$sort": { "year": 1 } }
+    ])
+
+    # counts is an one-time iterable (pymongo.synchronous.command_cursor.CommandCursor). not something  like a plain list
+    result = []
+    for item in counts:
+        result.append(item)
+    return jsonify(result)
+
+# TODO it is a major trade-off between querying on the backend and doing it on the frontend
+# retrieve trials by intervention+outcome for further aggregation and counting
+@app.route('/api/trials/<intervention>/<outcome>', methods=['GET'])
+def get_trials_by_intervention_outcome(intervention, outcome):
+    # aggregate over time
+    # do not aggregate over population. intended to aggregate by different groups on the frontend
+    # strip properties not needed for aggregation. intended for counting only.
+    counts = trials_collection.aggregate([
+        { "$match": {"pico_attributes.outcomes": outcome, "pico_attributes.interventions.type": intervention} },
+        # group by year. count
+        { "$group": { "_id": { "condition": "$conditions",
+                              "country": "$pico_attributes.populations.country",
+                               "gender": "$pico_attributes.populations.gender" }, "count": { "$sum": 1 } } },
+        {
+            "$project": {
+                "condition": "$_id.condition",
+                "country": "$_id.country",
+                "gender": "$_id.gender",
+                "count": 1,
+                "_id": 0  # exclude the default _id field
+            }
+        }
+    ])
+
+    result = []
+    for item in counts:
+        result.append(item)
+    return result
+
 # count trials grouped by conditions
 @app.route('/api/count-by-conditions/<intervention>', methods=['GET'])
 def count_intervention(intervention):
