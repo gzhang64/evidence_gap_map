@@ -6,7 +6,7 @@ This document includes two parts: the description of UI, and the organization of
 
 # User interaction
 
-The user starts the inquiry by first selecting (1) a intervention type, or (2) some conditions. The results and visualization are also shown in the two separated part, with details in the *Overall layout* section.
+The user starts the inquiry by first selecting (1) an intervention type, or (2) some conditions. The results and visualization are also shown in the two separated part, with details in the *Overall layout* section.
 
 For intervention type, once the user types some text, as little as one letter, all the matching intervention types are displayed. If the user select one of the intervention type, the plots are generated.
 
