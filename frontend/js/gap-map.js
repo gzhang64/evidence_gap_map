@@ -34,6 +34,8 @@ function draw_matrix_view(data) {
   })
 
   const grid = document.getElementById("gap-map")
+  grid.innerHTML = ""
+  popup.style.display = 'none'
   const num_ot = Math.min(outcomes.length, document.getElementById("number-of-outcomes").value)
   const num_inter = Math.min(interventions.length, document.getElementById("number-of-intervention-types").value)
   grid.insertAdjacentHTML("afterbegin", `<div style="border:thin solid lightgrey;padding:3px;">Intervention/Outcome</div>`)
@@ -43,7 +45,8 @@ function draw_matrix_view(data) {
         cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
         grid.appendChild(cell)
   }
-  const dim1 = "country", dim2 = "gender"
+  document.getElementById("primary-dimension").value = "country"
+  document.getElementById("secondary-dimension").value = "gender"
   for(let i=0;i<num_inter;i++){
     const intervention = interventions[i]
     const cell = document.createElement("div")
@@ -59,7 +62,9 @@ function draw_matrix_view(data) {
 
             const popup = document.getElementById("gap-map-popup")
             cell.onclick = (event) => {
-              document.getElementById("radial-title").innerHTML = `Distribution by ${dim1} and ${dim2}<br/>(${intervention} / ${outcome})`
+              intervention_selected = intervention
+              outcome_selected = outcome
+              document.getElementById("radial-title").innerHTML = `Population Distribution for ${intervention} / ${outcome})`
 
               fetch(`http://127.0.0.1:5000/api/count/${intervention}/${outcome}`).then(response => {
                 response.json().then(x=>{
@@ -70,6 +75,8 @@ function draw_matrix_view(data) {
                 console.error("Error:", error);
               });
 
+              const dim1 = document.getElementById("primary-dimension").value
+              const dim2 = document.getElementById("secondary-dimension").value
               fetch(`http://127.0.0.1:5000/api/trials/${intervention}/${outcome}`).then(response => {
                 response.json().then(x=>{
                   const counts = group_by_2d(x, dim1, dim2)
@@ -205,4 +212,26 @@ function create_radial_stacked_plot(data, element_id) {
       .attr("transform", d => (x(d.category) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? 
         "rotate(90)translate(0,5)" : "rotate(-90)translate(0,5)")
       .text(d => d.category);
+}
+
+// TODO eventually we should refactor avoid re-querying
+let intervention_selected = ""
+let outcome_selected = ""
+function redraw_radial() {
+  const dim1 = document.getElementById("primary-dimension").value
+  const dim2 = document.getElementById("secondary-dimension").value
+  console.debug(dim1, dim2)
+  fetch(`http://127.0.0.1:5000/api/trials/${intervention_selected}/${outcome_selected}`).then(response => {
+    response.json().then(x=>{
+      const counts = group_by_2d(x, dim1, dim2)
+      const counts_no_label = [] // for now
+      for(let country in counts) {
+        const values = Object.values(counts[country])
+        counts_no_label.push({category:country, values: values})
+      }
+      create_radial_stacked_plot(counts_no_label, "radial-stacked")
+    })
+  }).catch(error => {
+    console.error("Error:", error);
+  });
 }
