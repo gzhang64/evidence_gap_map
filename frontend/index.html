@@ -82,14 +82,17 @@
             <button onclick=draw_gap_map()>Draw Gap Map</button>
         </div>
         <div id="gap-map" style="display: grid;grid-template-columns: 1fr repeat(5, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;"></div><!-- 5 is for test-->
-        <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;">
-            <div id="radial-stacked" style="width: 30%;background-color: linen;"><span id="radial-title"></span>
+        <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;position: absolute;">
+            <div id="radial-stacked" style="width: 40%;background-color: linen;"><span id="radial-title"></span>
                 <div>
                     primary dimension <select id="primary-dimension"><option value="country" selected></option><option value="gender"></option><option value="age"></option></select><br/>
                     secondary dimension <select id="secondary-dimension"><option value="country"></option><option value="gender" selected></option><option value="age"></option></select>
                 </div>
             </div>
-            <div id="gap-map-trend" style="width: 70%;height: 300px;background-color: ivory;">Number of Studies Over Time</div>
+            <div id="gap-map-trend" style="width: 60%;height: 90%;background-color: ivory;">Number of Studies Over Time</div>
+            <button class="close-button" id="close-button">
+                <span class="close-icon">&times;</span>
+            </button>
         </div>
         <h2>Filter by Intervention Type</h2>
         <p>Type the initial letters of an intervention type and select from the suggestions.</p>

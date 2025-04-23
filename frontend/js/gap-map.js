@@ -58,7 +58,7 @@ function draw_matrix_view(data) {
             grid.appendChild(cell)
 
             const popup = document.getElementById("gap-map-popup")
-            cell.addEventListener('mouseenter', (event) => {
+            cell.onclick = (event) => {
               document.getElementById("radial-title").innerHTML = `Distribution by ${dim1} and ${dim2}<br/>(${intervention} / ${outcome})`
 
               fetch(`http://127.0.0.1:5000/api/count/${intervention}/${outcome}`).then(response => {
@@ -85,10 +85,10 @@ function draw_matrix_view(data) {
               });
 
               popup.style.display = 'flex'
-              });
-            cell.addEventListener('mouseleave', () => {
-                popup.style.display = 'none';
-            });
+            }
+            document.getElementById("close-button").onclick = () => {
+                 popup.style.display = 'none';
+            }
         }
     }
 }
