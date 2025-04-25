@@ -1,36 +1,32 @@
 function draw_gap_map() {
-    fetch(`http://127.0.0.1:5000/api/total`).then(response => {
-      response.json().then(x=>{
-        draw_matrix_view(x)
-      })
-    }).catch(error => {
-      console.error("Error:", error);
-    });
+  draw_matrix_view(matchedTrials)
 }
 
+// paramater data is expected to be the the global matchedTrials
 function draw_matrix_view(data) {
-  const outcomes = data.map(item=>item.outcome).reduce((accumulator, current) => {
-    if (!accumulator.includes(current)) {
-        accumulator.push(current);
-    }
-    return accumulator;
-  }, []);
-  const interventions = data.map(item=>item.intervention).reduce((accumulator, current) => {
-    if (!accumulator.includes(current)) {
-        accumulator.push(current);
-    }
-    return accumulator;
-  }, []);
+  const outcomes = []
+  const interventions = []
+  data.forEach(t=>{
+    t.pico_attributes.outcomes.forEach(o=>{
+      if (!outcomes.includes(o)) {
+        outcomes.push(o)
+      }
+    })
+    t.pico_attributes.interventions.forEach(i=>{
+      if (!interventions.includes(i.type)) {
+        interventions.push(i.type)
+      }
+    })
+  })
   const values = {}
-  data.forEach(item=>{
-    const it = item.intervention
-    const ot = item.outcome
-    let row = values[it]
-    if(row===undefined) {
-      values[it] = {}
-      row = values[it]
-    }
-    row[ot] = item.count
+  interventions.forEach(i=> {
+    values[i] = {}
+    outcomes.forEach(o=>{
+      values[i][o] = data.filter(t=>
+        t.pico_attributes.interventions.map(intervention=>intervention.type).includes(i) &&
+        t.pico_attributes.outcomes.includes(o)
+      ).length
+    })
   })
 
   const grid = document.getElementById("gap-map")
@@ -66,32 +62,32 @@ function draw_matrix_view(data) {
               outcome_selected = outcome
               document.getElementById("radial-title").innerHTML = `Population Distribution for ${intervention} / ${outcome})`
 
-              fetch(`http://127.0.0.1:5000/api/count/${intervention}/${outcome}`).then(response => {
-                response.json().then(x=>{
-                  const count_over_years = x.map( item=>({year: item.year, value:"count", records: item.count}) )
-                  trend_plot(count_over_years, "gap-map-trend")
-                })
-              }).catch(error => {
-                console.error("Error:", error);
-              });
+              const data_filtered = data.filter(t=>
+                t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention) &&
+                t.pico_attributes.outcomes.includes(outcome)
+              )
+              const years = {}
+
+              data_filtered.forEach(t=>{
+                if(years[t.time]===undefined) years[t.time] = 1
+                else years[t.time] += 1
+              })
+              const count_over_years = []
+              for(let y in years) count_over_years.push({year: y, value: 'count', records:years[y]})
+              trend_plot(count_over_years, "gap-map-trend")
 
               const dim1 = document.getElementById("primary-dimension").value
               const dim2 = document.getElementById("secondary-dimension").value
-              fetch(`http://127.0.0.1:5000/api/trials/${intervention}/${outcome}`).then(response => {
-                response.json().then(x=>{
-                  const counts = group_by_2d(x, dim1, dim2)
-                  const counts_no_label = [] // for now
-                  for(let country in counts) {
-                    const values = Object.values(counts[country])
-                    counts_no_label.push({category:country, values: values})
-                  }
-                  create_radial_stacked_plot(counts_no_label, "radial-stacked")
-                })
-              }).catch(error => {
-                console.error("Error:", error);
-              });
+              const counts = group_by_2d(data_filtered, dim1, dim2)
+              const counts_no_label = [] // for now
+              for(let cat1 in counts) {
+                const values = Object.values(counts[cat1])
+                counts_no_label.push({category:cat1, values: values})
+              }
 
               popup.style.display = 'flex'
+              create_radial_stacked_plot(counts_no_label, "radial-stacked")
+              trend_plot(count_over_years, "gap-map-trend")
             }
             document.getElementById("close-button").onclick = () => {
                  popup.style.display = 'none';
@@ -100,16 +96,16 @@ function draw_matrix_view(data) {
     }
 }
 
-// aggregate the result from API
-function group_by_2d(data, primary_dim, secondary_dim) {
+// aggregate the data on the frontend
+function group_by_2d(filtered_data, primary_dim, secondary_dim) {
   result = {}
-  data.forEach(element => {
-    const primary = element[primary_dim]
-    const secondary = element[secondary_dim]
+  filtered_data.forEach(element => {
+    const primary = element.pico_attributes.populations[primary_dim]
+    const secondary = element.pico_attributes.populations[secondary_dim]
     const x = result[primary]
     if(x===undefined) result[primary] = {}
-    if(result[primary][secondary]===undefined) result[primary][secondary] = element.count
-    else result[primary][secondary] += element.count
+    if(result[primary][secondary]===undefined) result[primary][secondary] = 1
+    else result[primary][secondary] += 1
   })
   return result
 }
@@ -220,18 +216,15 @@ let outcome_selected = ""
 function redraw_radial() {
   const dim1 = document.getElementById("primary-dimension").value
   const dim2 = document.getElementById("secondary-dimension").value
-  console.debug(dim1, dim2)
-  fetch(`http://127.0.0.1:5000/api/trials/${intervention_selected}/${outcome_selected}`).then(response => {
-    response.json().then(x=>{
-      const counts = group_by_2d(x, dim1, dim2)
-      const counts_no_label = [] // for now
-      for(let country in counts) {
-        const values = Object.values(counts[country])
-        counts_no_label.push({category:country, values: values})
-      }
-      create_radial_stacked_plot(counts_no_label, "radial-stacked")
-    })
-  }).catch(error => {
-    console.error("Error:", error);
-  });
+  const data_filtered = matchedTrials.filter(t=>
+    t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention_selected) &&
+    t.pico_attributes.outcomes.includes(outcome_selected)
+  )
+  const counts_no_label = [] // for now
+  const counts = group_by_2d(data_filtered, dim1, dim2)
+  for(let cat1 in counts) {
+        const values = Object.values(counts[cat1])
+        counts_no_label.push({category:cat1, values: values})
+  }
+  create_radial_stacked_plot(counts_no_label, "radial-stacked")
 }

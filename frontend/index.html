@@ -75,26 +75,6 @@
 
     <!-- EvidenceChart Section -->
     <section id="evidencechart" class="evidencechart-container">
-        <h2>Gap Map</h2>
-        <div>
-            Number of outcomes <input type="text" id="number-of-outcomes" value="5"><!--value  is for test-->
-            Number of intervention types <input type="text" id="number-of-intervention-types" value="6">
-            <button onclick=draw_gap_map()>Draw Gap Map</button>
-        </div>
-        <div id="gap-map" style="display: grid;grid-template-columns: 1fr repeat(5, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;"></div><!-- 5 is for test-->
-        <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;position: absolute;">
-            <div id="radial-stacked" style="width: 40%;background-color: linen;"><span id="radial-title" style="padding: 10px;"></span>
-                <div style="padding: 5px;">
-                    primary dimension <select id="primary-dimension" onchange="redraw_radial()"><option value="country">country</option><option value="gender">gender</option><option value="age" selected>age</option></select><br/>
-                    secondary dimension <select id="secondary-dimension" onchange="redraw_radial()"><option value="country">country</option><option value="gender" selected>gender</option><option value="age">age</option></select>
-                </div>
-            </div>
-            <div id="gap-map-trend" style="width: 60%;height: 90%;background-color: ivory;">Number of Studies Over Time</div>
-            <button class="close-button" id="close-button">
-                <span class="close-icon">&times;</span>
-            </button>
-        </div>
-
         <h2>Filter by Conditions</h2>
         <p>Type the initial letters of a condition, select from the suggestions, and use the AND/OR logic to refine your search results.</p>
 
@@ -126,6 +106,26 @@
 
         <!-- Add a new placeholder for the real-time query visualization -->
         <div id="queryVisualization" style="margin-top: 1rem; font-weight: bold;"></div>
+
+        <h3>Evidence Gap Map</h3>
+        <div>
+            Number of outcomes <input type="text" id="number-of-outcomes" value="5"><!--value  is for test-->
+            Number of intervention types <input type="text" id="number-of-intervention-types" value="6">
+            <button onclick=draw_gap_map()>Draw Gap Map</button>
+        </div>
+        <div id="gap-map" style="display: grid;grid-template-columns: 1fr repeat(5, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;"></div><!-- 5 is for test-->
+        <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;position: absolute;">
+            <div id="radial-stacked" style="width: 40%;background-color: linen;"><span id="radial-title" style="padding: 10px;"></span>
+                <div style="padding: 5px;">
+                    primary dimension <select id="primary-dimension" onchange="redraw_radial()"><option value="country">country</option><option value="gender">gender</option><option value="age" selected>age</option></select><br/>
+                    secondary dimension <select id="secondary-dimension" onchange="redraw_radial()"><option value="country">country</option><option value="gender" selected>gender</option><option value="age">age</option></select>
+                </div>
+            </div>
+            <div id="gap-map-trend" style="width: 60%;height: 90%;background-color: ivory;">Number of Studies Over Time</div>
+            <button class="close-button" id="close-button">
+                <span class="close-icon">&times;</span>
+            </button>
+        </div>
 
         <!-- this is the left column of the original layout, where we have all the condition-based plots -->
         <div class="evidencechart-split">
@@ -309,7 +309,6 @@
     <script src="./js/donut-chart.js"></script>
     <script src="./js/trend-plots.js"></script>
     <script src="./js/stacked-bars.js"></script>
-    <script src="./js/intervention-condition.js"></script>
     <script src="./js/gap-map.js"></script>
 
 </body>

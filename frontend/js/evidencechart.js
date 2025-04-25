@@ -7,25 +7,6 @@ let currentPage = 1;
 let paginatedData = [];
 let trial_collection = [];
 
-// Function to fetch all trials data from REST API and log it with timing
-async function loadTrialsData() {
-    console.time("Data Load Time"); // Start timing
-
-    try {
-        const response = await fetch('http://127.0.0.1:5000/api/trials');
-        if (!response.ok) throw new Error('Failed to load data from API');
-
-        const trial_collection = await response.json();
-        console.log("Fetched trials data:", trial_collection.length); // Log the fetched data
-        matchedTrials = trial_collection;
-
-    } catch (error) {
-        console.error("Error loading data from API:", error);
-    } finally {
-        console.timeEnd("Data Load Time"); // End timing and log the duration
-    }
-}
-
 async function loadConditionsFromAPI() {
     console.time("Conditions Load Time"); // Start timing
     try {
@@ -798,7 +779,6 @@ function goToPage(page) {
 
 // Initialize by loading conditions from the CSV file
 window.onload = function() {
-    // loadTrialsData();
     // Load conditions for filter
     loadConditionsFromAPI();
 
