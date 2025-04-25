@@ -35,6 +35,7 @@ function draw_matrix_view(data) {
 
   const grid = document.getElementById("gap-map")
   grid.innerHTML = ""
+  const popup = document.getElementById("gap-map-popup")
   popup.style.display = 'none'
   const num_ot = Math.min(outcomes.length, document.getElementById("number-of-outcomes").value)
   const num_inter = Math.min(interventions.length, document.getElementById("number-of-intervention-types").value)
@@ -60,7 +61,6 @@ function draw_matrix_view(data) {
             cell.style.border = "thin solid lightgrey"
             grid.appendChild(cell)
 
-            const popup = document.getElementById("gap-map-popup")
             cell.onclick = (event) => {
               intervention_selected = intervention
               outcome_selected = outcome
