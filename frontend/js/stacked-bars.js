@@ -1,7 +1,7 @@
 function group_by_intervention_type(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         trial.pico_attributes.interventions.forEach(intervention=>{
             const t = intervention.type
             if (!groups.includes(t)) {
@@ -31,7 +31,7 @@ function group_by_intervention_type(data) {
 function group_by_gender(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         const t = trial.pico_attributes.populations.gender
         if (!groups.includes(t)) {
             groups.push(t)
@@ -60,7 +60,7 @@ function group_by_gender(data) {
 function group_by_age(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         const t = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
         if (!groups.includes(t)) {
             groups.push(t)
@@ -89,7 +89,7 @@ function group_by_age(data) {
 function group_by_country(data) {
     const groups = []
     const aggregated = data.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         const t = trial.pico_attributes.populations.country
         if (!groups.includes(t)) {
             groups.push(t)

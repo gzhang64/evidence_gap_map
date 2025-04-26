@@ -119,6 +119,19 @@ async function submitSearch() {
         if (!response.ok) throw new Error("Failed to fetch matching trials");
 
         matchedTrials = await response.json();
+
+        // this only to safe-guide the messy data
+        matchedTrials.forEach(trial => {
+            if( trial.pico_attributes.outcomes===undefined) {
+                trial.pico_attributes.outcomes = []
+            }
+        })
+        matchedTrials.forEach(trial => {
+            if( trial.pico_attributes.interventions===undefined) {
+                trial.pico_attributes.interventions = []
+            }
+        })
+
         console.log("Matched Trials:", matchedTrials);
 
         // Update paginatedData and initialize pagination
@@ -134,7 +147,10 @@ async function submitSearch() {
         // Update other visualizations (map, charts)
         const countryTrialCount = countTrialsByCountry(matchedTrials);
         drawChoroplethMap(countryTrialCount);
-        const count_by_year = matchedTrials.map(trial=>trial.time)
+        // this is not the ideal and safest conversion to year.
+        // used multiple places. this should be reviewed and improved. TODO
+        const count_by_year = matchedTrials.map(trial=>trial.study_dates.start_date.substring(0,4))
+            .filter(item=>item!='na')
             .reduce((acc, curr) => {
             acc[curr] = (acc[curr] || 0) + 1;
             return acc;
@@ -149,7 +165,7 @@ async function submitSearch() {
 
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
         const aggregated_ages = matchedTrials.reduce((acc, trial) => {
-            const year = trial.time
+            const year = trial.study_dates.start_date.substring(0,4)
             // use the same normalization as the other age plots
             const min_age = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
             const max_age = normalizeAgeToBin(trial.pico_attributes.populations.maximum_age || "NA");
@@ -234,7 +250,7 @@ async function submitSearch() {
 
 function gender_by_year(matchedTrials) {
     const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         const gender = normalizeGender(trial.pico_attributes.populations.gender || "N/A")
         if(!acc[year]) {
             acc[year] = {}
@@ -262,7 +278,7 @@ function gender_by_year(matchedTrials) {
 
 function intervention_by_year(matchedTrials) {
     const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         const intervention_types = trial.pico_attributes.interventions.map(x=>x.type) || []
         for(const t of intervention_types) {
             if(!acc[year]) {
@@ -292,7 +308,7 @@ function intervention_by_year(matchedTrials) {
 
 function top_intervention_names_by_year(matchedTrials, top_intervention_names) {
     const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.time
+        const year = trial.study_dates.start_date.substring(0,4)
         const intervention_names = trial.pico_attributes.interventions.map(x=>x.name) || []
         for(const t of intervention_names) {
             if(!top_intervention_names.includes(t)) continue
@@ -323,8 +339,9 @@ function top_intervention_names_by_year(matchedTrials, top_intervention_names) {
 
 function top_outcomes_by_year(matchedTrials, top_names) {
     const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.time
-        const names = trial.pico_attributes.outcomes || []
+        const year = trial.study_dates.start_date.substring(0,4)
+        if(year=='na') return acc // continue, ignoring the bad date
+        const names = (trial.pico_attributes.outcomes || []).map(outcome=>outcome.title)
         for(const t of names) {
             if(!top_names.includes(t)) continue
             if(!acc[year]) {
@@ -655,7 +672,7 @@ function getTop20Outcomes(matchedTrials) {
 
     // Count occurrences of each outcome
     matchedTrials.forEach(trial => {
-        const outcomes = trial.pico_attributes.outcomes || [];
+        const outcomes = (trial.pico_attributes.outcomes || []).map(outcome=>outcome.title);
         outcomes.forEach(outcome => {
             outcomeCount[outcome] = (outcomeCount[outcome] || 0) + 1;
         });

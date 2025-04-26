@@ -45,7 +45,8 @@ function trend_plot(data, element_id) {
             .attr("stroke-width", 1.5)
             .attr("d", line);
 
-        const value_for_selector = value.replace(/[\s\<]/g, '')
+        // remove the special characters that not allowed to be in a selector
+        const value_for_selector = value.replace(/[\s\<\.\(\)]/g, '')
         svg.selectAll(`.dot-${value_for_selector}`)
             .data(d)
             .enter().append("circle")

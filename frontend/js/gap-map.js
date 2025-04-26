@@ -2,14 +2,14 @@ function draw_gap_map() {
   draw_matrix_view(matchedTrials)
 }
 
-// paramater data is expected to be the the global matchedTrials
+// parameter data is expected to be the the global matchedTrials
 function draw_matrix_view(data) {
   const outcomes = []
   const interventions = []
   data.forEach(t=>{
     t.pico_attributes.outcomes.forEach(o=>{
-      if (!outcomes.includes(o)) {
-        outcomes.push(o)
+      if (!outcomes.includes(o.title)) {
+        outcomes.push(o.title)
       }
     })
     t.pico_attributes.interventions.forEach(i=>{
@@ -24,10 +24,18 @@ function draw_matrix_view(data) {
     outcomes.forEach(o=>{
       values[i][o] = data.filter(t=>
         t.pico_attributes.interventions.map(intervention=>intervention.type).includes(i) &&
-        t.pico_attributes.outcomes.includes(o)
+        t.pico_attributes.outcomes.map(outcome=>outcome.title).includes(o)
       ).length
     })
   })
+
+  // sorting by frequencies
+  const outcome_total = {} // total number for each outcome
+  outcomes.forEach( outcome => outcome_total[outcome] = interventions.reduce((total,intervention)=>total+values[intervention][outcome], 0) )
+  outcomes.sort((a,b)=>outcome_total[a]<outcome_total[b])
+  const intervention_total = {} // total number for each intervention
+  interventions.forEach( intervention => intervention_total[intervention] = outcomes.reduce((total,outcome)=>total+values[intervention][outcome], 0) )
+  interventions.sort((a,b)=>intervention_total[a]<intervention_total[b])
 
   const grid = document.getElementById("gap-map")
   grid.innerHTML = ""
@@ -53,7 +61,7 @@ function draw_matrix_view(data) {
     for(let j=0;j<num_ot;j++){
             const outcome = outcomes[j]
             const cell = document.createElement("div")
-            cell.style.backgroundColor = get_blue_shade(values[intervention][outcome])
+            cell.style.backgroundColor = get_blue_shade(values[intervention][outcome], min=0, max=2)
             cell.style.border = "thin solid lightgrey"
             grid.appendChild(cell)
 
@@ -64,13 +72,14 @@ function draw_matrix_view(data) {
 
               const data_filtered = data.filter(t=>
                 t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention) &&
-                t.pico_attributes.outcomes.includes(outcome)
+                t.pico_attributes.outcomes.map(outcome=>outcome.title).includes(outcome)
               )
               const years = {}
 
               data_filtered.forEach(t=>{
-                if(years[t.time]===undefined) years[t.time] = 1
-                else years[t.time] += 1
+                const year = t.study_dates.start_date.substring(0,4)
+                if(years[year]===undefined) years[year] = 1
+                else years[year] += 1
               })
               const count_over_years = []
               for(let y in years) count_over_years.push({year: y, value: 'count', records:years[y]})
@@ -218,7 +227,7 @@ function redraw_radial() {
   const dim2 = document.getElementById("secondary-dimension").value
   const data_filtered = matchedTrials.filter(t=>
     t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention_selected) &&
-    t.pico_attributes.outcomes.includes(outcome_selected)
+    t.pico_attributes.outcomes.map(outcome=>outcome.title).includes(outcome_selected)
   )
   const counts_no_label = [] // for now
   const counts = group_by_2d(data_filtered, dim1, dim2)

@@ -16,12 +16,37 @@ trials_collection = mongo.db.aact
 # Route to get distinct conditions
 @app.route('/api/conditions', methods=['GET'])
 def get_distinct_conditions():
-    distinct_conditions = trials_collection.distinct("conditions")
-    flattened_conditions = {
-        condition 
-        for condition in distinct_conditions 
-    }
-    return jsonify(sorted(flattened_conditions))
+    # Aggregation pipeline to extract distinct canonical_name values
+    pipeline = [
+        {"$project": {
+            "conditions": "$pico_attributes.populations.conditions"
+        }},
+        {"$unwind": "$conditions"},
+        {"$project": {
+            "concepts": {"$objectToArray": "$conditions.concepts"}
+        }},
+        {"$unwind": "$concepts"},
+        {"$replaceRoot": {
+            "newRoot": {"$arrayElemAt": ["$concepts.v", 0]}
+        }},
+        {"$project": {
+            "canonical_name": 1
+        }},
+        {"$group": {
+            "_id": "$canonical_name"
+        }},
+        {"$sort": {"_id": 1}}  # Optional: sort alphabetically
+    ]
+
+    # Run aggregation
+    results = trials_collection.aggregate(pipeline)
+    # Extract and print distinct canonical_names
+    if results:
+        distinct_canonical_names = map(lambda x: x["_id"], results)
+        return jsonify(distinct_canonical_names)
+    else:
+        print("No canonical_names found.")
+        return jsonify([])
 
 @app.route('/api/search_trials', methods=['POST'])
 def search_trials():
@@ -32,14 +57,35 @@ def search_trials():
     # Construct MongoDB query for conditions
     query_conditions = []
     for group in selected_groups:
-        group_query = {"conditions": {"$all": group}}  # Each group is an AND clause
+        group_query = {"concepts_array.v.canonical_name": {"$all": group}}  # Each group is an AND clause
         query_conditions.append(group_query)
 
     # Use an OR query for multiple groups
     query = {"$or": query_conditions} if query_conditions else {}
 
-    # Query the database with the constructed query
-    matching_trials = list(trials_collection.find(query, {"_id": 0}))
+    pipeline = [
+        # Unwind populations and conditions
+        {"$unwind": "$pico_attributes.populations"},
+        {"$unwind": "$pico_attributes.populations.conditions"},
+        # Convert `concepts` object to array of {k: key, v: array} pairs
+        {"$addFields": {
+            "concepts_array": {"$objectToArray": "$pico_attributes.populations.conditions.concepts"}
+        }},
+        # Unwind the concepts array (now [{k: "ALL", v: [...]}, ...])
+        {"$unwind": "$concepts_array"},
+        # Unwind the nested concept arrays (e.g., "ALL": [...])
+        {"$unwind": "$concepts_array.v"},
+        # Match the target canonical_name
+        {"$match": query},
+        # Group back to original documents (optional)
+        #{"$group": {
+        #    "_id": "$_id",
+        #    "nct_id": {"$first": "$nct_id"},
+        #    "title": {"$first": "$title"}
+        #}}
+    ]
+
+    matching_trials = list(trials_collection.aggregate(pipeline))
     return jsonify(matching_trials)
 
 # Start the Flask server
