@@ -111,7 +111,6 @@ function draw_matrix_view(data) {
         })
         const count_over_years = []
         for (let y in years) count_over_years.push({ year: y, value: 'count', records: years[y] })
-        trend_plot(count_over_years, "gap-map-trend")
 
         const dim1 = document.getElementById("primary-dimension").value
         const dim2 = document.getElementById("secondary-dimension").value
