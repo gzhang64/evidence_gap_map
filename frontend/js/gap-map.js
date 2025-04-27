@@ -50,6 +50,22 @@ function draw_matrix_view(data) {
         cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
         grid.appendChild(cell)
   }
+  if(num_ot < outcomes.length) {
+    interventions.forEach(i=> {
+      values[i].others = 0
+      for(let i_outcome=num_ot; i_outcome<outcomes.length; i_outcome++) {
+        values[i].others += values[i][ outcomes[i_outcome] ]
+      }
+    })
+
+    grid.style = `display: grid;grid-template-columns: 1fr repeat(${num_ot+1}, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;`
+    const cell = document.createElement("div")
+    cell.textContent = "Other outcomes"
+    cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
+    grid.appendChild(cell)
+  } else {
+    grid.style = `display: grid;grid-template-columns: 1fr repeat(${num_ot}, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;`
+  }
   document.getElementById("primary-dimension").value = "country"
   document.getElementById("secondary-dimension").value = "gender"
   for(let i=0;i<num_inter;i++){
@@ -58,8 +74,12 @@ function draw_matrix_view(data) {
     cell.textContent = intervention
     cell.style = "border:thin solid lightgrey;padding:3px;"
     grid.appendChild(cell)
-    for(let j=0;j<num_ot;j++){
-            const outcome = outcomes[j]
+    let outcome_list = []
+    for(let j=0; j<=num_ot; j++){
+            if(j==num_ot && num_ot == outcomes.length) continue // no extra column for 'Other outcomes' needed
+
+            const outcome = j<num_ot ? outcomes[j] : 'others'
+            if(j<num_ot)outcome_list.push(outcome)
             const value = values[intervention][outcome]
             const cell = document.createElement("div")
             cell.style.backgroundColor = get_blue_shade(value, min=0, max=2)
@@ -77,7 +97,8 @@ function draw_matrix_view(data) {
               outcome_selected = outcome
               document.getElementById("radial-title").innerHTML = `Population Distribution for ${intervention} / ${outcome})`
 
-              const data_filtered = data.filter(t=>
+              const data_filtered = outcome==="others" ? other_data(data, intervention) : 
+                data.filter(t=>
                 t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention) &&
                 t.pico_attributes.outcomes.map(outcome=>outcome.title).includes(outcome)
               )
@@ -105,11 +126,25 @@ function draw_matrix_view(data) {
               create_radial_stacked_plot(counts_no_label, "radial-stacked")
               trend_plot(count_over_years, "gap-map-trend")
             }
-            document.getElementById("close-button").onclick = () => {
-                 popup.style.display = 'none';
-            }
         }
+        outcome_lists[intervention]= outcome_list
     }
+    document.getElementById("close-button").onclick = () => popup.style.display = 'none'
+}
+
+// shortlist is the list of first few outcomes that are individually displayed
+function other_data(data, intervention) {
+  const shortlist = outcome_lists[intervention]
+  const filtered = []
+  data.forEach(t => {
+    if(!t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention)) return
+    const all_outcomes_in_one_trial = t.pico_attributes.outcomes.map(outcome=>outcome.title)
+    for(let i=0; i<all_outcomes_in_one_trial.length; i++) {
+      if(shortlist.includes(all_outcomes_in_one_trial[i])) return
+    }
+    filtered.push(t)
+  })
+  return filtered
 }
 
 // aggregate the data on the frontend
@@ -229,10 +264,13 @@ function create_radial_stacked_plot(data, element_id) {
 // TODO eventually we should refactor avoid re-querying
 let intervention_selected = ""
 let outcome_selected = ""
+let outcome_lists = {}
 function redraw_radial() {
   const dim1 = document.getElementById("primary-dimension").value
   const dim2 = document.getElementById("secondary-dimension").value
-  const data_filtered = matchedTrials.filter(t=>
+  const data_filtered = outcome_selected==="others" ? 
+    other_data(matchedTrials, intervention_selected) : 
+    matchedTrials.filter(t=>
     t.pico_attributes.interventions.map(intervention=>intervention.type).includes(intervention_selected) &&
     t.pico_attributes.outcomes.map(outcome=>outcome.title).includes(outcome_selected)
   )
