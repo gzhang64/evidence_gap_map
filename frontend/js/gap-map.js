@@ -60,9 +60,16 @@ function draw_matrix_view(data) {
     grid.appendChild(cell)
     for(let j=0;j<num_ot;j++){
             const outcome = outcomes[j]
+            const value = values[intervention][outcome]
             const cell = document.createElement("div")
-            cell.style.backgroundColor = get_blue_shade(values[intervention][outcome], min=0, max=2)
+            cell.style.backgroundColor = get_blue_shade(value, min=0, max=2)
             cell.style.border = "thin solid lightgrey"
+
+            const tooltip = document.createElement("div")
+            tooltip.setAttribute("data-count", value)
+            tooltip.className = "x-tooltip"
+            cell.appendChild(tooltip)
+
             grid.appendChild(cell)
 
             cell.onclick = (event) => {
