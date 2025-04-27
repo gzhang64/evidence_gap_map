@@ -159,21 +159,7 @@ async function submitSearch() {
         // Update other visualizations (map, charts)
         const countryTrialCount = countTrialsByCountry(matchedTrials);
         drawChoroplethMap(countryTrialCount);
-        // this is not the ideal and safest conversion to year.
-        // used multiple places. this should be reviewed and improved. TODO
-        const count_by_year = matchedTrials.map(trial=>trial.study_dates.start_date.substring(0,4))
-            .filter(item=>item!='na')
-            .reduce((acc, curr) => {
-            acc[curr] = (acc[curr] || 0) + 1;
-            return acc;
-          }, {});
-        const array = Object.keys(count_by_year).map(key=>({
-            year: key,
-            value: "total",
-            records: count_by_year[key]
-            })
-        )
-        trend_plot(array, "trend-geographical")
+        trend_plot(aggregate_by_year(matchedTrials, t=>t.pico_attributes.populations.country), "trend-geographical")
 
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
         const aggregated_ages = matchedTrials.reduce((acc, trial) => {
@@ -258,6 +244,34 @@ async function submitSearch() {
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
+}
+
+function aggregate_by_year(matchedTrials, property) {
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.study_dates.start_date.substring(0,4)
+        const value = property(trial) || "N/A"
+        if(!acc[year]) {
+            acc[year] = {}
+        } else {
+            if(!acc[year][value]) {
+                acc[year][value] = 1
+            } else {
+                acc[year][value]++
+            }
+        }
+        return acc
+      }, {})
+    const as_array=[]
+    for(const year in aggregated) {
+        const values = aggregated[year]
+        for(const v in values) {
+            as_array.push({
+                year: year,
+                value: v,
+                records: +values[v]})
+        }
+    }
+    return as_array
 }
 
 function gender_by_year(matchedTrials) {
