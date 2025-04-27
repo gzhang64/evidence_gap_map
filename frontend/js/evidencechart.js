@@ -96,6 +96,17 @@ function updateSelectedConditions() {
         document.getElementById('report-export-button').style.display = 'none'
     }
     document.querySelector('.visualizations-column').style.display = 'none' // hide the plots until search is carried out again
+    // clear evidence-gap-map
+    matchedTrials = []
+    document.getElementById("gap-map").innerHTML = ""
+    document.getElementById("egm-section").style.display = "none"
+    // clear the tabular result
+    const searchResultsContainer = document.getElementById("searchResults")
+    searchResultsContainer.innerHTML = ""
+    searchResultsContainer.style.display = 'none'
+    // clear pagination control
+    const paginationControlsDiv = document.getElementById("paginationControls");
+    paginationControlsDiv.innerHTML = "";
 }
 
 async function submitSearch() {
@@ -132,6 +143,7 @@ async function submitSearch() {
             }
         })
 
+        document.getElementById("egm-section").style.display = "block"
         console.log("Matched Trials:", matchedTrials);
 
         // Update paginatedData and initialize pagination
@@ -368,75 +380,6 @@ function top_outcomes_by_year(matchedTrials, top_names) {
     }
     return as_array
 }
-
-// Function to update search results with matchedTrials
-function updateSearchResults(matchedTrials) {
-    const searchResultsContainer = document.getElementById("searchResults");
-    searchResultsContainer.innerHTML = ""; // Clear previous results
-
-    if (matchedTrials.length === 0) {
-        searchResultsContainer.style.display = 'none';
-        return;
-    }
-
-    searchResultsContainer.style.display = 'block';
-
-    matchedTrials.forEach(trial => {
-        const trialDiv = document.createElement("div");
-        trialDiv.classList.add("search-entry");
-
-        // Format trial details
-        const title = trial.title || "Untitled Trial";
-        const nctId = trial.nct_id || "N/A";
-        const conditions = trial.conditions && trial.conditions.length > 0 ? trial.conditions.join(", ") : "No conditions specified";
-        const conditionConcepts = trial.condition_concepts && trial.condition_concepts.length > 0 ?
-            trial.condition_concepts.join(", ") : "No condition concepts specified";
-
-        
-        const ageRange = `${trial.pico_attributes.populations.minimum_age || "N/A"} - ${trial.pico_attributes.populations.maximum_age || "N/A"}`;
-        const country = trial.pico_attributes.populations.country || "N/A";
-        const gender = trial.pico_attributes.populations.gender || "N/A";
-
-        const interventions = trial.pico_attributes.interventions && trial.pico_attributes.interventions.length > 0 ? 
-            trial.pico_attributes.interventions.join(", ") : "No interventions specified";
-
-        const outcomes = trial.pico_attributes.outcomes && trial.pico_attributes.outcomes.length > 0 ? 
-            trial.pico_attributes.outcomes.join(", ") : "No outcomes specified";
-
-        // New fields for intervention types, concepts, and outcome/condition concepts
-        const interventionTypes = trial.pico_attributes.intervention_types && trial.pico_attributes.intervention_types.length > 0 ?
-            trial.pico_attributes.intervention_types.join(", ") : "No intervention types specified";
-        
-        const interventionConcepts = trial.pico_attributes.intervention_concepts && trial.pico_attributes.intervention_concepts.length > 0 ?
-            trial.pico_attributes.intervention_concepts.join(", ") : "No intervention concepts specified";
-
-        const outcomeConcepts = trial.pico_attributes.outcomes && trial.pico_attributes.outcomes.length > 0 ?
-            trial.pico_attributes.outcomes.join(", ") : "No outcome concepts specified";
-
-        // Structure the HTML to include new fields
-        trialDiv.innerHTML = `
-            <h4>${title}</h4>
-            <p><strong>NCT ID:</strong> ${nctId}</p>
-            <p><strong>Conditions:</strong> ${conditions}</p>
-            <p><strong>Condition Concepts:</strong> ${conditionConcepts}</p>
-            <p><strong>Population:</strong></p>
-            <ul>
-                <li><strong>Age Range:</strong> ${ageRange}</li>
-                <li><strong>Country:</strong> ${country}</li>
-                <li><strong>Gender:</strong> ${gender}</li>
-            </ul>
-            <p><strong>Interventions:</strong> ${interventions}</p>
-            <p><strong>Intervention Types:</strong> ${interventionTypes}</p>
-            <p><strong>Intervention Concepts:</strong> ${interventionConcepts}</p>
-            <p><strong>Outcomes:</strong> ${outcomes}</p>
-            <p><strong>Outcome Concepts:</strong> ${outcomeConcepts}</p>
-            
-        `;
-
-        searchResultsContainer.appendChild(trialDiv);
-    });
-}
-
 
 // Remove condition from the selected list
 function removeCondition(condition) {
