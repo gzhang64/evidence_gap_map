@@ -159,56 +159,16 @@ async function submitSearch() {
         // Update other visualizations (map, charts)
         const countryTrialCount = countTrialsByCountry(matchedTrials);
         drawChoroplethMap(countryTrialCount);
-        //trend_plot(aggregate_by_year(matchedTrials, t=>t.pico_attributes.populations.country), "trend-geographical")
         dual_trend_plot(group_by_country(matchedTrials), "trend-geographical")
 
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
-        const aggregated_ages = matchedTrials.reduce((acc, trial) => {
-            const year = trial.study_dates.start_date.substring(0,4)
-            // use the same normalization as the other age plots
-            const min_age = normalizeAgeToBin(trial.pico_attributes.populations.minimum_age || "NA");
-            const max_age = normalizeAgeToBin(trial.pico_attributes.populations.maximum_age || "NA");
-            if(!acc[year]) {
-                acc[year] = {
-                    min: {},
-                    max: {}
-                }
-            } else {
-                if(!acc[year].min[min_age]) {
-                    acc[year].min[min_age] = 1
-                } else {
-                    acc[year].min[min_age]++
-                }
-                if(!acc[year].max[max_age]) {
-                    acc[year].max[max_age] = 1
-                } else {
-                    acc[year].max[max_age]++
-                }
-            }
-            return acc;
-          }, {});
-        const min_age_array=[], max_age_array = []
-        for(const year in aggregated_ages) {
-            const min_values = aggregated_ages[year].min
-            for(const age in min_values) {
-                min_age_array.push({
-                    year: year,
-                    value: age,
-                    records: +min_values[age]})
-            }
-            const max_values = aggregated_ages[year].max
-            for(const age in max_values) {
-                max_age_array.push({
-                    year: year,
-                    value: age,
-                    records: +max_values[age]})
-            }
-        }
 
         createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
-        trend_plot(min_age_array, "trend-min-age")
+        trend_plot(aggregate_by_year(matchedTrials, 
+            t=>normalizeAgeToBin(t.pico_attributes.populations.minimum_age || "NA") ), "trend-min-age")
         createAgeBarChart(maxAgeCount, '#bar-chart-max-age', 'Maximum Age');
-        trend_plot(max_age_array, "trend-max-age")
+        trend_plot(aggregate_by_year(matchedTrials, 
+            t=>normalizeAgeToBin(t.pico_attributes.populations.maximum_age || "NA") ), "trend-max-age")
 
         const genderCount = countGenderDistribution(matchedTrials);
         const genderData = Object.entries(genderCount).map(([gender, count]) => ({
@@ -216,7 +176,9 @@ async function submitSearch() {
             count
         }));
         draw_donut_chart(genderData, '#gender-donut-chart', 'gender');
-        trend_plot(gender_by_year(matchedTrials), "trend-gender")
+        trend_plot(aggregate_by_year(matchedTrials,
+            trial=>normalizeGender(trial.pico_attributes.populations.gender || "N/A")
+        ), "trend-gender")
 
         // Count intervention types and render the intervention type donut chart
         const interventionCount = countInterventionTypes(matchedTrials);
@@ -247,62 +209,7 @@ async function submitSearch() {
     }
 }
 
-function aggregate_by_year(matchedTrials, property) {
-    const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.study_dates.start_date.substring(0,4)
-        const value = property(trial) || "N/A"
-        if(!acc[year]) {
-            acc[year] = {}
-        } else {
-            if(!acc[year][value]) {
-                acc[year][value] = 1
-            } else {
-                acc[year][value]++
-            }
-        }
-        return acc
-      }, {})
-    const as_array=[]
-    for(const year in aggregated) {
-        const values = aggregated[year]
-        for(const v in values) {
-            as_array.push({
-                year: year,
-                value: v,
-                records: +values[v]})
-        }
-    }
-    return as_array
-}
-
-function gender_by_year(matchedTrials) {
-    const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.study_dates.start_date.substring(0,4)
-        const gender = normalizeGender(trial.pico_attributes.populations.gender || "N/A")
-        if(!acc[year]) {
-            acc[year] = {}
-        } else {
-            if(!acc[year][gender]) {
-                acc[year][gender] = 1
-            } else {
-                acc[year][gender]++
-            }
-        }
-        return acc
-      }, {})
-    const gender_array=[]
-    for(const year in aggregated) {
-        const values = aggregated[year]
-        for(const gender in values) {
-            gender_array.push({
-                year: year,
-                value: gender,
-                records: +values[gender]})
-        }
-    }
-    return gender_array
-}
-
+// this is different from aggregate_by_year because there are multiple intervention types for one trial
 function intervention_by_year(matchedTrials) {
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0,4)

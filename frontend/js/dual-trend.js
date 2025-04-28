@@ -18,6 +18,7 @@ function dual_trend_plot(x_data, element_id) {
     const subWidth = 150 - subMargin.left - subMargin.right;
     const subHeight = 100 - subMargin.top - subMargin.bottom;
 
+    d3.select(`#${element_id}`).selectAll("svg").remove()
     const svg = d3.select(`#${element_id}`)
         .append("svg")
         .attr("width", width + margin.left + margin.right)
