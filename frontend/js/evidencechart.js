@@ -212,6 +212,7 @@ async function submitSearch() {
 // this is different from aggregate_by_year because there are multiple intervention types for one trial
 function intervention_by_year(matchedTrials) {
     const aggregated = matchedTrials.reduce((acc, trial) => {
+        if(trial.study_dates.start_date==="na") return acc // to prevent "Unexpected value NaN parsing cx attribute." plotting
         const year = trial.study_dates.start_date.substring(0,4)
         const intervention_types = trial.pico_attributes.interventions.map(x=>x.type) || []
         for(const t of intervention_types) {
