@@ -118,8 +118,16 @@
         <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;position: absolute;">
             <div id="radial-stacked" style="width: 40%;background-color: linen;"><span id="radial-title" style="padding: 10px;"></span>
                 <div style="padding: 5px;">
-                    primary dimension <select id="primary-dimension" onchange="redraw_radial()"><option value="country">country</option><option value="gender">gender</option><option value="age" selected>age</option></select><br/>
-                    secondary dimension <select id="secondary-dimension" onchange="redraw_radial()"><option value="country">country</option><option value="gender" selected>gender</option><option value="age">age</option></select>
+                    primary dimension <select id="primary-dimension" onchange="redraw_radial()">
+                        <option value="country" selected>country</option>
+                        <option value="gender">gender</option>
+                        <option value="minimum_age">minimum_age</option>
+                        <option value="maximum_age">maximum_age</option></select><br/>
+                    secondary dimension <select id="secondary-dimension" onchange="redraw_radial()">
+                        <option value="country">country</option>
+                        <option value="gender" selected>gender</option>
+                        <option value="minimum_age">minimum_age</option>
+                        <option value="maximum_age">maximum_age</option></select>
                 </div>
             </div>
             <div id="gap-map-trend" style="width: 60%;height: 90%;background-color: ivory;">Number of Studies Over Time</div>
