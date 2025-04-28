@@ -159,7 +159,8 @@ async function submitSearch() {
         // Update other visualizations (map, charts)
         const countryTrialCount = countTrialsByCountry(matchedTrials);
         drawChoroplethMap(countryTrialCount);
-        trend_plot(aggregate_by_year(matchedTrials, t=>t.pico_attributes.populations.country), "trend-geographical")
+        //trend_plot(aggregate_by_year(matchedTrials, t=>t.pico_attributes.populations.country), "trend-geographical")
+        dual_trend_plot(group_by_country(matchedTrials), "trend-geographical")
 
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
         const aggregated_ages = matchedTrials.reduce((acc, trial) => {
