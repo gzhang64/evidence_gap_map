@@ -46,7 +46,7 @@ function trend_plot(data, element_id) {
             .attr("d", line);
 
         // remove the special characters that not allowed to be in a selector
-        const value_for_selector = value.replace(/[\s\<\.\(\)\/"*%]/g, '')
+        const value_for_selector = value.replace(/[\s\<\.\(\)\/"*%:]/g, '')
         svg.selectAll(`.dot-${value_for_selector}`)
             .data(d)
             .enter().append("circle")
@@ -94,33 +94,4 @@ function trend_plot(data, element_id) {
         .attr("text-anchor", "middle")
         .attr("font-size", "x-small")
         .text("Number of Records");
-}
-
-function aggregate_by_year(matchedTrials, property) {
-    const aggregated = matchedTrials.reduce((acc, trial) => {
-        const year = trial.study_dates.start_date.substring(0, 4)
-        const value = property(trial) || "N/A"
-        if (!acc[year]) {
-            acc[year] = {}
-        } else {
-            if (!acc[year][value]) {
-                acc[year][value] = 1
-            } else {
-                acc[year][value]++
-            }
-        }
-        return acc
-    }, {})
-    const as_array = []
-    for (const year in aggregated) {
-        const values = aggregated[year]
-        for (const v in values) {
-            as_array.push({
-                year: year,
-                value: v,
-                records: +values[v]
-            })
-        }
-    }
-    return as_array
 }
