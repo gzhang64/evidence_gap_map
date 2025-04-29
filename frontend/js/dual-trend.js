@@ -179,3 +179,31 @@ function dual_trend_plot(x_data, element_id) {
         .attr("class", "tooltip")
         .style("opacity", 0);
 }
+
+function aggregate_by_year_x(matchedTrials, property) {
+    const groups = []
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.study_dates.start_date.substring(0, 4)
+        const value = property(trial) || "N/A"
+        if (!groups.includes(value)) {
+            groups.push(value)
+        }
+        if (!acc[year]) {
+            acc[year] = {}
+        } else {
+            if (!acc[year][value]) {
+                acc[year][value] = 1
+            } else {
+                acc[year][value]++
+            }
+        }
+        return acc
+    }, {})
+    const as_array = []
+    for (const year in aggregated) {
+        const values = aggregated[year]
+        values.year = year
+        as_array.push(values)
+    }
+    return { groups: groups, data: as_array }
+}

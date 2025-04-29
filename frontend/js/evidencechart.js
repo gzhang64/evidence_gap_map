@@ -164,7 +164,7 @@ async function submitSearch() {
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
 
         createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
-        trend_plot(aggregate_by_year(matchedTrials, 
+        dual_trend_plot(aggregate_by_year_x(matchedTrials, 
             t=>normalizeAgeToBin(t.pico_attributes.populations.minimum_age || "NA") ), "trend-min-age")
         createAgeBarChart(maxAgeCount, '#bar-chart-max-age', 'Maximum Age');
         trend_plot(aggregate_by_year(matchedTrials, 
