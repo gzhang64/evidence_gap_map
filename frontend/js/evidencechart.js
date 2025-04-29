@@ -164,10 +164,10 @@ async function submitSearch() {
         const { minAgeCount, maxAgeCount } = countMinAndMaxAges(matchedTrials);
 
         createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
-        dual_trend_plot(aggregate_by_year_x(matchedTrials, 
+        dual_trend_plot(aggregate_by_year(matchedTrials, 
             t=>normalizeAgeToBin(t.pico_attributes.populations.minimum_age || "NA") ), "trend-min-age")
         createAgeBarChart(maxAgeCount, '#bar-chart-max-age', 'Maximum Age');
-        trend_plot(aggregate_by_year(matchedTrials, 
+        dual_trend_plot(aggregate_by_year(matchedTrials, 
             t=>normalizeAgeToBin(t.pico_attributes.populations.maximum_age || "NA") ), "trend-max-age")
 
         const genderCount = countGenderDistribution(matchedTrials);
@@ -176,7 +176,7 @@ async function submitSearch() {
             count
         }));
         draw_donut_chart(genderData, '#gender-donut-chart', 'gender');
-        trend_plot(aggregate_by_year(matchedTrials,
+        dual_trend_plot(aggregate_by_year(matchedTrials,
             trial=>normalizeGender(trial.pico_attributes.populations.gender || "N/A")
         ), "trend-gender")
 

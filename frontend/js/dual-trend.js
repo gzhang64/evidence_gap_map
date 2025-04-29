@@ -180,7 +180,7 @@ function dual_trend_plot(x_data, element_id) {
         .style("opacity", 0);
 }
 
-function aggregate_by_year_x(matchedTrials, property) {
+function aggregate_by_year(matchedTrials, property) {
     const groups = []
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0, 4)
