@@ -187,7 +187,7 @@ async function submitSearch() {
             count
         }));
         draw_donut_chart(interventionData, '#intervention-pie-chart', 'intervention');
-        trend_plot(intervention_by_year(matchedTrials), "trend-intervention-types")
+        dual_trend_plot(count_interventions_by_year(matchedTrials), "trend-intervention-types")
 
         const top20Interventions = getTop20Interventions(matchedTrials);
         draw_horizontal_bar_chart(top20Interventions, '#top20-interventions-bar-chart', 'intervention');
@@ -201,38 +201,6 @@ async function submitSearch() {
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
-}
-
-// this is different from aggregate_by_year because there are multiple intervention types for one trial
-function intervention_by_year(matchedTrials) {
-    const aggregated = matchedTrials.reduce((acc, trial) => {
-        if(trial.study_dates.start_date==="na") return acc // to prevent "Unexpected value NaN parsing cx attribute." plotting
-        const year = trial.study_dates.start_date.substring(0,4)
-        const intervention_types = trial.pico_attributes.interventions.map(x=>x.type) || []
-        for(const t of intervention_types) {
-            if(!acc[year]) {
-                acc[year] = {}
-            } else {
-                if(!acc[year][t]) {
-                    acc[year][t] = 1
-                } else {
-                    acc[year][t]++
-                }
-            }
-        }
-        return acc
-      }, {})
-    const as_array=[]
-    for(const year in aggregated) {
-        const values = aggregated[year]
-        for(const v in values) {
-            as_array.push({
-                year: year,
-                value: v,
-                records: +values[v]})
-        }
-    }
-    return as_array
 }
 
 function top_intervention_names_by_year(matchedTrials, top_intervention_names) {
