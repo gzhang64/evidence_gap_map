@@ -10,9 +10,11 @@ function dual_trend_plot(x_data, element_id) {
 
     const colors = d3.scaleOrdinal(d3.schemeTableau10);
 
-    const margin = { top: 20, right: 30, bottom: 30, left: 50 };
-    const width = 600 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
+    const element_width = document.getElementById(element_id).clientWidth
+    const element_height = document.getElementById(element_id).clientHeight
+    const margin = { top: 20, right: 100, bottom: 30, left: 50 };
+    const width = element_width - margin.left - margin.right;
+    const height = element_height - margin.top - margin.bottom;
 
     const subMargin = { top: 10, right: 10, bottom: 20, left: 50 };
     const subWidth = 150 - subMargin.left - subMargin.right;
@@ -153,7 +155,7 @@ function dual_trend_plot(x_data, element_id) {
     // Legend
     const legend = svg.append("g")
         .attr("class", "legend")
-        .attr("transform", `translate(${width - 150}, 20)`);
+        .attr("transform", `translate(${width - 5}, 20)`);
 
     legend.selectAll("rect")
         .data(keys)
