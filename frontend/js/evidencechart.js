@@ -198,12 +198,6 @@ async function submitSearch() {
         draw_horizontal_bar_chart(top20Outcomes, '#top20-outcomes-bar-chart', 'outcome');
         const top_outcome_names = top20Outcomes.map(x=>x.outcome)
         trend_plot(top_outcomes_by_year(matchedTrials, top_outcome_names), "trend-top-outcomes")
-
-        const searchQuery = selectedGroups.map(group => group.join(' AND ')).join(' OR ') // plot title
-        stacked_bars(matchedTrials, group_by_age, "age-distribution", searchQuery, "Population Age Group Distribution Over Time")
-        stacked_bars(matchedTrials, group_by_country, "country-distribution", searchQuery, "Country Distribution of Studies Over Time")
-        stacked_bars(matchedTrials, group_by_gender, "gender-distribution", searchQuery, "Gender Distribution of Studies Over Time")
-        stacked_bars(matchedTrials, group_by_intervention_type, "intervention-types-over-time", searchQuery, "Intervention Types Over Time")
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
