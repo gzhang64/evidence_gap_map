@@ -112,17 +112,19 @@ function dual_trend_plot(x_data, element_id) {
 
     svg.append("text")
         .attr("x", width / 2)
-        .attr("y", height + margin.bottom - 5)
+        .attr("y", height + margin.bottom)
         .style("text-anchor", "middle")
+        .attr("font-size", "small")
         .text("Year");
 
     svg.append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", 0 - margin.left + 15)
+        .attr("y", 0 - margin.left + 5)
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .style("text-anchor", "middle")
-        .text("Keyword Count");
+        .attr("font-size", "small")
+        .text("Number of Studies");
 
     // Sub-panel - Percentage
     const subX = d3.scaleLinear()
