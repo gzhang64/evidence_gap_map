@@ -14,7 +14,7 @@ function dual_trend_plot(x_data, element_id) {
     const width = 600 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
-    const subMargin = { top: 10, right: 10, bottom: 20, left: 30 };
+    const subMargin = { top: 10, right: 10, bottom: 20, left: 50 };
     const subWidth = 150 - subMargin.left - subMargin.right;
     const subHeight = 100 - subMargin.top - subMargin.bottom;
 
