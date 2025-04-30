@@ -77,12 +77,13 @@ def search_trials():
         {"$unwind": "$concepts_array.v"},
         # Match the target canonical_name
         {"$match": query},
-        # Group back to original documents (optional)
-        #{"$group": {
-        #    "_id": "$_id",
-        #    "nct_id": {"$first": "$nct_id"},
-        #    "title": {"$first": "$title"}
-        #}}
+        # Group back to original documents
+        {"$group": {
+            "_id": "$_id",
+            "nct_id": {"$first": "$nct_id"},
+            "pico_attributes": {"$first": "$pico_attributes"},
+            "study_dates": {"$first": "$study_dates"}
+        }}
     ]
 
     matching_trials = list(trials_collection.aggregate(pipeline))
