@@ -10,8 +10,9 @@ function dual_trend_plot(x_data, element_id) {
 
     const colors = d3.scaleOrdinal(d3.schemeTableau10);
 
-    const element_width = document.getElementById(element_id).clientWidth
-    const element_height = document.getElementById(element_id).clientHeight
+    // do not use client dimension because the plot is created before it is displayed
+    const element_width = 600
+    const element_height = 400
     const margin = { top: 20, right: 100, bottom: 30, left: 50 };
     const width = element_width - margin.left - margin.right;
     const height = element_height - margin.top - margin.bottom;

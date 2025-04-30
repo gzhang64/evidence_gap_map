@@ -107,39 +107,11 @@
         <!-- Add a new placeholder for the real-time query visualization -->
         <div id="queryVisualization" style="margin-top: 1rem; font-weight: bold;"></div>
 
-        <section id="egm-section">
-        <h3>Evidence Gap Map</h3>
-        <div>
-            Number of outcomes <input type="text" id="number-of-outcomes" value="5"><!--value  is for test-->
-            Number of intervention types <input type="text" id="number-of-intervention-types" value="6">
-            <button onclick=draw_gap_map()>Draw Gap Map</button>
-        </div>
-        <div id="gap-map" style="display: grid;grid-template-columns: 1fr repeat(5, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;"></div><!-- 5 is for test-->
-        <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;position: absolute;">
-            <div id="radial-stacked" style="width: 40%;background-color: linen;"><span id="radial-title" style="padding: 10px;"></span>
-                <div style="padding: 5px;">
-                    primary dimension <select id="primary-dimension" onchange="redraw_radial()">
-                        <option value="country" selected>country</option>
-                        <option value="gender">gender</option>
-                        <option value="minimum_age">minimum_age</option>
-                        <option value="maximum_age">maximum_age</option></select><br/>
-                    secondary dimension <select id="secondary-dimension" onchange="redraw_radial()">
-                        <option value="country">country</option>
-                        <option value="gender" selected>gender</option>
-                        <option value="minimum_age">minimum_age</option>
-                        <option value="maximum_age">maximum_age</option></select>
-                </div>
-            </div>
-            <div id="gap-map-trend" style="width: 60%;height: 90%;background-color: ivory;">Number of Studies Over Time</div>
-            <button class="close-button" id="close-button">
-                <span class="close-icon">&times;</span>
-            </button>
-        </div>
-        </section>
-
+        <div id="result-container" style="display: flex;"> <!-- this is the main container for the result. left for visualization; right side for tabular presentation-->
         <!-- this is the left column of the original layout, where we have all the condition-based plots -->
         <div class="evidencechart-split">
             <div class="visualizations-column" style="display: none;" id="content-to-export">
+                <nav><a id="show-total">Show Total</a><a id="show-trend">Show Trend</a></nav>
                 <div class="content">
                     <h4>Geographical Distribution of Clinical Trials</h4>
                     <div class="chart-pair">
@@ -219,6 +191,36 @@
                 <!-- Pagination buttons will appear here -->
             </div>
         </div>
+        </div><!-- end of result-container -->
+
+        <section id="egm-section" style="position: relative;">
+            <div>
+                Number of outcomes <input type="text" id="number-of-outcomes" value="5"><!--value  is for test-->
+                Number of intervention types <input type="text" id="number-of-intervention-types" value="6">
+                <button onclick=draw_gap_map() id="display-egm">Display Evidence Gap Map</button>
+            </div>
+            <div id="gap-map" style="display: grid;grid-template-columns: 1fr repeat(5, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;"></div><!-- 5 is for test-->
+            <div id="gap-map-popup" style="display: none; border:thin solid;padding:5px;margin: 5px;position: absolute;">
+                <div id="radial-stacked" style="width: 40%;background-color: linen;"><span id="radial-title" style="padding: 10px;"></span>
+                    <div style="padding: 5px;">
+                        primary dimension <select id="primary-dimension" onchange="redraw_radial()">
+                            <option value="country" selected>country</option>
+                            <option value="gender">gender</option>
+                            <option value="minimum_age">minimum_age</option>
+                            <option value="maximum_age">maximum_age</option></select><br/>
+                        secondary dimension <select id="secondary-dimension" onchange="redraw_radial()">
+                            <option value="country">country</option>
+                            <option value="gender" selected>gender</option>
+                            <option value="minimum_age">minimum_age</option>
+                            <option value="maximum_age">maximum_age</option></select>
+                    </div>
+                </div>
+                <div id="gap-map-trend" style="width: 60%;height: 90%;background-color: ivory;">Number of Studies Over Time</div>
+                <button class="close-button" id="close-button">
+                    <span class="close-icon">&times;</span>
+                </button>
+            </div>
+        </section>
     </section>
 
     <!-- Our Team Section -->
@@ -297,7 +299,6 @@
             </p>
         </div>
     </section>
-
 
     <footer>
         <p>&copy; 2024 EvidenceChart - Visualizing Clinical Trials</p>

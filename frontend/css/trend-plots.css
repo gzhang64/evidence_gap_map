@@ -1,11 +1,14 @@
 .chart-pair {
-    display: flex; justify-content: center;width: 100%;background-color: whitesmoke;
+    background-color: whitesmoke;
 }
 .left-of-pair {
-    width: 50%;
+    width: 600px;
     margin: 10px;
+    display: block;
 }
 .right-of-pair {
-    width: 50%; background-color: white;
+    width: 600px;
+    background-color: white;
     margin: 10px;
+    display: none;
 }

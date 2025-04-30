@@ -1,5 +1,13 @@
 function draw_gap_map() {
-  draw_matrix_view(matchedTrials)
+  const default_label = "Display Evidence Gap Map"
+  const current = document.getElementById("display-egm").textContent
+  if(current==default_label) {
+    draw_matrix_view(matchedTrials)
+    document.getElementById("display-egm").textContent = "Hide Evidence Gap Map" 
+  } else {
+    document.getElementById('gap-map').style.display='none'
+    document.getElementById("display-egm").textContent = default_label
+  }
 }
 
 function match_intervention(trial, intervention_x) {

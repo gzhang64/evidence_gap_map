@@ -505,7 +505,7 @@ function displayPage(page) {
 
             const entryDiv = document.createElement("div");
             entryDiv.classList.add("search-entry");
-            
+
             entryDiv.innerHTML = `
                 <h4>${entry.title || "Untitled Entry"}</h4> <!-- Display the title field -->
                 <p><strong>NCT ID:</strong> ${entry.nct_id || "NA"}</p>
@@ -589,12 +589,42 @@ function goToPage(page) {
     createPaginationControls();
 }
 
+function set_tab_status(id, selected) {
+    const background_color = "#0a2240"
+    const color = "white"
+    const selected_background_color = "#E1E1E1"
+    const selected_color = "#0A2240"
+    if(selected) {
+        document.getElementById(id).style.backgroundColor = selected_background_color
+        document.getElementById(id).style.color = selected_color
+    } else {
+        document.getElementById(id).style.backgroundColor = background_color
+        document.getElementById(id).style.color = color
+    }
+}
+
 // Initialize by loading conditions from the CSV file
 window.onload = function() {
     // Load conditions for filter
     loadConditionsFromAPI();
 
     showSection('home');  // Show Home section by default
+
+    set_tab_status("show-total", true)
+    set_tab_status("show-trend", false)
+
+    document.getElementById("show-total").onclick = function(event) {
+        set_tab_status("show-total", true)
+        set_tab_status("show-trend", false)
+        document.querySelectorAll(".left-of-pair").forEach(item=>item.style.display='block')
+        document.querySelectorAll(".right-of-pair").forEach(item=>item.style.display='none')
+    }
+    document.getElementById("show-trend").onclick = function(event) {
+        set_tab_status("show-total", false)
+        set_tab_status("show-trend", true)
+        document.querySelectorAll(".right-of-pair").forEach(item=>item.style.display='block')
+        document.querySelectorAll(".left-of-pair").forEach(item=>item.style.display='none')
+    }
 
     const { jsPDF } = window.jspdf;
     document.getElementById('report-export-button').addEventListener('click', () => {
