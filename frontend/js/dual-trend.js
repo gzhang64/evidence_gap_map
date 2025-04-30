@@ -181,6 +181,36 @@ function dual_trend_plot(x_data, element_id) {
         .style("opacity", 0);
 }
 
+function intervention_types_by_year(matchedTrials) {
+    const groups = []
+    const aggregated = matchedTrials.reduce((acc, trial) => {
+        const year = trial.study_dates.start_date.substring(0, 4)
+        trial.pico_attributes.interventions.forEach(intervention=> {
+            const value = intervention.type
+            if (!groups.includes(value)) {
+                groups.push(value)
+            }
+            if (!acc[year]) {
+                acc[year] = {}
+            } else {
+                if (!acc[year][value]) {
+                    acc[year][value] = 1
+                } else {
+                    acc[year][value]++
+                }
+            }
+        })
+        return acc
+    }, {})
+    const as_array = []
+    for (const year in aggregated) {
+        const values = aggregated[year]
+        values.year = year
+        as_array.push(values)
+    }
+    return { groups: groups, data: as_array }
+}
+
 function aggregate_by_year(matchedTrials, property) {
     const groups = []
     const aggregated = matchedTrials.reduce((acc, trial) => {

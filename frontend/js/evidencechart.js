@@ -187,12 +187,11 @@ async function submitSearch() {
             count
         }));
         draw_donut_chart(interventionData, '#intervention-pie-chart', 'intervention');
-        dual_trend_plot(count_multiple_properties_by_year(matchedTrials, 'interventions'), "trend-intervention-types")
+        dual_trend_plot(intervention_types_by_year(matchedTrials), "trend-intervention-types")
 
         const top20Interventions = getTop20Interventions(matchedTrials);
         draw_horizontal_bar_chart(top20Interventions, '#top20-interventions-bar-chart', 'intervention');
-        const top_intervention_names = top20Interventions.map(x=>x.intervention)
-        trend_plot(top_intervention_names_by_year(matchedTrials, top_intervention_names), "trend-top-interventions")
+        dual_trend_plot(count_multiple_properties_by_year(matchedTrials, 'interventions'), "trend-top-interventions")
 
         const top20Outcomes = getTop20Outcomes(matchedTrials);
         draw_horizontal_bar_chart(top20Outcomes, '#top20-outcomes-bar-chart', 'outcome');
