@@ -81,6 +81,7 @@ def search_trials():
         {"$group": {
             "_id": "$_id",
             "nct_id": {"$first": "$nct_id"},
+            "title": {"$first": "$title"},
             "pico_attributes": {"$first": "$pico_attributes"},
             "study_dates": {"$first": "$study_dates"}
         }}

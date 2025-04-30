@@ -158,8 +158,9 @@ function dual_trend_plot(x_data, element_id) {
         .attr("class", "legend")
         .attr("transform", `translate(${width - 5}, 20)`);
 
+    const first10keys = keys.slice(0, 10) // to limit the number of legend items
     legend.selectAll("rect")
-        .data(keys)
+        .data(first10keys)
         .join("rect")
         .attr("x", 0)
         .attr("y", (d, i) => i * 20)
@@ -168,7 +169,7 @@ function dual_trend_plot(x_data, element_id) {
         .attr("fill", d => colors(d));
 
     legend.selectAll("text")
-        .data(keys)
+        .data(first10keys)
         .join("text")
         .attr("x", 20)
         .attr("y", (d, i) => i * 20 + 12)
