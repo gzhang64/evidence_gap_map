@@ -506,22 +506,50 @@ function displayPage(page) {
             const entryDiv = document.createElement("div");
             entryDiv.classList.add("search-entry");
 
+            const intervention_types = entry.pico_attributes.interventions.map(item=>item.type).reduce((acc, type)=> acc===""?type:`${acc},${type}`, "")
+
+            // this format applies to both intervention and outcome
+            // use , ; | to show three layer of data format
+            const reduce_canonical_names = function(acc, triple_layer_object) {
+                const tmp = []
+                const concepts = triple_layer_object.concepts
+                for(let key in concepts) {
+                  tmp.push( concepts[key].reduce((sub, item)=>{
+                        return sub==='' ? item.canonical_name : sub+", "+item.canonical_name
+                    }, '')
+                  )
+                }
+                return acc==='' ? tmp.join("; ") : acc+" | "+tmp.join("; ")
+            }
+            const interventions = entry.pico_attributes.interventions.reduce(reduce_canonical_names, "")
+            const outcomes = entry.pico_attributes.outcomes.reduce(reduce_canonical_names, "")
+
+            //const debug = entry.pico_attributes.populations.conditions
+            //const conditions = entry.pico_attributes.populations.conditions.reduce(reduce_canonical_names, "")
+            // FIXME temporary solution. TODO the conditions of the original data format should be used
+            const concepts = entry.pico_attributes.populations.conditions.concepts
+            const tmp = []
+            for(let key in concepts) {
+                  tmp.push( concepts[key].reduce((sub, item)=>{
+                        return sub==='' ? item.canonical_name : sub+", "+item.canonical_name
+                    }, '')
+                  )
+            }
+            const conditions = tmp.join()
+
             entryDiv.innerHTML = `
                 <h4>${entry.title || "Untitled Entry"}</h4> <!-- Display the title field -->
-                <p><strong>NCT ID:</strong> ${entry.nct_id || "NA"}</p>
-                <p><strong>Conditions:</strong> ${entry.conditions ? entry.conditions.join(", ") : "Not specified"}</p>
+                <p><a href="https://clinicaltrials.gov/study/${entry.nct_id}" target=_blank>${entry.nct_id}</a></p>
+                <p><strong>Conditions:</strong> ${conditions ? conditions : "Not specified"}</p>
                 <p><strong>Population:</strong><br> ${populationDetails}</p>
-                <p><strong>Interventions:</strong> ${entry.pico_attributes.interventions ? entry.pico_attributes.interventions.join(", ") : "Not specified"}</p>
-                <p><strong>Intervention types:</strong> ${entry.pico_attributes.intervention_types ? entry.pico_attributes.intervention_types.join(", ") : "Not specified"}</p>
-                <p><strong>Outcomes:</strong> ${entry.pico_attributes.outcomes.length > 0 ? entry.pico_attributes.outcomes.join(", ") : "No outcomes specified"}</p>
+                <p><strong>Interventions:</strong> ${interventions ? interventions : "Not specified"}</p>
+                <p><strong>Intervention types:</strong> ${intervention_types ? intervention_types : "Not specified"}</p>
+                <p><strong>Outcomes:</strong> ${outcomes ? outcomes : "No outcomes specified"}</p>
             `;
             searchResultsDiv.appendChild(entryDiv);
         });
     }
 }
-
-
-
 
 // Function to create pagination controls
 function createPaginationControls() {
