@@ -1,9 +1,8 @@
 // Function to draw a horizontal bar chart
 function draw_horizontal_bar_chart(data, chartID, variable_name) {
     const margin = { top: 20, right: 0, bottom: 20, left: 150 };
-    const element = document.getElementById(chartID.replace("#", ""))
-    const width = element.offsetWidth - margin.left - margin.right;
-    const height = element.offsetWidth*0.6 - margin.top - margin.bottom;
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
     // Clear previous chart content
     d3.select(chartID).html("");
@@ -80,9 +79,8 @@ function draw_horizontal_bar_chart(data, chartID, variable_name) {
 function createAgeBarChart(data, chartID, title) {
     // Set up margin and dimensions
     const margin = { top: 20, right: 10, bottom: 60, left: 40 };
-    const element = document.getElementById(chartID.replace("#", ""))
-    const width = element.offsetWidth - margin.left - margin.right;
-    const height = element.offsetWidth*0.6 - margin.top - margin.bottom;
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
     // Clear previous chart content
     d3.select(chartID).html("");

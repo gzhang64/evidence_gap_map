@@ -279,9 +279,8 @@ function countTrialsByCountry(matchedTrials) {
 
 // Function to draw the choropleth map with Europe on the left
 function drawChoroplethMap(countryTrialCount) {
-    const element = document.getElementById("map").parentElement
-    const width = element.offsetWidth
-    const height = element.offsetWidth*0.6
+    const width = 600
+    const height = 400
 
     const svg = d3.select("#map")
         .attr("width", width)

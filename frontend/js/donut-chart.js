@@ -1,8 +1,7 @@
 // Function to draw a donut chart with a legend and hover tooltip
 function draw_donut_chart(data, chartID, variable_name) {
-    const element = document.getElementById(chartID.replace("#", ""))
-    const width = element.offsetWidth
-    const height = element.offsetWidth*0.6
+    const width = 600
+    const height = 400
     const margin = 10;
     const legendWidth = 50;  // Space for the legend
 
