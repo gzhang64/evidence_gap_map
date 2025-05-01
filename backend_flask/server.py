@@ -84,8 +84,11 @@ def search_trials():
             "title": {"$first": "$title"},
             "pico_attributes": {"$first": "$pico_attributes"},
             "study_dates": {"$first": "$study_dates"}
-        }}
+        }},
+        { "$sort": { "title": 1 } },
     ]
+    # apparently aggregate operation is asynchronous
+    # so even if sorting is not required, it helps keeping the result in a deterministic order
 
     matching_trials = list(trials_collection.aggregate(pipeline))
     return jsonify(matching_trials)
