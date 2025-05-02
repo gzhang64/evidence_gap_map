@@ -213,12 +213,14 @@ function intervention_types_by_year(matchedTrials) {
 }
 
 function aggregate_by_year(matchedTrials, property) {
-    const groups = []
+    const groups = {}
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0, 4)
         const value = property(trial) || "N/A"
-        if (!groups.includes(value)) {
-            groups.push(value)
+        if (!groups[value]) {
+            groups[value] = 1
+        } else {
+            groups[value]++
         }
         if (!acc[year]) {
             acc[year] = {}
@@ -237,7 +239,7 @@ function aggregate_by_year(matchedTrials, property) {
         values.year = year
         as_array.push(values)
     }
-    return { groups: groups, data: as_array }
+    return { groups: Object.keys(groups).sort((a, b) => groups[a] < groups[b]), data: as_array }
 }
 
 function count_multiple_properties_by_year(matchedTrials, property) {
