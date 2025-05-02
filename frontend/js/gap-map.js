@@ -1,11 +1,11 @@
 function draw_gap_map() {
   const default_label = "Display Evidence Gap Map"
   const current = document.getElementById("display-egm").textContent
-  if(current==default_label) {
+  if (current == default_label) {
     draw_matrix_view(matchedTrials)
-    document.getElementById("display-egm").textContent = "Hide Evidence Gap Map" 
+    document.getElementById("display-egm").textContent = "Hide Evidence Gap Map"
   } else {
-    document.getElementById('gap-map').style.display='none'
+    document.getElementById('gap-map').style.display = 'none'
     document.getElementById("display-egm").textContent = default_label
   }
 }
@@ -13,10 +13,10 @@ function draw_gap_map() {
 function match_intervention(trial, intervention_x) {
   let match_i = false
   trial.pico_attributes.interventions.forEach(intervention => {
-    if(match_i) return
-    for(let key in intervention.concepts) {
+    if (match_i) return
+    for (let key in intervention.concepts) {
       // concepts[key] is an array
-      if (intervention.concepts[key].some(item=>item.canonical_name==intervention_x) ) {
+      if (intervention.concepts[key].some(item => item.canonical_name == intervention_x)) {
         match_i = true
         return
       }
@@ -28,59 +28,76 @@ function match_intervention(trial, intervention_x) {
 function match(trial, intervention_x, outcome_x) {
   let match_i = false
   trial.pico_attributes.interventions.forEach(intervention => {
-    if(match_i) return
-    for(let key in intervention.concepts) {
+    if (match_i) return
+    for (let key in intervention.concepts) {
       // concepts[key] is an array
-      if (intervention.concepts[key].some(item=>item.canonical_name==intervention_x) ) {
+      if (intervention.concepts[key].some(item => item.canonical_name == intervention_x)) {
         match_i = true
         return
       }
     }
   })
-  if(!match_i) return false
+  if (!match_i) return false
 
   let match_o = false
   trial.pico_attributes.outcomes.forEach(outcome => {
-    if(match_o) return
-    for(let key in outcome.concepts) {
+    if (match_o) return
+    for (let key in outcome.concepts) {
       // concepts[key] is an array
-      if (outcome.concepts[key].some(item=>item.canonical_name==outcome_x) ) {
-              match_o = true
-              return
+      if (outcome.concepts[key].some(item => item.canonical_name == outcome_x)) {
+        match_o = true
+        return
       }
     }
   })
-  if(!match_o) return false
+  if (!match_o) return false
 
   return true
 }
 
 // parameter data is expected to be the the global matchedTrials
 function draw_matrix_view(data) {
-  const outcomes = []
-  const interventions = []
+  // console.debug("BEFORE", data.length)
+  // data = data.filter(trial => {
+  //   const outcomes = new Set()
+  //   trial.pico_attributes.outcomes.forEach(outcome => {
+  //     for(let key in outcome.concepts) {
+  //       outcome.concepts[key].forEach(item => {
+  //         outcomes.add(item.canonical_name)
+  //       })
+  //     }
+  //   })
+  //   return outcomes.size>0
+  // })
+  // console.debug("AFTER", data.length)
+  const outcomes_set = new Set()
+  const interventions_set = new Set()
   data.forEach(t => {
+    const outcomes_per_trial = new Set()
     t.pico_attributes.outcomes.forEach(o => {
-      for(let key in o.concepts) {
+      for (let key in o.concepts) {
         // concepts[key] is an array
-        o.concepts[key].forEach(item=> {
-          if (!outcomes.includes(item.canonical_name)) {
-            outcomes.push(item.canonical_name)
-          }
+        o.concepts[key].forEach(item => {
+          outcomes_per_trial.add(item.canonical_name)
         })
       }
     })
+    const interventions_per_trial = new Set()
     t.pico_attributes.interventions.forEach(i => {
-      for(let key in i.concepts) {
+      for (let key in i.concepts) {
         // concepts[key] is an array
-        i.concepts[key].forEach(item=> {
-          if (!interventions.includes(item.canonical_name)) {
-            interventions.push(item.canonical_name)
-          }
+        i.concepts[key].forEach(item => {
+          interventions_per_trial.add(item.canonical_name)
         })
       }
     })
+    if (outcomes_per_trial.size > 0 && interventions_per_trial.size > 0) {
+      outcomes_per_trial.forEach(x => outcomes_set.add(x))
+      interventions_per_trial.forEach(x => interventions_set.add(x))
+    }
   })
+  const outcomes = [...outcomes_set]
+  const interventions = [...interventions_set]
   console.debug("outcomes", outcomes)
   console.debug("sizes of interventions/outcomes", interventions.length, outcomes.length)
   // TODO this algorithm night be able to be improved
@@ -89,7 +106,7 @@ function draw_matrix_view(data) {
     values[i] = {}
     outcomes.forEach(o => {
       values[i][o] = 0
-      data.forEach(trial => { if(match(trial, i, o))values[i][o]++ } )
+      data.forEach(trial => { if (match(trial, i, o)) values[i][o]++ })
     })
   })
 
@@ -115,7 +132,7 @@ function draw_matrix_view(data) {
     grid.appendChild(cell)
   }
   other_outcomes = []
-  for (let j=num_ot; j<outcomes.length; j++) {
+  for (let j = num_ot; j < outcomes.length; j++) {
     other_outcomes.push(outcomes[j])
   }
   if (num_ot < outcomes.length) {
@@ -164,7 +181,7 @@ function draw_matrix_view(data) {
         document.getElementById("radial-title").innerHTML = `Population Distribution for ${intervention} / ${outcome})`
 
         const data_filtered = outcome === "others" ? trials_with_other_outcomes(data, intervention) :
-          data.filter(t => match(t, intervention, outcome) )
+          data.filter(t => match(t, intervention, outcome))
         const years = {}
 
         data_filtered.forEach(t => {
@@ -199,14 +216,14 @@ function trials_with_other_outcomes(data, intervention) {
     if (!match_intervention(t, intervention)) return
     const all_outcomes_in_one_trial = []
     t.pico_attributes.outcomes.forEach(outcome => {
-      for(let key in outcome.concepts) { // concepts[key] is an array
-        outcome.concepts[key].forEach(item=>{
-          if(!all_outcomes_in_one_trial.includes(item.canonical_name))
+      for (let key in outcome.concepts) { // concepts[key] is an array
+        outcome.concepts[key].forEach(item => {
+          if (!all_outcomes_in_one_trial.includes(item.canonical_name))
             all_outcomes_in_one_trial.push(item.canonical_name)
         })
       }
     })
-    if(all_outcomes_in_one_trial.some(x=>other_outcomes.includes(x)))
+    if (all_outcomes_in_one_trial.some(x => other_outcomes.includes(x)))
       filtered.push(t)
   })
   console.debug("number of trials_with_other_outcomes", filtered.length)
@@ -336,7 +353,7 @@ function redraw_radial() {
   const dim2 = document.getElementById("secondary-dimension").value
   const data_filtered = outcome_selected === "others" ?
     trials_with_other_outcomes(matchedTrials, intervention_selected) :
-    matchedTrials.filter( t => match(t, intervention_selected, outcome_selected) )
+    matchedTrials.filter(t => match(t, intervention_selected, outcome_selected))
   const counts_no_label = [] // for now
   const counts = group_by_2d(data_filtered, dim1, dim2)
   for (let cat1 in counts) {
