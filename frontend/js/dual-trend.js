@@ -186,7 +186,7 @@ function intervention_types_by_year(matchedTrials) {
     const groups = []
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0, 4)
-        trial.pico_attributes.interventions.forEach(intervention=> {
+        trial.pico_attributes.interventions.forEach(intervention => {
             const value = intervention.type
             if (!groups.includes(value)) {
                 groups.push(value)
@@ -246,15 +246,15 @@ function count_multiple_properties_by_year(matchedTrials, property) {
         const year = trial.study_dates.start_date.substring(0, 4)
         const values = []
         trial.pico_attributes[property].forEach(p => {
-            for(let key in p.concepts) {
+            for (let key in p.concepts) {
                 // concepts[key] is an array
-                p.concepts[key].forEach(item=> {
-                    if(!values.includes(item.canonical_name))
+                p.concepts[key].forEach(item => {
+                    if (!values.includes(item.canonical_name))
                         values.push(item.canonical_name)
                 })
             }
         })
-        values.forEach(value=>{
+        values.forEach(value => {
             if (!groups.includes(value)) {
                 groups.push(value)
             }
