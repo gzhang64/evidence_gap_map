@@ -165,10 +165,10 @@ async function submitSearch() {
 
         createAgeBarChart(minAgeCount, '#bar-chart-min-age', 'Minimum Age');
         dual_trend_plot(aggregate_by_year(matchedTrials, 
-            t=>normalizeAgeToBin(t.pico_attributes.populations.minimum_age || "NA") ), "trend-min-age")
+            t=>normalizeAgeToBin(t.pico_attributes.populations.minimum_age || "NA") ), "trend-min-age", false)
         createAgeBarChart(maxAgeCount, '#bar-chart-max-age', 'Maximum Age');
         dual_trend_plot(aggregate_by_year(matchedTrials, 
-            t=>normalizeAgeToBin(t.pico_attributes.populations.maximum_age || "NA") ), "trend-max-age")
+            t=>normalizeAgeToBin(t.pico_attributes.populations.maximum_age || "NA") ), "trend-max-age", false)
 
         const genderCount = countGenderDistribution(matchedTrials);
         const genderData = Object.entries(genderCount).map(([gender, count]) => ({

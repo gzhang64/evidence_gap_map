@@ -1,7 +1,8 @@
 // this is a new design of a trend plot with two panels: 
 // a main one for count and an embedded one for percentage
-function dual_trend_plot(x_data, element_id) {
-    const keys = x_data.groups
+function dual_trend_plot(x_data, element_id, order_by_total = true) {
+    const keys = order_by_total ? Object.keys(x_data.groups).sort((a, b) => x_data.groups[a] < x_data.groups[b])
+        : Object.keys(x_data.groups).sort()
     const data = x_data.data.filter(item => item.year !== "na")
     data.forEach(item => {
         item.year = +item.year // necessary or not
@@ -77,22 +78,12 @@ function dual_trend_plot(x_data, element_id) {
         .attr("fill", d => colors(d.key))
         .style("opacity", 0.8)
         .on("mouseover", function (event, d) {
-            const mouseX = event.layerX - margin.left;
-            const bisectYear = d3.bisector(data => data.year).left;
-            const x0 = x.invert(mouseX);
-            const i = bisectYear(data, x0, 1);
-            const d0 = data[i - 1];
-            const d1 = data[i];
-            const currentData = (x0 - d0.year > d1.year - x0) ? d1 : d0;
-            // DEBUG d.data===undefined
-            // FIXME the tooltip's year (x-coordinate) is off
-
             d3.select(this)
                 .style("opacity", 1);
             tooltip.transition()
                 .duration(200)
                 .style("opacity", 0.9);
-            tooltip.html(`<strong>${d.key}</strong><br>Year: ${currentData.year}<br>Count: ${currentData[d.key]}`)
+            tooltip.html(`<strong>${d.key}</strong><br>Count: ${x_data.groups[d.key]}`)
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 20) + "px");
         })
@@ -183,13 +174,15 @@ function dual_trend_plot(x_data, element_id) {
 }
 
 function intervention_types_by_year(matchedTrials) {
-    const groups = []
+    const groups = {}
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0, 4)
         trial.pico_attributes.interventions.forEach(intervention => {
             const value = intervention.type
-            if (!groups.includes(value)) {
-                groups.push(value)
+            if (!groups[value]) {
+                groups[value] = 1
+            } else {
+                groups[value]++
             }
             if (!acc[year]) {
                 acc[year] = {}
@@ -239,11 +232,11 @@ function aggregate_by_year(matchedTrials, property) {
         values.year = year
         as_array.push(values)
     }
-    return { groups: Object.keys(groups).sort((a, b) => groups[a] < groups[b]), data: as_array }
+    return { groups: groups, data: as_array }
 }
 
 function count_multiple_properties_by_year(matchedTrials, property) {
-    const groups = []
+    const groups = {}
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0, 4)
         const values = []
@@ -257,8 +250,10 @@ function count_multiple_properties_by_year(matchedTrials, property) {
             }
         })
         values.forEach(value => {
-            if (!groups.includes(value)) {
-                groups.push(value)
+            if (!groups[value]) {
+                groups[value] = 1
+            } else {
+                groups[value]++
             }
             if (!acc[year]) {
                 acc[year] = {}
