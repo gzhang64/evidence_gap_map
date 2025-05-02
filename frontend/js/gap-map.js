@@ -57,19 +57,6 @@ function match(trial, intervention_x, outcome_x) {
 
 // parameter data is expected to be the the global matchedTrials
 function draw_matrix_view(data) {
-  // console.debug("BEFORE", data.length)
-  // data = data.filter(trial => {
-  //   const outcomes = new Set()
-  //   trial.pico_attributes.outcomes.forEach(outcome => {
-  //     for(let key in outcome.concepts) {
-  //       outcome.concepts[key].forEach(item => {
-  //         outcomes.add(item.canonical_name)
-  //       })
-  //     }
-  //   })
-  //   return outcomes.size>0
-  // })
-  // console.debug("AFTER", data.length)
   const outcomes_set = new Set()
   const interventions_set = new Set()
   data.forEach(t => {
@@ -100,7 +87,7 @@ function draw_matrix_view(data) {
   const interventions = [...interventions_set]
   console.debug("outcomes", outcomes)
   console.debug("sizes of interventions/outcomes", interventions.length, outcomes.length)
-  // TODO this algorithm night be able to be improved
+  // TODO this algorithm might be able to be improved
   const values = {}
   interventions.forEach(i => {
     values[i] = {}
@@ -176,11 +163,9 @@ function draw_matrix_view(data) {
       grid.appendChild(cell)
 
       cell.onclick = (event) => {
-        intervention_selected = intervention
-        outcome_selected = outcome
         document.getElementById("radial-title").innerHTML = `Population Distribution for ${intervention} / ${outcome})`
 
-        const data_filtered = outcome === "others" ? trials_with_other_outcomes(data, intervention) :
+        data_filtered = outcome === "others" ? trials_with_other_outcomes(data, intervention) :
           data.filter(t => match(t, intervention, outcome))
         const years = {}
 
@@ -344,16 +329,12 @@ function create_radial_stacked_plot(data, element_id) {
     .text(d => d.category);
 }
 
-// TODO eventually we should refactor avoid re-querying
-let intervention_selected = ""
-let outcome_selected = ""
-let other_outcomes = null // list of 'other' outcomes for given conditions + number limit. used in trials_with_other_outcomes
+// trials filtered by a given intervention and outcome
+// make it global to facilitate redraw when the radial-stacked dimension options are changed
+let data_filtered = []
 function redraw_radial() {
   const dim1 = document.getElementById("primary-dimension").value
   const dim2 = document.getElementById("secondary-dimension").value
-  const data_filtered = outcome_selected === "others" ?
-    trials_with_other_outcomes(matchedTrials, intervention_selected) :
-    matchedTrials.filter(t => match(t, intervention_selected, outcome_selected))
   const counts_no_label = [] // for now
   const counts = group_by_2d(data_filtered, dim1, dim2)
   for (let cat1 in counts) {
