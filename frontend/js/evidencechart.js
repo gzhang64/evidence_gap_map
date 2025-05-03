@@ -504,23 +504,23 @@ function displayPage(page) {
             const entryDiv = document.createElement("div");
             entryDiv.classList.add("search-entry");
 
-            const intervention_types = entry.pico_attributes.interventions.map(item=>item.type).reduce((acc, type)=> acc===""?type:`${acc},${type}`, "")
+            const intervention_types = Array.from(entry.pico_attributes.interventions.map(item=>item.type).reduce((acc, type)=> acc.add(type), new Set())).join()
 
             // this format applies to both intervention and outcome
-            // use , ; | to show three layer of data format
+            // REMOVED feature: use , ; | to show three layer of data format
             const reduce_canonical_names = function(acc, triple_layer_object) {
-                const tmp = []
+                const tmp = new Set()
                 const concepts = triple_layer_object.concepts
                 for(let key in concepts) {
-                  tmp.push( concepts[key].reduce((sub, item)=>{
-                        return sub==='' ? item.canonical_name : sub+", "+item.canonical_name
-                    }, '')
-                  )
+                    concepts[key].reduce((sub, item)=>{
+                        return sub.add(item.canonical_name)
+                    }, new Set()).forEach(x=>tmp.add(x))
                 }
-                return acc==='' ? tmp.join("; ") : acc+" | "+tmp.join("; ")
+                tmp.forEach(x=>acc.add(x))
+                return acc
             }
-            const interventions = entry.pico_attributes.interventions.reduce(reduce_canonical_names, "")
-            const outcomes = entry.pico_attributes.outcomes.reduce(reduce_canonical_names, "")
+            const interventions = Array.from(entry.pico_attributes.interventions.reduce(reduce_canonical_names, new Set())).join()
+            const outcomes = Array.from(entry.pico_attributes.outcomes.reduce(reduce_canonical_names, new Set())).join()
 
             //const debug = entry.pico_attributes.populations.conditions
             //const conditions = entry.pico_attributes.populations.conditions.reduce(reduce_canonical_names, "")
