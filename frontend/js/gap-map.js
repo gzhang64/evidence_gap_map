@@ -87,22 +87,23 @@ function draw_matrix_view(data) {
   const interventions = [...interventions_set]
   console.debug("outcomes", outcomes)
   console.debug("sizes of interventions/outcomes", interventions.length, outcomes.length)
-  // TODO this algorithm might be able to be improved
-  const values = {}
-  interventions.forEach(i => {
-    values[i] = {}
-    outcomes.forEach(o => {
-      values[i][o] = 0
-      data.forEach(trial => { if (match(trial, i, o)) values[i][o]++ })
+
+  // filtered trials for each combination of intervention and outcome
+  interventions.forEach(intervention => {
+    data_filtered[intervention] = {}
+    outcomes.forEach(outcome => {
+      data_filtered[intervention][outcome] = data.filter(t => match(t, intervention, outcome))
     })
   })
 
   // sorting by frequencies
   const outcome_total = {} // total number for each outcome
-  outcomes.forEach(outcome => outcome_total[outcome] = interventions.reduce((total, intervention) => total + values[intervention][outcome], 0))
+  outcomes.forEach(outcome => outcome_total[outcome] = interventions.reduce((total, intervention) =>
+    total + data_filtered[intervention][outcome].length, 0))
   outcomes.sort((a, b) => outcome_total[a] < outcome_total[b])
   const intervention_total = {} // total number for each intervention
-  interventions.forEach(intervention => intervention_total[intervention] = outcomes.reduce((total, outcome) => total + values[intervention][outcome], 0))
+  interventions.forEach(intervention => intervention_total[intervention] = outcomes.reduce((total, outcome) =>
+    total + data_filtered[intervention][outcome].length, 0))
   interventions.sort((a, b) => intervention_total[a] < intervention_total[b])
 
   const grid = document.getElementById("gap-map")
@@ -118,16 +119,13 @@ function draw_matrix_view(data) {
     cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
     grid.appendChild(cell)
   }
-  other_outcomes = []
+  const other_outcomes = []
   for (let j = num_ot; j < outcomes.length; j++) {
     other_outcomes.push(outcomes[j])
   }
   if (num_ot < outcomes.length) {
-    interventions.forEach(i => {
-      values[i].others = 0
-      for (let i_outcome = num_ot; i_outcome < outcomes.length; i_outcome++) {
-        values[i].others += values[i][outcomes[i_outcome]]
-      }
+    interventions.forEach(intervention => {
+      data_filtered[intervention].others = trials_with_other_outcomes(data, intervention, other_outcomes)
     })
 
     grid.style = `display: grid;grid-template-columns: 1fr repeat(${num_ot + 1}, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;`
@@ -150,7 +148,7 @@ function draw_matrix_view(data) {
       if (j == num_ot && num_ot == outcomes.length) continue // no extra column for 'Other outcomes' needed
 
       const outcome = j < num_ot ? outcomes[j] : 'others'
-      const value = values[intervention][outcome]
+      const value = data_filtered[intervention][outcome].length
       const cell = document.createElement("div")
       cell.style.backgroundColor = get_blue_shade(value, min = 0, max = 2)
       cell.style.border = "thin solid lightgrey"
@@ -165,8 +163,6 @@ function draw_matrix_view(data) {
       cell.onclick = (event) => {
         document.getElementById("radial-title").innerHTML = `Population Distribution for ${intervention} / ${outcome})`
 
-        data_filtered = outcome === "others" ? trials_with_other_outcomes(data, intervention) :
-          data.filter(t => match(t, intervention, outcome))
         const years = {}
 
         data_filtered.forEach(t => {
@@ -195,7 +191,7 @@ function draw_matrix_view(data) {
   document.getElementById("close-button").onclick = () => popup.style.display = 'none'
 }
 
-function trials_with_other_outcomes(data, intervention) {
+function trials_with_other_outcomes(data, intervention, other_outcomes) {
   const filtered = []
   data.forEach(t => {
     if (!match_intervention(t, intervention)) return
