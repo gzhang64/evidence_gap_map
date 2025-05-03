@@ -25,6 +25,21 @@ function match_intervention(trial, intervention_x) {
   return match_i
 }
 
+function match_outcome(trial, outcome_x) {
+  let match_o = false
+  trial.pico_attributes.outcomes.forEach(outcome => {
+    if (match_o) return
+    for (let key in outcome.concepts) {
+      // concepts[key] is an array
+      if (outcome.concepts[key].some(item => item.canonical_name == outcome_x)) {
+        match_o = true
+        return
+      }
+    }
+  })
+  return match_o
+}
+
 function match(trial, intervention_x, outcome_x) {
   let match_i = false
   trial.pico_attributes.interventions.forEach(intervention => {
@@ -119,6 +134,10 @@ function draw_matrix_view(data) {
     cell.style = "border:thin solid lightgrey;font-size:10px;padding:3px;"
     grid.appendChild(cell)
   }
+  const other_interventions = []
+  for (let i = num_inter; i < interventions.length; i++) {
+    other_interventions.push(interventions[i])
+  }
   const other_outcomes = []
   for (let j = num_ot; j < outcomes.length; j++) {
     other_outcomes.push(outcomes[j])
@@ -136,12 +155,19 @@ function draw_matrix_view(data) {
   } else {
     grid.style = `display: grid;grid-template-columns: 1fr repeat(${num_ot}, 100px);width: 80%;margin: auto;margin-top: 5px;margin-bottom: 5px;`
   }
+  if (num_inter < interventions.length) {
+    data_filtered.others = {}
+    outcomes.forEach(outcome => {
+      data_filtered.others[outcome] = trials_with_other_interventions(data, outcome, other_interventions)
+    })
+  }
   document.getElementById("primary-dimension").value = "country"
   document.getElementById("secondary-dimension").value = "gender"
-  for (let i = 0; i < num_inter; i++) {
-    const intervention = interventions[i]
+  for (let i = 0; i <= num_inter; i++) {
+    if(num_inter == interventions.length && i == num_inter) continue // no extra row for 'Other intervention' needed
+    const intervention = i < num_inter ? interventions[i] : 'others'
     const cell = document.createElement("div")
-    cell.textContent = intervention
+    cell.textContent = i < num_inter ? intervention : 'Other interventions'
     cell.style = "border:thin solid lightgrey;padding:3px;"
     grid.appendChild(cell)
     for (let j = 0; j <= num_ot; j++) {
@@ -208,6 +234,26 @@ function trials_with_other_outcomes(data, intervention, other_outcomes) {
       filtered.push(t)
   })
   console.debug("number of trials_with_other_outcomes", filtered.length)
+  return filtered
+}
+
+function trials_with_other_interventions(data, outcome, other_interventions) {
+  const filtered = []
+  data.forEach(t => {
+    if (!match_outcome(t, outcome)) return
+    const all_interventions_in_one_trial = []
+    t.pico_attributes.interventions.forEach(intervention => {
+      for (let key in intervention.concepts) { // concepts[key] is an array
+        intervention.concepts[key].forEach(item => {
+          if (!all_interventions_in_one_trial.includes(item.canonical_name))
+            all_interventions_in_one_trial.push(item.canonical_name)
+        })
+      }
+    })
+    if (all_interventions_in_one_trial.some(x => other_interventions.includes(x)))
+      filtered.push(t)
+  })
+  console.debug("number of trials_with_other_interventions", filtered.length)
   return filtered
 }
 
