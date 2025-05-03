@@ -160,11 +160,14 @@ function draw_matrix_view(data) {
     outcomes.forEach(outcome => {
       data_filtered.others[outcome] = trials_with_other_interventions(data, outcome, other_interventions)
     })
+    if (num_ot < outcomes.length) {
+      data_filtered.others.others = trials_others_others(data, other_interventions, other_outcomes)
+    }
   }
   document.getElementById("primary-dimension").value = "country"
   document.getElementById("secondary-dimension").value = "gender"
   for (let i = 0; i <= num_inter; i++) {
-    if(num_inter == interventions.length && i == num_inter) continue // no extra row for 'Other intervention' needed
+    if (num_inter == interventions.length && i == num_inter) continue // no extra row for 'Other intervention' needed
     const intervention = i < num_inter ? interventions[i] : 'others'
     const cell = document.createElement("div")
     cell.textContent = i < num_inter ? intervention : 'Other interventions'
@@ -254,6 +257,35 @@ function trials_with_other_interventions(data, outcome, other_interventions) {
       filtered.push(t)
   })
   console.debug("number of trials_with_other_interventions", filtered.length)
+  return filtered
+}
+
+function trials_others_others(data, other_interventions, other_outcomes) {
+  const filtered = []
+  data.forEach(t => {
+    const all_interventions_in_one_trial = []
+    t.pico_attributes.interventions.forEach(intervention => {
+      for (let key in intervention.concepts) { // concepts[key] is an array
+        intervention.concepts[key].forEach(item => {
+          if (!all_interventions_in_one_trial.includes(item.canonical_name))
+            all_interventions_in_one_trial.push(item.canonical_name)
+        })
+      }
+    })
+    const all_outcomes_in_one_trial = []
+    t.pico_attributes.outcomes.forEach(outcome => {
+      for (let key in outcome.concepts) { // concepts[key] is an array
+        outcome.concepts[key].forEach(item => {
+          if (!all_outcomes_in_one_trial.includes(item.canonical_name))
+            all_outcomes_in_one_trial.push(item.canonical_name)
+        })
+      }
+    })
+    if (all_interventions_in_one_trial.some(x => other_interventions.includes(x)) &&
+      all_outcomes_in_one_trial.some(x => other_outcomes.includes(x)))
+      filtered.push(t)
+  })
+  console.debug("number of trials_others_others", filtered.length)
   return filtered
 }
 
