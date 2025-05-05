@@ -6,30 +6,25 @@ This document includes two parts: the description of UI, and the organization of
 
 # User interaction
 
-The user starts the inquiry by first selecting (1) an intervention type, or (2) some conditions. The results and visualization are also shown in the two separated part, with details in the *Overall layout* section.
-
-For intervention type, once the user types some text, as little as one letter, all the matching intervention types are displayed. If the user select one of the intervention type, the plots are generated.
-
-For the condition, once the user types some text, all the matching conditions are displayed. If the user select one of the condition, it is added to the the list of conditions,
+The user starts the inquiry by first selecting some conditions.
+The results are all based on the selection of conditions,
+and organized as a visualization panel, a tabular panel, and a 'evidence pag map' section, with details in the *Overall layout* section.
+Once the user types some text, all the matching conditions are displayed. If the user select one of the condition, it is added to the the list of conditions,
 based on which the inquiry will be carried out. When the user press the *Search* button, the plots and results will be generated.
-
-In both cases, the results are about the number of studies matching the inquiry criterion.
 
 # Overall layout
 
-For intervention type inquiry, there are two plots. They are displayed side by side: one for count, another for percentage.
-
-For condition inquiry, the plots are grouped into the following sections:
-- a group of three plot
-- a plot for
-- a group of 7 pairs of plots. Each pair includes a variety of types of plot on the left, and a corresponding the trend plot on the right.
-  1. global count
-  2. minimum gae
-  3. maximum age
+The visualization includes a main part of two panels side-by-side: plots on the left side and the tabular panel on the right side. After the main part, there is an 'evidence gap mapping' section.
+The left panel, namely all the main plots, are grouped into two tabs. Each of the tab has a group of 7 plots, each corresponding to the counterpart in the other tab. The first tab is about the total number of trials, and the second tab is about the trend of change over years.
+  1. count of countries
+  2. count of minimum age groups
+  3. count of maximum age groups
   4. gender distribution
   5. intervention type distribution
-  6. top 20 intervention types
+  6. top 20 interventions
   7. top 20 outcomes
+
+The evidence gap mapping shows a grid visualizing the number of trials for each combination of intervention and outcome after the user clicks a button to show this grid. Then the user can click a cell in the grid to explore details for that combination. Specifically, th pop-up box will show two plots: a radial-stacked plot showing the distribution for two dimensions out of 4 population parameters, which the user can further interactively choose from, and a trend plot to show the change of total number of trials over years.
 
 ## Software constructs
 
@@ -38,22 +33,21 @@ The system is made of two part: the backend data service API, and the frontend w
 ### backend
 The backend data service is implement using Python flask. The code is the directory `backend_flask`.
 
-There are 4 endpoints:
+There are two endpoints:
 1. /api/conditions: get all distinct conditions
-2. /api/intervention-types: get all distinct intervention types
-3. /api/search_trials: get study info for given conditions
-4. /api/count-by-conditions/<intervention>: count trials grouped by conditions
+2. /api/search_trials: get study info for given conditions
 
 ### front end
 The frontend app is is basically static content that can be served by any web server. We use python built-in http server to do this during development. The content if in the direction `frontend`.
 
 The implementation of various plots are mainly organized by the types of the plots:
-1. stacked bar chart: in file stacker-bars.js, used in 6 plots
+1. stacked trend chart: in file dual-trend.js, used in 7 plots
 2. vertical bar chart:  in file bar-charts.js, used in two plots
 3. horizontal bar chart: in file bar-charts.js, used in one plot
-4. line plot (trend plot): in file trend-plots.js, used in 7 plots
+4. line plot (trend plot): in file trend-plots.js, used in one plot
 5. donut chart: in file donut-charts.js, used in two plots
 6. geographical map: in file evidencechart.js, used in one plot
+7. evidence gap map: in file gap-map.js, implementation of the interactive 'evidence gap map'
 
 `evidencechart.js` is also the main script file that uses other scripts, and implements the user interaction workflow.
 
