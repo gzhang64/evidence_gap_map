@@ -138,7 +138,7 @@ function dual_trend_plot(x_data, element_id, order_by_total = true) {
     subSvg.append("g")
         .attr("class", "axis sub-x-axis")
         .attr("transform", `translate(0,${subHeight})`)
-        .call(d3.axisBottom(subX).ticks(5).tickFormat(d3.format("d")));
+        .call(d3.axisBottom(subX).ticks(3).tickFormat(d3.format("d")));
 
     subSvg.append("g")
         .attr("class", "axis sub-y-axis")
