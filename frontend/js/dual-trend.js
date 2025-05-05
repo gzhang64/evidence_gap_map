@@ -159,12 +159,13 @@ function dual_trend_plot(x_data, element_id, order_by_total = true) {
         .attr("height", 15)
         .attr("fill", d => colors(d));
 
+    const legend_limit = 11
     legend.selectAll("text")
         .data(first10keys)
         .join("text")
         .attr("x", 20)
         .attr("y", (d, i) => i * 20 + 12)
-        .text(d => d)
+        .text(d => d.length <= legend_limit ? d : d.substring(0, legend_limit) + "...")
         .style("font-size", "0.9em");
 
     // Tooltip
