@@ -237,6 +237,9 @@ function removeCondition(condition) {
     selectedGroups = selectedGroups.map(group =>
         group.filter(item => item !== condition)
     ).filter(group => group.length > 0);
+    // although we do want to filter out duplicate empty sub-arrays, 
+    // we need to keep at least one
+    if(selectedGroups.length==0) selectedGroups = [[]]
     updateSelectedConditions();
 }
 
