@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
-<body onload="showSection('home')"> <!-- Show Home section by default -->
+<body>
 
     <header>
         <h1>Welcome to EvidenceChart</h1>
@@ -115,7 +115,7 @@
                 <div class="content">
                     <h4>Geographical Distribution of Clinical Trials</h4>
                     <div class="chart-pair">
-                        <div class="left-of-pair">
+                        <div class="left-of-pair" id="map-container">
                         <svg id="map"></svg> <!-- SVG placeholder for the map -->
                         </div>
                         <div class="right-of-pair" id="trend-geographical">

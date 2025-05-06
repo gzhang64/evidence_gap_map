@@ -632,6 +632,63 @@ function set_tab_status(id, selected) {
     }
 }
 
+function save_style(element) {
+    const saved_style = element.style
+    element.style.display = 'block'
+    element.style.position = 'absolute'
+    element.style.left = '-9999px'
+    return saved_style
+}
+
+async function add_element_to_export(element_id, doc, y=10, width = 150, height=100) {
+    const element = document.getElementById(element_id)
+    const saved_style = save_style(element)
+    const canvas = await html2canvas(element, {scale: 2})
+    doc.addImage(canvas.toDataURL('image/png'), 'PNG', 10, y, width, height)
+    element.style = saved_style // restore the style
+}
+
+async function generateMultiPagePDF() {
+    // Initialize jsPDF
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+    pdf.text('EvidenceChart Exported Report', 10, 20)
+
+    await add_element_to_export('map-container', pdf, y=30)
+    await add_element_to_export('trend-geographical', pdf, y=150)
+
+    pdf.addPage()
+
+    await add_element_to_export('bar-chart-min-age', pdf, y=30, width=300, height=200)
+    await add_element_to_export('trend-min-age', pdf, y=150)
+
+    pdf.addPage()
+
+    await add_element_to_export('bar-chart-max-age', pdf, y=30, width=300, height=200)
+    await add_element_to_export('trend-max-age', pdf, y=150)
+
+    pdf.addPage()
+
+    await add_element_to_export('gender-donut-chart', pdf)
+    await add_element_to_export('trend-gender', pdf, y=150)
+
+    pdf.addPage()
+
+    await add_element_to_export('intervention-pie-chart', pdf)
+    await add_element_to_export('trend-intervention-types', pdf, y=150)
+
+    pdf.addPage() // page 6
+
+    await add_element_to_export('top20-interventions-bar-chart', pdf)
+    await add_element_to_export('trend-top-interventions', pdf, y=150)
+
+    pdf.addPage() // page 7
+
+    await add_element_to_export('top20-outcomes-bar-chart', pdf)
+    await add_element_to_export('trend-top-outcomes', pdf, y=150)
+
+    pdf.save('evidence-chart.pdf')
+}
 // Initialize by loading conditions from the CSV file
 window.onload = function() {
     // Load conditions for filter
@@ -655,16 +712,7 @@ window.onload = function() {
         document.querySelectorAll(".left-of-pair").forEach(item=>item.style.display='none')
     }
 
-    const { jsPDF } = window.jspdf;
-    document.getElementById('report-export-button').addEventListener('click', () => {
-        const element = document.getElementById('content-to-export');
-        html2canvas(element).then((canvas) => {
-            const imgData = canvas.toDataURL('image/png');
-            const doc = new jsPDF();
-            doc.addImage(imgData, 'PNG', 10, 10);
-            doc.save('evidence-chart.pdf');
-        });
-    });
+    document.getElementById('report-export-button').addEventListener('click', generateMultiPagePDF)
 };
 
 document.addEventListener('DOMContentLoaded', () => {
