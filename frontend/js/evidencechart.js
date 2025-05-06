@@ -366,14 +366,14 @@ function normalizeAgeToBin(age) {
     return "over 80 yr";
 }
 
+const ageBins = [
+    "< 1 yr", "under 10 yr", "10 - 20 yr", "20 - 30 yr", "30 - 40 yr",
+    "40 - 50 yr", "50 - 60 yr", "60 - 70 yr", "70 - 80 yr",
+    "over 80 yr", "NA"
+];
+
 // Function to count minimum and maximum ages from matchedTrials, with all bins initialized
 function countMinAndMaxAges(matchedTrials) {
-    const ageBins = [
-        "< 1 yr", "under 10 yr", "10 - 20 yr", "20 - 30 yr", "30 - 40 yr",
-        "40 - 50 yr", "50 - 60 yr", "60 - 70 yr", "70 - 80 yr",
-        "over 80 yr", "NA"
-    ];
-
     // Initialize all bins to zero
     const minAgeCount = {};
     const maxAgeCount = {};

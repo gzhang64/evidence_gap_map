@@ -5,7 +5,7 @@ function dual_trend_plot(x_data, element_id, order_by_total = true) {
         if (a === 'N/A') return 1;
         else if (b === 'N/A') return -1;
         else return x_data.groups[a] < x_data.groups[b]
-    }) : Object.keys(x_data.groups).sort()
+    }) : Object.keys(x_data.groups).sort((a, b) => ageBins.indexOf(a) > ageBins.indexOf(b))
     const data = x_data.data.filter(item => item.year !== "na")
     data.forEach(item => {
         item.year = +item.year // necessary or not
