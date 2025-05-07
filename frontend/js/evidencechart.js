@@ -89,11 +89,9 @@ function updateSelectedConditions() {
     if (searchQuery) {
         queryVisualization.innerHTML = `Current query: ${searchQuery}`;
         queryVisualization.style.display = 'block'; // Make query visible
-        document.getElementById('report-export-button').style.display = 'block'
     } else {
         queryVisualization.innerHTML = '';
         queryVisualization.style.display = 'none'; // Hide query if no conditions
-        document.getElementById('report-export-button').style.display = 'none'
     }
     document.querySelector('.visualizations-column').style.display = 'none' // hide the plots until search is carried out again
     // clear evidence-gap-map
@@ -107,6 +105,7 @@ function updateSelectedConditions() {
     // clear pagination control
     const paginationControlsDiv = document.getElementById("paginationControls");
     paginationControlsDiv.innerHTML = "";
+    document.getElementById('report-export-button').style.display = 'none'
 }
 
 async function submitSearch() {
@@ -196,6 +195,8 @@ async function submitSearch() {
         const top20Outcomes = getTop20Outcomes(matchedTrials);
         draw_horizontal_bar_chart(top20Outcomes, '#top20-outcomes-bar-chart', 'outcome');
         dual_trend_plot(count_multiple_properties_by_year(matchedTrials, 'outcomes'), "trend-top-outcomes")
+
+        document.getElementById('report-export-button').style.display = 'block'
     } catch (error) {
         console.error("Error in submitSearch:", error);
     }
