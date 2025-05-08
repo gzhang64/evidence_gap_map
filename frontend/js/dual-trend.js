@@ -1,7 +1,7 @@
 // this is a new design of a trend plot with two panels: 
 // a main one for count and an embedded one for percentage
 const LIMIT_OF_GROUPS = 19
-function dual_trend_plot(x_data, element_id) {
+function dual_trend_plot(x_data, element_id, title = null) {
     const keys = x_data.keys
     const data = x_data.data.filter(item => item.year !== "na")
     data.forEach(item => {
@@ -172,6 +172,14 @@ function dual_trend_plot(x_data, element_id) {
     const tooltip = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
+
+    if (title) {
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", 15)
+            .style("text-anchor", "middle")
+            .text(title);
+    }
 }
 
 function intervention_types_by_year(matchedTrials) {
