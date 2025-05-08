@@ -1,18 +1,10 @@
 // this is a new design of a trend plot with two panels: 
 // a main one for count and an embedded one for percentage
-function dual_trend_plot(x_data, element_id, order_by_total = true) {
-    const keys = order_by_total ? Object.keys(x_data.groups).sort((a, b) => {
-        if (a === 'N/A') return 1;
-        else if (b === 'N/A') return -1;
-        else return x_data.groups[a] < x_data.groups[b]
-    }) : Object.keys(x_data.groups).sort((a, b) => ageBins.indexOf(a) > ageBins.indexOf(b))
-    const others = keys.splice(20, Infinity, "Others")
-    x_data.groups.Others = 0
-    others.forEach(k => x_data.groups.Others += x_data.groups[k]) // FIXME  this is correct *only if* the groups are mutually exclusive
+function dual_trend_plot(x_data, element_id) {
+    const keys = x_data.keys
     const data = x_data.data.filter(item => item.year !== "na")
     data.forEach(item => {
         item.year = +item.year // necessary or not
-        item.Others = others.reduce((acc, x) => acc + item[x] || 0, 0) // FIXME this is correct *only if* the groups are mutually exclusive
         keys.forEach(k => { if (item[k] === undefined) item[k] = 0 }) // safe-guard for later process
     })
 
@@ -210,10 +202,16 @@ function intervention_types_by_year(matchedTrials) {
         values.year = year
         as_array.push(values)
     }
-    return { groups: groups, data: as_array }
+    const keys = Object.keys(groups).sort((a, b) => {
+        if (a === 'N/A') return 1;
+        else if (b === 'N/A') return -1;
+        else return groups[a] < groups[b]
+    })
+    // number of keys is expected to be small, so no "Others" group is created
+    return { keys: keys, groups: groups, data: as_array }
 }
 
-function aggregate_by_year(matchedTrials, property) {
+function aggregate_by_year(matchedTrials, property, order_by_age = false) {
     const groups = {}
     const aggregated = matchedTrials.reduce((acc, trial) => {
         const year = trial.study_dates.start_date.substring(0, 4)
@@ -234,13 +232,32 @@ function aggregate_by_year(matchedTrials, property) {
         }
         return acc
     }, {})
+    const keys = order_by_age ?
+        Object.keys(groups).sort((a, b) => ageBins.indexOf(a) > ageBins.indexOf(b)) :
+        Object.keys(groups).sort((a, b) => {
+            if (a === 'N/A') return 1;
+            else if (b === 'N/A') return -1;
+            else return groups[a] < groups[b]
+        })
+
+    if (keys.length > 20) keys.splice(20, Infinity, "Others")
+    const others_per_year = {}
+    matchedTrials.forEach(trial => {
+        const year = trial.study_dates.start_date.substring(0, 4)
+        if (keys.includes(property(trial) || "N/A")) return
+        if (others_per_year[year] === undefined) others_per_year[year] = 1
+        else others_per_year[year]++
+    })
+    groups.Others = Object.values(others_per_year).reduce((a, c) => a + c, 0)
+
     const as_array = []
     for (const year in aggregated) {
         const values = aggregated[year]
         values.year = year
+        values.Others = others_per_year[year]
         as_array.push(values)
     }
-    return { groups: groups, data: as_array }
+    return { keys: keys, groups: groups, data: as_array }
 }
 
 function count_multiple_properties_by_year(matchedTrials, property) {
@@ -275,11 +292,41 @@ function count_multiple_properties_by_year(matchedTrials, property) {
         })
         return acc
     }, {})
+
+    const keys = Object.keys(groups).sort((a, b) => {
+        if (a === 'N/A') return 1;
+        else if (b === 'N/A') return -1;
+        else return groups[a] < groups[b]
+    })
+    if (keys.length > 20) keys.splice(20, Infinity, "Others")
+    const others_per_year = {}
+    matchedTrials.forEach(trial => {
+        const year = trial.study_dates.start_date.substring(0, 4)
+        let matched = false
+        trial.pico_attributes[property].forEach(p => {
+            for (let key in p.concepts) {
+                if (matched) return
+                // concepts[key] is an array
+                p.concepts[key].forEach(item => {
+                    if (keys.includes(item.canonical_name)) {
+                        matched = true
+                        return
+                    }
+                })
+            }
+        })
+        if (matched) return
+        if (others_per_year[year] === undefined) others_per_year[year] = 1
+        else others_per_year[year]++
+    })
+    groups.Others = Object.values(others_per_year).reduce((a, c) => a + c, 0)
+
     const as_array = []
     for (const year in aggregated) {
         const values = aggregated[year]
         values.year = year
+        values.Others = others_per_year[year]
         as_array.push(values)
     }
-    return { groups: groups, data: as_array }
+    return { keys: keys, groups: groups, data: as_array }
 }
