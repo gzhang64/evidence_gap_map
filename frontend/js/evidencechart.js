@@ -633,20 +633,16 @@ function set_tab_status(id, selected) {
     }
 }
 
-function save_style(element) {
-    const saved_style = element.style
-    element.style.display = 'block'
-    element.style.position = 'absolute'
-    element.style.left = '-9999px'
-    return saved_style
+function get_hidden_side() {
+    const unselected_color = "white"
+    if(document.getElementById("show-total").style.color === unselected_color) return "left"
+    else return "right"
 }
 
 async function add_element_to_export(element_id, doc, y=10, width = 150, height=100) {
     const element = document.getElementById(element_id)
-    const saved_style = save_style(element)
     const canvas = await html2canvas(element, {scale: 2})
     doc.addImage(canvas.toDataURL('image/png'), 'PNG', 10, y, width, height)
-    element.style = saved_style // restore the style
 }
 
 async function generateMultiPagePDF() {
@@ -657,17 +653,25 @@ async function generateMultiPagePDF() {
     pdf.setFontSize(12);
     pdf.text(`query: ${selectedGroups.map(group => group.join(' AND '))}`, 10, 27)
 
+    const hidden_side = get_hidden_side()
+    const hidden_side_elements = document.querySelectorAll(`.${hidden_side}-of-pair`)
+    hidden_side_elements.forEach(item=>{
+        item.style.position = 'absolute'
+        item.style.left = '-9999px'
+        item.style.display='block'
+    })
+
     await add_element_to_export('map-container', pdf, y=30)
     await add_element_to_export('trend-geographical', pdf, y=150)
 
     pdf.addPage()
 
-    await add_element_to_export('bar-chart-min-age', pdf, y=30, width=300, height=200)
+    await add_element_to_export('bar-chart-min-age', pdf, y=30)
     await add_element_to_export('trend-min-age', pdf, y=150)
 
     pdf.addPage()
 
-    await add_element_to_export('bar-chart-max-age', pdf, y=30, width=300, height=200)
+    await add_element_to_export('bar-chart-max-age', pdf, y=30)
     await add_element_to_export('trend-max-age', pdf, y=150)
 
     pdf.addPage()
@@ -689,6 +693,13 @@ async function generateMultiPagePDF() {
 
     await add_element_to_export('top20-outcomes-bar-chart', pdf)
     await add_element_to_export('trend-top-outcomes', pdf, y=150)
+
+    // restore to be hidden
+    hidden_side_elements.forEach(item=>{
+        item.style.position = null
+        item.style.left = null
+        item.style.display = "none"
+    })
 
     pdf.save('evidence-chart.pdf')
 }
