@@ -654,6 +654,8 @@ async function generateMultiPagePDF() {
     const { jsPDF } = window.jspdf;
     const pdf = new jsPDF();
     pdf.text('EvidenceChart Exported Report', 10, 20)
+    pdf.setFontSize(12);
+    pdf.text(`query: ${selectedGroups.map(group => group.join(' AND '))}`, 10, 27)
 
     await add_element_to_export('map-container', pdf, y=30)
     await add_element_to_export('trend-geographical', pdf, y=150)
