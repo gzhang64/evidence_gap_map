@@ -1,5 +1,6 @@
 // this is a new design of a trend plot with two panels: 
 // a main one for count and an embedded one for percentage
+const LIMIT_OF_GROUPS = 19
 function dual_trend_plot(x_data, element_id) {
     const keys = x_data.keys
     const data = x_data.data.filter(item => item.year !== "na")
@@ -240,7 +241,7 @@ function aggregate_by_year(matchedTrials, property, order_by_age = false) {
             else return groups[a] < groups[b]
         })
 
-    if (keys.length > 20) keys.splice(20, Infinity, "Others")
+    if (keys.length > LIMIT_OF_GROUPS) keys.splice(LIMIT_OF_GROUPS, Infinity, "Others")
     const others_per_year = {}
     matchedTrials.forEach(trial => {
         const year = trial.study_dates.start_date.substring(0, 4)
@@ -298,7 +299,7 @@ function count_multiple_properties_by_year(matchedTrials, property) {
         else if (b === 'N/A') return -1;
         else return groups[a] < groups[b]
     })
-    if (keys.length > 20) keys.splice(20, Infinity, "Others")
+    if (keys.length > LIMIT_OF_GROUPS) keys.splice(LIMIT_OF_GROUPS, Infinity, "Others")
     const others_per_year = {}
     matchedTrials.forEach(trial => {
         const year = trial.study_dates.start_date.substring(0, 4)
