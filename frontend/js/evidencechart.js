@@ -728,7 +728,9 @@ window.onload = function() {
         document.querySelectorAll(".left-of-pair").forEach(item=>item.style.display='none')
     }
 
-    document.getElementById('report-export-button').addEventListener('click', generateMultiPagePDF)
+    document.getElementById('report-export-button').addEventListener('click', function() {
+        runJobWithProgress("Generating the PDF report, please wait...", generateMultiPagePDF)
+    })
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -747,3 +749,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function runJobWithProgress(message, jobFunction) {
+  // Create overlay div
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.top = '0';
+  overlay.style.left = '0';
+  overlay.style.width = '100%';
+  overlay.style.height = '100%';
+  overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  overlay.style.display = 'flex';
+  overlay.style.justifyContent = 'center';
+  overlay.style.alignItems = 'center';
+  overlay.style.zIndex = '1000';
+  
+  // Create progress message div
+  const progressDiv = document.createElement('div');
+  progressDiv.style.backgroundColor = 'white';
+  progressDiv.style.padding = '20px';
+  progressDiv.style.borderRadius = '5px';
+  progressDiv.textContent = message;
+  
+  // Add to overlay and document
+  overlay.appendChild(progressDiv);
+  document.body.appendChild(overlay);
+  
+  // Disable scrolling
+  document.body.style.overflow = 'hidden';
+  
+  // Run the job and clean up when done
+  Promise.resolve()
+    .then(jobFunction)
+    .finally(() => {
+      document.body.removeChild(overlay);
+      document.body.style.overflow = '';
+    });
+}
