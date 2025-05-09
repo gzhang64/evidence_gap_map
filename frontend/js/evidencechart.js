@@ -658,6 +658,7 @@ async function generateMultiPagePDF() {
 
     const page_num_x = pdf.internal.pageSize.getWidth() - 20
     const page_num_y = pdf.internal.pageSize.getHeight() - 10
+    const center_x = pdf.internal.pageSize.getWidth() / 2
 
     const hidden_side = get_hidden_side()
     const hidden_side_elements = document.querySelectorAll(`.${hidden_side}-of-pair`)
@@ -667,13 +668,15 @@ async function generateMultiPagePDF() {
         item.style.display='block'
     })
 
-    await add_element_to_export('map-container', pdf, y=30)
-    await add_element_to_export('trend-geographical', pdf, y=150)
     pdf.setFontSize(8)
+    pdf.text('Geographical Distribution of Clinical Trials', center_x, 35, {align: 'center'})
+    await add_element_to_export('map-container', pdf, y=40)
+    await add_element_to_export('trend-geographical', pdf, y=150)
     pdf.text('page 1', page_num_x, page_num_y)
 
     pdf.addPage()
 
+    pdf.text('Eligible Age Distribution', center_x, 25, {align: 'center'})
     await add_element_to_export('bar-chart-min-age', pdf, y=30)
     await add_element_to_export('trend-min-age', pdf, y=150)
     pdf.text('page 2', page_num_x, page_num_y)
@@ -686,25 +689,29 @@ async function generateMultiPagePDF() {
 
     pdf.addPage()
 
-    await add_element_to_export('gender-donut-chart', pdf)
+    pdf.text('Gender Distribution in Clinical Trials', center_x, 15, {align: 'center'})
+    await add_element_to_export('gender-donut-chart', pdf, y=20)
     await add_element_to_export('trend-gender', pdf, y=150)
     pdf.text('page 4', page_num_x, page_num_y)
 
     pdf.addPage()
 
-    await add_element_to_export('intervention-pie-chart', pdf)
+    pdf.text('Intervention Types Distribution', center_x, 15, {align: 'center'})
+    await add_element_to_export('intervention-pie-chart', pdf, y=20)
     await add_element_to_export('trend-intervention-types', pdf, y=150)
     pdf.text('page 5', page_num_x, page_num_y)
 
     pdf.addPage() // page 6
 
-    await add_element_to_export('top20-interventions-bar-chart', pdf)
+    pdf.text('Top 20 Investigated Interventions', center_x, 15, {align: 'center'})
+    await add_element_to_export('top20-interventions-bar-chart', pdf, y=20)
     await add_element_to_export('trend-top-interventions', pdf, y=150)
     pdf.text('page 6', page_num_x, page_num_y)
 
     pdf.addPage() // page 7
 
-    await add_element_to_export('top20-outcomes-bar-chart', pdf)
+    pdf.text('Top 20 Investigated Outcomes', center_x, 15, {align: 'center'})
+    await add_element_to_export('top20-outcomes-bar-chart', pdf, y=20)
     await add_element_to_export('trend-top-outcomes', pdf, y=150)
     pdf.text('page 7', page_num_x, page_num_y)
 
@@ -741,7 +748,6 @@ function add_tabular_content_to_pdf(doc) {
         didDrawPage: (data) => { // Use didDrawPage hook to add content to every page
             const pageNum = doc.internal.getNumberOfPages(); // Current page number
             doc.setFontSize(8);
-            //doc.text(`page ${pageNum}`, doc.internal.pageSize.getWidth() / 2, doc.internal.pageSize.getHeight() - 10, {align: 'center'});
             doc.text(`page ${pageNum}`, page_num_x, page_num_y)
         }
     };
