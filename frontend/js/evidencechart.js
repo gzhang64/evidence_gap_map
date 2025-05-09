@@ -650,6 +650,7 @@ async function add_element_to_export(element_id, doc, y=10, width = 150, height=
 async function generateMultiPagePDF() {
     // Initialize jsPDF
     const { jsPDF } = window.jspdf;
+    applyPlugin(jsPDF);
     const pdf = new jsPDF();
     pdf.text('EvidenceChart Exported Report', 10, 20)
     pdf.setFontSize(12);
@@ -703,8 +704,32 @@ async function generateMultiPagePDF() {
         item.style.display = "none"
     })
 
+    pdf.addPage() // pages 8 and later
+    add_tabular_content_to_pdf(pdf)
+
     pdf.save('evidence-chart.pdf')
 }
+
+function add_tabular_content_to_pdf(doc) {
+    const head = [['NCT number', 'title']]
+    const rows = matchedTrials.map(item=>[item.nct_id, item.title])
+    const options = {
+        startY: 20, // Vertical position to start the table
+        didDrawCell: (data) => { // add hyperlink
+            if (data.column.dataKey === 0 && data.cell.section === 'body') { // Check column and section
+                doc.setFillColor(255, 255, 255);
+                doc.rect(data.cell.x, data.cell.y, data.cell.width, data.cell.height, 'F'); // clear the original content
+                // approximately match the orginal text position
+                const x = data.cell.x + 2;
+                const y = data.cell.y + 5;
+                doc.textWithLink(data.cell.raw, x, y, { url: `https://clinicaltrials.gov/study/${data.cell.raw}` });
+            }
+        },
+    };
+
+    doc.autoTable({ head: head, body: rows, ...options });
+}
+
 // Initialize by loading conditions from the CSV file
 window.onload = function() {
     // Load conditions for filter
