@@ -408,3 +408,12 @@ svg {
 .search-entry p strong {
     font-weight: bold;
 }
+
+.btn {
+    margin-left: 10px; padding: 0.75rem; border: none; background-color: #2d64a8; color: white; border-radius: 5px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
